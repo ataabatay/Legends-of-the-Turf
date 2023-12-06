@@ -7,6 +7,7 @@ import {
   getMyTeam,
   getSinglePlayer,
   getAllTeams,
+  deleteTeam
 } from '../controllers/footballers.js'
 
 import {
@@ -32,6 +33,7 @@ router.route('/myteam/:teamId/edit/details')
 
 router.route('/myteam/:teamId')
   .get(getMyTeam)
+  .delete(deleteTeam)
 
 router.route('/players/:playerId')
   .get(getSinglePlayer)
