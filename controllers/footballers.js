@@ -1,8 +1,8 @@
-// import 'footballers model'
-// import 'teams created by users model'
-// import mongoose once for database queries
+import Footballer from '../models/footballer'
+import Team from '../models/team'
+import mongoose from 'mongoose'
 
-// *Create new team 
+// *Create new team - XXX
 // Method: POST
 // Path: '/myteam/newteam'
 export const createTeam = async (req, res) => {
@@ -10,7 +10,7 @@ export const createTeam = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Fetch all the players
+// *Fetch all the players - DONE
 // Method: GET
 // Path: '/players/'
 export const getAllPlayers = async (req, res) => {
@@ -18,7 +18,7 @@ export const getAllPlayers = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Add players to a team
+// *Add players to a team - XXX
 // Method: PUT
 // Path: 'myteam/newteam/playerselection
 export const addPlayers = async (req, res) => {
@@ -26,7 +26,7 @@ export const addPlayers = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Fetch my team
+// *Fetch my team - XXX
 // Method: GET
 // Path: '/myteam/:teamId'
 export const getMyTeam = async (req, res) => {
@@ -34,7 +34,7 @@ export const getMyTeam = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Fetch single player
+// *Fetch single player - DONE
 // Method: GET
 // Path: '/players/:playerId'
 export const getSinglePlayer = async (req, res) => {
@@ -43,7 +43,7 @@ export const getSinglePlayer = async (req, res) => {
 }
 
 // ! Optionals 
-// *Update team details (change team name/logo etc.)
+// *Update team details (change team name/logo etc.) - XXX
 // Method: PUT
 // Path: '/myteam/:teamId
 export const changeTeamDetails = async (req, res) => {
@@ -51,7 +51,7 @@ export const changeTeamDetails = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Update team (selection of players)
+// *Update team (selection of players) - XXX
 // Method: PUT
 // Path: '/myteam/:teamId
 export const makeTransfers = async (req, res) => {

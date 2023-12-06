@@ -10,4 +10,4 @@ const footballerSchema = new mongoose.Schema({
   price: { type: Number, required: true },
 })
 
-export default mongoose.model(footballerSchema)
+export default mongoose.model('Footballer', footballerSchema)
