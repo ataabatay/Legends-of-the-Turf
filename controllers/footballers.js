@@ -12,18 +12,13 @@ export const createTeam = async (req, res) => {
   } catch (error) {
     console.log(error)
     return res.status(400).json(error)
-  } 
+  }
 }
 
 // *Fetch all the players - working
 // Method: GET
 // Path: '/players/'
 export const getAllPlayers = async (req, res) => {
-<<<<<<< HEAD
-  const players = await Footballer.find() 
-  return res.json(players)
-=======
-<<<<<<< HEAD
   try {
     const allPlayers = await Footballer.find()
     return res.status(200).json(allPlayers)
@@ -31,11 +26,6 @@ export const getAllPlayers = async (req, res) => {
     console.log(error)
     return res.status(400).json(error)
   }
-=======
-  console.log('Get all players')
-  return res.status(200).json({ message: 'Success' })
->>>>>>> ff75630677bc0114adc75942b13e2cfb525c7de8
->>>>>>> development
 }
 
 // *Add/edit players in a team - working
@@ -58,7 +48,6 @@ export const getMyTeam = async (req, res) => {
 // Method: GET
 // Path: '/players/:playerId'
 export const getSinglePlayer = async (req, res) => {
-<<<<<<< HEAD
   try {
     // find the footballer by the id provided in the params 
     const footballer = await Footballer.findById(req.params.playerId)
@@ -70,10 +59,6 @@ export const getSinglePlayer = async (req, res) => {
     console.log(error)
     return res.status(400).json(error)
   }
-=======
-  console.log('Get single player')
-  return res.status(200).json({ message: 'Success' })
->>>>>>> ff75630677bc0114adc75942b13e2cfb525c7de8
 }
 
 // ! Optionals
@@ -91,4 +76,17 @@ export const changeTeamDetails = async (req, res) => {
 export const makeTransfers = async (req, res) => {
   console.log('Get single player')
   return res.status(200).json({message: 'Success'})
+}
+
+// *Get all teams
+// Method: GET
+// Path: '/teams'
+export const getAllTeams = async (req, res) => {
+  try {    
+    const allTeams = await Team.find()
+    return res.status(200).json(allTeams)
+  } catch (error) {
+    console.log(error)
+    return res.status(400).json(error)
+  }
 }

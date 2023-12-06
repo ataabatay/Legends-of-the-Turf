@@ -1,11 +1,12 @@
 import express from 'express'
-import {
-  addPlayersToTeam,
-  changeTeamDetails,
-  createTeam,
-  getAllPlayers,
-  getMyTeam,
-  getSinglePlayer
+import { 
+  addPlayersToTeam, 
+  changeTeamDetails, 
+  createTeam, 
+  getAllPlayers, 
+  getMyTeam, 
+  getSinglePlayer,
+  getAllTeams,
 } from '../controllers/footballers.js'
 
 import {
@@ -35,10 +36,7 @@ router.route('/myteam/:teamId')
 router.route('/players/:playerId')
   .get(getSinglePlayer)
 
-router.route('/register')
-  .post(register)
-
-router.route('/login')
-  .post(login)
+router.route('/teams')
+  .get(getAllTeams)
 
 export default router
