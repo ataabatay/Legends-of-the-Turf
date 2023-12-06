@@ -4,12 +4,21 @@ import 'dotenv/config'
 
 const app = express()
 
+//Middleware
+
 app.use(express.json())
 
 app.use((req, res, next) => {
   console.log(`Request received: ${req.method} ${req.url}`)
   next()
 })
+
+// Endpoints
+app.get('/players', async (req, res) => 
+)
+
+
+
 // Start servers
 
 async function startServer(){
