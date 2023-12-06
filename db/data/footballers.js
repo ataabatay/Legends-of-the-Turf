@@ -1252,7 +1252,7 @@ export default [
   },
   {
     firstName: 'Joel',
-    lastName: 'Leeds United',
+    lastName: '',
     teamName: 'Leeds United',
     position: 'GK',
     DOB: '17/06/1990',
@@ -1261,7 +1261,7 @@ export default [
   },
   {
     firstName: 'Joelinton',
-    lastName: 'Newcastle United',
+    lastName: '',
     teamName: 'Newcastle United',
     position: 'MF',
     DOB: '14/08/1996',
@@ -3106,7 +3106,8 @@ export default [
   },
   {
     firstName: 'Rodri',
-    lastName: 'Manchester City',
+    lastName: '',
+    teamName: 'Manchester City',
     position: 'MF',
     DOB: '22/06/1996',
     height: '191 cm',
@@ -3114,7 +3115,8 @@ export default [
   },
   {
     firstName: 'Rodrigo',
-    lastName: 'Leeds United',
+    lastName: '',
+    teamName: 'Leeds United',
     position: 'FW',
     DOB: '06/03/1991',
     height: '182 cm',
@@ -3770,7 +3772,8 @@ export default [
   },
   {
     firstName: 'Tetê',
-    lastName: 'Leicester City',
+    lastName: '',
+    teamName: 'Leicester City',
     position: 'FW',
     DOB: '15/02/2000',
     height: '175 cm',

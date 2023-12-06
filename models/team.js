@@ -5,4 +5,4 @@ const teamSchema = new mongoose.Schema({
   players: [],
 })
 
-export default mongoose.model(teamSchema)
+export default mongoose.model('Team', teamSchema)
