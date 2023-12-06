@@ -1,4 +1,4 @@
-// import user model
+import User from '../models/user.js'
 // import jwt 
 // import bcrypt for encryption
 
