@@ -14,6 +14,7 @@ export const createTeam = async (req, res) => {
 // Method: GET
 // Path: '/players/'
 export const getAllPlayers = async (req, res) => {
+<<<<<<< HEAD
   try {
     const allPlayers = await Footballer.find()
     return res.status(200).json(allPlayers)
@@ -21,6 +22,10 @@ export const getAllPlayers = async (req, res) => {
     console.log(error)
     return res.status(400).json(error)
   }
+=======
+  console.log('Get all players')
+  return res.status(200).json({ message: 'Success' })
+>>>>>>> ff75630677bc0114adc75942b13e2cfb525c7de8
 }
 
 // *Add players to a team - XXX
@@ -43,6 +48,7 @@ export const getMyTeam = async (req, res) => {
 // Method: GET
 // Path: '/players/:playerId'
 export const getSinglePlayer = async (req, res) => {
+<<<<<<< HEAD
   try {
     // find the footballer by the id provided in the params 
     const footballer = await Footballer.findById(req.params.playerId)
@@ -54,6 +60,10 @@ export const getSinglePlayer = async (req, res) => {
     console.log(error)
     return res.status(400).json(error)
   }
+=======
+  console.log('Get single player')
+  return res.status(200).json({ message: 'Success' })
+>>>>>>> ff75630677bc0114adc75942b13e2cfb525c7de8
 }
 
 // ! Optionals 
