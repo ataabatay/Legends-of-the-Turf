@@ -5,6 +5,8 @@ import 'dotenv/config'
 // ! Middleware
 // helper for fetching the body of requests
 const app = express()
+
+//Middleware
 app.use(express.json())
 
 // incoming request logger
