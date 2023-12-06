@@ -6,7 +6,7 @@ import Footballer from '../models/footballer.js'
 // This function will:
 // 1. Establish a connection to the database
 // 2. We will clear out existing data in preparation to add our initial/dummy data
-// 3. Add our movieData into the the movie collection
+// 3. Add our footballerData into the the footballer collection
 // 4. Close the connection to the database
 async function seed() {
   try {
