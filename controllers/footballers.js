@@ -6,16 +6,21 @@ import mongoose from 'mongoose'
 // Method: POST
 // Path: '/myteam/newteam'
 export const createTeam = async (req, res) => {
-  console.log('Create team')
-  return res.status(200).json({ message: 'Success' })
+  try {
+    const teamToCreate = await Team.create(req.body)
+    return res.status(201).json(teamToCreate)
+  } catch (error) {
+    console.log(error)
+    return res.status(400).json(error)
+  } 
 }
 
 // *Fetch all the players - working
 // Method: GET
 // Path: '/players/'
 export const getAllPlayers = async (req, res) => {
-  console.log('Get all players')
-  return res.status(200).json({ message: 'Success' })
+  const players = await Footballer.find() 
+  return res.json(players)
 }
 
 // *Add players to a team - working
