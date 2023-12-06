@@ -1,7 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import 'dotenv/config'
-import router from './config/routes.js'
+import router from './config/router.js'
 
 // ! Middleware
 // helper for fetching the body of requests

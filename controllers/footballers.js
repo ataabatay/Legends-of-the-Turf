@@ -1,8 +1,8 @@
-import Footballer from '../models/footballer'
-import Team from '../models/team'
+import Footballer from '../models/footballer.js'
+import Team from '../models/team.js'
 import mongoose from 'mongoose'
 
-// *Create new team - XXX
+// *Create new team - working
 // Method: POST
 // Path: '/myteam/newteam'
 export const createTeam = async (req, res) => {
@@ -10,7 +10,7 @@ export const createTeam = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Fetch all the players - DONE
+// *Fetch all the players - working
 // Method: GET
 // Path: '/players/'
 export const getAllPlayers = async (req, res) => {
@@ -18,7 +18,7 @@ export const getAllPlayers = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Add players to a team - XXX
+// *Add players to a team - working
 // Method: PUT
 // Path: 'myteam/newteam/playerselection
 export const addPlayers = async (req, res) => {
@@ -26,7 +26,7 @@ export const addPlayers = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Fetch my team - XXX
+// *Fetch my team - working
 // Method: GET
 // Path: '/myteam/:teamId'
 export const getMyTeam = async (req, res) => {
@@ -34,7 +34,7 @@ export const getMyTeam = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Fetch single player - DONE
+// *Fetch single player - working
 // Method: GET
 // Path: '/players/:playerId'
 export const getSinglePlayer = async (req, res) => {
@@ -43,7 +43,7 @@ export const getSinglePlayer = async (req, res) => {
 }
 
 // ! Optionals 
-// *Update team details (change team name/logo etc.) - XXX
+// *Update team details (change team name/logo etc.) - working
 // Method: PUT
 // Path: '/myteam/:teamId
 export const changeTeamDetails = async (req, res) => {
@@ -51,9 +51,9 @@ export const changeTeamDetails = async (req, res) => {
   return res.status(200).json({ message: 'Success' })
 }
 
-// *Update team (selection of players) - XXX
+// *Update team (selection of players) - working
 // Method: PUT
-// Path: '/myteam/:teamId
+// Path: '/myteam/:teamId/swapplayers
 export const makeTransfers = async (req, res) => {
   console.log('Get single player')
   return res.status(200).json({ message: 'Success' })

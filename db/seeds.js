@@ -1,5 +1,4 @@
 import footballerData from './data/footballers.js'
-
 import mongoose from 'mongoose'
 import 'dotenv/config'
 import Footballer from '../models/footballer.js'
@@ -17,18 +16,16 @@ async function seed() {
     const { deletedCount: footballerCount } = await Footballer.deleteMany()
     console.log(`❌ Deleted ${ footballerCount } footballers from the database`)
 
-    
     const footballersCreated = await Footballer.create(footballerData)
     console.log(`🌱 Seeded ${footballersCreated.length} footballers to the database`)
 
     await mongoose.connection.close()
     console.log('👋 Closed the connection to the database')
-
+    
   } catch (error) {
     console.log(error)
     await mongoose.connection.close()
     console.log('👋 Closed the connection to the database')
   }
-
 }
 seed()
