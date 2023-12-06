@@ -6,6 +6,7 @@ import {
   getAllPlayers, 
   getMyTeam, 
   getSinglePlayer,
+  getAllTeams,
 } from '../controllers/footballers.js'
 // import login and register from user controllers when ready
 // import secure route when ready
@@ -29,5 +30,8 @@ router.route('/myteam/:teamId')
 
 router.route('/players/:playerId')
   .get(getSinglePlayer)
+
+router.route('/teams')
+  .get(getAllTeams)
 
 export default router
