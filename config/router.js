@@ -7,6 +7,7 @@ import {
   getMyTeam, 
   getSinglePlayer,
   getAllTeams,
+  deleteTeam
 } from '../controllers/footballers.js'
 // import login and register from user controllers when ready
 // import secure route when ready
@@ -22,11 +23,12 @@ router.route('/players')
 router.route('/myteam/:teamId/edit/players')
   .put(addPlayersToTeam)
 
-  router.route('/myteam/:teamId/edit/details')
+router.route('/myteam/:teamId/edit/details')
   .put(changeTeamDetails)
 
 router.route('/myteam/:teamId')
   .get(getMyTeam)
+  .delete(deleteTeam)
 
 router.route('/players/:playerId')
   .get(getSinglePlayer)
