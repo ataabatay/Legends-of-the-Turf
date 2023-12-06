@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 import 'dotenv/config'
 
 const app = express()
-
+// Ata was here
 app.use(express.json())
 
 app.use((req, res, next) => {
