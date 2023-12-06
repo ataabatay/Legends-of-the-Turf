@@ -7,7 +7,7 @@
 // Path: '/myteam/newteam'
 export const createTeam = async (req, res) => {
   console.log('Create team')
-  return res.status(200).json({message: 'Success'})
+  return res.status(200).json({ message: 'Success' })
 }
 
 // *Fetch all the players
@@ -15,7 +15,7 @@ export const createTeam = async (req, res) => {
 // Path: '/players/'
 export const getAllPlayers = async (req, res) => {
   console.log('Get all players')
-  return res.status(200).json({message: 'Success'})
+  return res.status(200).json({ message: 'Success' })
 }
 
 // *Add players to a team
@@ -23,7 +23,7 @@ export const getAllPlayers = async (req, res) => {
 // Path: 'myteam/newteam/playerselection
 export const addPlayers = async (req, res) => {
   console.log('Add players')
-  return res.status(200).json({message: 'Success'})
+  return res.status(200).json({ message: 'Success' })
 }
 
 // *Fetch my team
@@ -31,7 +31,7 @@ export const addPlayers = async (req, res) => {
 // Path: '/myteam/:teamId'
 export const getMyTeam = async (req, res) => {
   console.log('Get my team')
-  return res.status(200).json({message: 'Success'})
+  return res.status(200).json({ message: 'Success' })
 }
 
 // *Fetch single player
@@ -39,7 +39,7 @@ export const getMyTeam = async (req, res) => {
 // Path: '/players/:playerId'
 export const getSinglePlayer = async (req, res) => {
   console.log('Get single player')
-  return res.status(200).json({message: 'Success'})
+  return res.status(200).json({ message: 'Success' })
 }
 
 // ! Optionals 
@@ -48,7 +48,7 @@ export const getSinglePlayer = async (req, res) => {
 // Path: '/myteam/:teamId
 export const changeTeamDetails = async (req, res) => {
   console.log('Get single player')
-  return res.status(200).json({message: 'Success'})
+  return res.status(200).json({ message: 'Success' })
 }
 
 // *Update team (selection of players)
@@ -56,5 +56,5 @@ export const changeTeamDetails = async (req, res) => {
 // Path: '/myteam/:teamId
 export const makeTransfers = async (req, res) => {
   console.log('Get single player')
-  return res.status(200).json({message: 'Success'})
+  return res.status(200).json({ message: 'Success' })
 }
