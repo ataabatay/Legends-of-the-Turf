@@ -25,7 +25,6 @@ export const login = async (req, res) => {
 
     if (!userToLogin || !bcrypt.compareSync(password, userToLogin.password)) {
       throw new Error(!userToLogin ? 'email not found' : 'passwords don\'t match')
-
     }
     const token = jwt.sign({ sub: userToLogin._id }, process.env.SECRET, { expiresIn: '7d' })
     return res.status(202).json({ message: `logged in ${userToLogin.username}`, token: token })
