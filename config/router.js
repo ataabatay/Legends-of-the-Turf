@@ -22,7 +22,7 @@ router.route('/players')
 router.route('/myteam/:teamId/edit/players')
   .put(addPlayersToTeam)
 
-  router.route('/myteam/:teamId/edit/details')
+router.route('/myteam/:teamId/edit/details')
   .put(changeTeamDetails)
 
 router.route('/myteam/:teamId')
