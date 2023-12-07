@@ -1,13 +1,19 @@
 import express from 'express'
-import { 
-  addPlayersToTeam, 
-  changeTeamDetails, 
-  createTeam, 
-  getAllPlayers, 
-  getMyTeam, 
+import {
+  addPlayersToTeam,
+  changeTeamDetails,
+  createTeam,
+  getAllPlayers,
+  getMyTeam,
   getSinglePlayer,
   getAllTeams,
+  deleteTeam
 } from '../controllers/footballers.js'
+
+import {
+  login,
+  register
+} from '../controllers/users.js'
 // import login and register from user controllers when ready
 // import secure route when ready
 
@@ -27,11 +33,18 @@ router.route('/myteam/:teamId/edit/details')
 
 router.route('/myteam/:teamId')
   .get(getMyTeam)
+  .delete(deleteTeam)
 
 router.route('/players/:playerId')
   .get(getSinglePlayer)
 
 router.route('/teams')
   .get(getAllTeams)
+
+router.route('/register')
+  .post(register)
+
+router.route('/login')
+  .post( login)
 
 export default router
