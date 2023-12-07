@@ -6,7 +6,7 @@ export default function SingleFootballer(){
   
   return (
     <>
-      <h2>I'm a solo TUUUURD!</h2>
+      <h2>I am a solo TUUUURD!</h2>
     </>
   )
 }

@@ -1,7 +1,10 @@
 // React and router imports
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import './index.css'
+
+// Styles 
 
 // Page components
 import App from './App.jsx';
