@@ -64,7 +64,6 @@ export const getSinglePlayer = async (req, res) => {
 //Delete teams
 //METHOD: Delete
 // Path: '/myteam/:teamId'
-
 export const deleteTeam = async (req, res) => {
   try {
     const { teamId } = req.params
@@ -85,14 +84,6 @@ export const deleteTeam = async (req, res) => {
 // Method: PUT
 // Path: '/myteam/:teamId/edit/details'
 export const changeTeamDetails = async (req, res) => {
-  console.log('Get single player')
-  return res.status(200).json({message: 'Success'})
-}
-
-// *Update team (selection of players) - working
-// Method: PUT
-// Path: '/myteam/:teamId/swapplayers
-export const makeTransfers = async (req, res) => {
   console.log('Get single player')
   return res.status(200).json({message: 'Success'})
 }
