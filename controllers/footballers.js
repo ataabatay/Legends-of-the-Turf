@@ -32,16 +32,28 @@ export const getAllPlayers = async (req, res) => {
 // Method: PUT
 // Path: 'myteam/:teamId/edit/players'
 export const addPlayersToTeam = async (req, res) => {
-  console.log('Add players')
-  return res.status(200).json({message: 'Success'})
+  try {
+    const teamToEdit = await Team.findById(req.params.teamId)
+    const playersToAdd = req.body
+    Object.assign(teamToEdit, playersToAdd)
+    await teamToEdit.save()
+    return res.status(200).json(teamToEdit)
+  } catch (error) {
+    return res.status(400).json(error)
+  }
 }
 
 // *Fetch my team - working
 // Method: GET
 // Path: '/myteam/:teamId'
 export const getMyTeam = async (req, res) => {
-  console.log('Get my team')
-  return res.status(200).json({message: 'Success'})
+  try {
+    const teamToFetch = await Team.findById(req.params.teamId).populate('players')
+    if (!teamToFetch) return res.status(404).json({message: 'Team not found'})
+    return res.status(200).json(teamToFetch)
+  } catch (error) {
+    return res.status(400).json(error)
+  }
 }
 
 // *Fetch single player
@@ -84,15 +96,25 @@ export const deleteTeam = async (req, res) => {
 // Method: PUT
 // Path: '/myteam/:teamId/edit/details'
 export const changeTeamDetails = async (req, res) => {
-  console.log('Get single player')
-  return res.status(200).json({message: 'Success'})
+  try {
+    const teamToEdit = await Team.findById(req.params.teamId)
+    if (!teamToEdit) return res.status(404).json({message: 'Team not found'})
+
+    //* TO ADD: validation to match owner is same as current user to allow changes
+    Object.assign(teamToEdit, req.body)
+    await teamToEdit.save()
+    return res.status(200).json(teamToEdit)
+  } catch (error) {
+    console.log(error)
+    return res.status(400).json(error)
+  }
 }
 
 // *Get all teams
 // Method: GET
 // Path: '/teams'
 export const getAllTeams = async (req, res) => {
-  try {    
+  try {
     const allTeams = await Team.find()
     return res.status(200).json(allTeams)
   } catch (error) {
