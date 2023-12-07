@@ -7,7 +7,6 @@
     "serve": "npx nodemon index.js",
     "seed": "node db/seeds.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
   "keywords": [],
   "author": "",
@@ -18,6 +17,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.0.2"
+    "mongoose": "^8.0.2",
+    "react-router-dom": "^6.20.1"
   }
 }
