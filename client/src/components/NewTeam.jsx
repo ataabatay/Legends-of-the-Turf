@@ -1,12 +1,22 @@
+import { useState } from 'react'
+import ImageUploadField from './components/ImageUploadField'
+
+export default function NewTeam() {
+  const [ formData, setFormData ] = useState({
+    teamName: '',
+    image: '',
+  })
 
 
-export default function NewTeam(){
-
-
+function handleChange(e){
+  setFormData({ ...formData, [e.target.name]: e.target.value })
+}
 
   return (
-    <>
-      <h2>New Turds to come out!!</h2>
-    </>
-  )
+  <form onSubmit={e => e.preventDefault()}>
+    <input type="text" name="teamName" placeholder='Team Name' onChange={handleChange} value={formData.teamName}/>
+    <ImageUploadField setFormData={setFormData} formData={formData} />
+    <input type="submit" value="Upload Team Logo" />
+  </form>
+)
 }
