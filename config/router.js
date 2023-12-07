@@ -14,26 +14,26 @@ import {
   login,
   register
 } from '../controllers/users.js'
-// import login and register from user controllers when ready
-// import secure route when ready
+
+import secureRoute from './secureRoute.js'
 
 const router = express.Router()
 
 router.route('/myteam/newteam')
-  .post(createTeam)
+  .post(secureRoute, createTeam)
 
 router.route('/players')
   .get(getAllPlayers)
 
 router.route('/myteam/:teamId/edit/players')
-  .put(addPlayersToTeam)
+  .put(secureRoute, addPlayersToTeam)
 
 router.route('/myteam/:teamId/edit/details')
-  .put(changeTeamDetails)
+  .put(secureRoute, changeTeamDetails)
 
 router.route('/myteam/:teamId')
   .get(getMyTeam)
-  .delete(deleteTeam)
+  .delete(secureRoute, deleteTeam)
 
 router.route('/players/:playerId')
   .get(getSinglePlayer)
