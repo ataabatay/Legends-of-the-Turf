@@ -7,6 +7,8 @@ import { Outlet } from 'react-router-dom'
 import Home from './components/Home'
 import Navigation from './components/Nav'
 
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,6 +16,8 @@ function App() {
     <>
       <Navigation />
       <Home />
+      
+      
     
       <h1>Hello turds</h1>
       <button>Login</button>
@@ -21,6 +25,7 @@ function App() {
       {/* <main>
       <Outlet />
       </main> */}
+      
     </>
   )
 }
