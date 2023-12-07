@@ -21,7 +21,9 @@ function App() {
     
       <h1>Hello turds</h1>
       <button>Login</button>
+      {/* <Link to="/login" className='btn btn-blue'>Login</Link> */}
       <button>Register</button>
+      {/* <Link to="/register" className='btn btn-blue'>Register</Link> */}
       {/* <main>
       <Outlet />
       </main> */}
