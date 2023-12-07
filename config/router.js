@@ -1,37 +1,50 @@
 import express from 'express'
-import { 
-  addPlayersToTeam, 
-  changeTeamDetails, 
-  createTeam, 
-  getAllPlayers, 
-  getMyTeam, 
+import {
+  addPlayersToTeam,
+  changeTeamDetails,
+  createTeam,
+  getAllPlayers,
+  getMyTeam,
   getSinglePlayer,
   getAllTeams,
+  deleteTeam
 } from '../controllers/footballers.js'
-// import login and register from user controllers when ready
-// import secure route when ready
+
+import {
+  login,
+  register
+} from '../controllers/users.js'
+
+import secureRoute from './secureRoute.js'
 
 const router = express.Router()
 
 router.route('/myteam/newteam')
-  .post(createTeam)
+  .post(secureRoute, createTeam)
 
 router.route('/players')
   .get(getAllPlayers)
 
 router.route('/myteam/:teamId/edit/players')
-  .put(addPlayersToTeam)
+  .put(secureRoute, addPlayersToTeam)
 
-  router.route('/myteam/:teamId/edit/details')
-  .put(changeTeamDetails)
+router.route('/myteam/:teamId/edit/details')
+  .put(secureRoute, changeTeamDetails)
 
 router.route('/myteam/:teamId')
   .get(getMyTeam)
+  .delete(secureRoute, deleteTeam)
 
 router.route('/players/:playerId')
   .get(getSinglePlayer)
 
 router.route('/teams')
   .get(getAllTeams)
+
+router.route('/register')
+  .post(register)
+
+router.route('/login')
+  .post( login)
 
 export default router

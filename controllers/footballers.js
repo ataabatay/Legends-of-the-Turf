@@ -73,6 +73,24 @@ export const getSinglePlayer = async (req, res) => {
   }
 }
 
+//Delete teams
+//METHOD: Delete
+// Path: '/myteam/:teamId'
+export const deleteTeam = async (req, res) => {
+  try {
+    const { teamId } = req.params
+    const team = await Team.findByIdAndDelete(teamId)
+    if (!team) {
+      return res.status(404).json({ message: 'Team not found' })
+    }
+    return res.sendStatus(204)
+  } catch (error) {
+    console.log(error)
+    return res.status(400).json(error)
+  }
+}
+
+
 // ! Optionals
 // *Update team details (change team name/logo etc.) - working
 // Method: PUT
