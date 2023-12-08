@@ -14,6 +14,7 @@ export default function Navigation() {
           <Nav.Link href="/home"><button type='button' className='btn btn-primary'>Home</button></Nav.Link>
           <Nav.Link href="/myteam/1"><button type='button' className='btn btn-primary'>My Team</button></Nav.Link>
           <Nav.Link href="/rules"><button type='button' className='btn btn-primary'>Rules</button></Nav.Link>
+          <Nav.Link href="/footballers"><button type='button' className='btn btn-primary'>Player Stats</button></Nav.Link>
           <Nav.Link href="#"><button type='button' className='btn btn-primary'>Sign out</button></Nav.Link>
         </Nav>
       </Container>
