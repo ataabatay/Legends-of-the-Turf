@@ -1,4 +1,5 @@
 import {Form} from 'react-router-dom'
+import react from 'react'
 
 export default function Register(){
   
