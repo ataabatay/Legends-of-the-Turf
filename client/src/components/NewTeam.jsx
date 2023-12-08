@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ImageUploadField from './components/ImageUploadField'
+import ImageUploadField from './ImageUploadField'
 import react from 'react'
 
 export default function NewTeam() {
