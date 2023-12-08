@@ -17,12 +17,12 @@ export default function MyTeam() {
   console.log(teamName)
   return (
     <>
-      <h2>I'm Your Team Go Turds!</h2>
+      <h2>Lets Go {teamName}! </h2>
       <section className='players'>
         <p>{teamName}</p>
         <Container fluid>
 
-          <Col key={_id} md={12}>
+          <Col key={_id} className="card" md={12}>
             <Row>
               {sortedPlayers
                 .filter((player) => player.position === 'GK')
@@ -57,7 +57,7 @@ export default function MyTeam() {
               {sortedPlayers
                 .filter((player) => player.position === 'MF')
                 .map((player, index) => (
-                  <Col key={` ${player.id} ${index}`} md={3}>
+                  <Col key={` ${player.id} ${index}`} className="card" md={3}>
                     <p>{player.firstName} <br /> {player.position}</p>
                   </Col>
                 ))}
@@ -72,7 +72,7 @@ export default function MyTeam() {
               {sortedPlayers
                 .filter((player) => player.position === 'FW')
                 .map((player, index) => (
-                  <Col key={`${player.id} ${index}`} md={6}>
+                  <Col key={`${player.id} ${index}`} className="card" md={6}>
                     <p>{player.firstName} <br /> {player.position}</p>
                   </Col>
                 ))}
