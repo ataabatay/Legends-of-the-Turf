@@ -1,7 +1,8 @@
 import './App.css'
-
 import Navigation from './components/Nav'
 import { Outlet, useLocation } from 'react-router-dom'
+
+import { Link } from 'react-router-dom'
 
 export default function App() {
 
@@ -19,12 +20,16 @@ export default function App() {
       :
       <>
         <h1>Hello turds</h1>
-        <button>Login</button>
-        <button>Register</button>
+
+        <Link to={'/login'}>
+          <button>Login</button>
+        </Link>
+
+        <Link to={'/register'}>
+          <button>Register</button>
+        </Link>
       </>
       }
     </>
   )
 }
-
-
