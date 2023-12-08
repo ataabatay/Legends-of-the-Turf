@@ -8,7 +8,7 @@ export default function Navigation() {
 
   return (
     <>
-    <Navbar bg="primary" data-bs-theme="dark">
+    <Navbar className="navbar" bg="primary" data-bs-theme="dark">
       <Container>
         <Nav className="me-auto">
           <Nav.Link href="/home"><button type='button' className='btn btn-primary'>Home</button></Nav.Link>

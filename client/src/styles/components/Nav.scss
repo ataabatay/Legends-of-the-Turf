@@ -1,0 +1,9 @@
+nav {
+  @include flex-between(row);
+  background-color: red;
+  padding: 2em;
+}
+
+.navbar, .container {
+  width: 100%;
+}
