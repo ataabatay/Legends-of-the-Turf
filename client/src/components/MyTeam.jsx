@@ -9,6 +9,11 @@ export default function MyTeam() {
 console.log(usersTeam)
   const { _id, teamName, players } = usersTeam
 
+  const sortedPlayers = players.sort((a, b) => {
+  const positionOrder = { 'GK': 1, 'DF': 2, 'MF': 3, 'FW': 4 }
+
+  return positionOrder[a] - positionOrder[b]
+  })
 console.log(teamName)
   return (
     <>
@@ -17,16 +22,56 @@ console.log(teamName)
         <p>{teamName}</p>
         <Container fluid>
           <Row >
-
             <Col key={_id} md={12}>
-              {players.map((player) => (
-                <Col key={player.id} md={12}>
-                  
-                    {player.firstName}
-                  
+              <Row>
+              {sortedPlayers
+              .filter((player) => player.position === 'GK')
+              .map((player) => (
+                <Col key={`${player.id}` } md={12}>
+                  <p>{player.firstName} <br/> {player.position}</p>
                 </Col>
               ))}
+              </Row>
             </Col>
+          </Row>
+          <Row >
+            
+              <Row>
+              {sortedPlayers
+              .filter((player) => player.position === 'DF')
+              .map((player, index) => (
+                <Col key={`${player.id} ${index}`} md={3}>
+                  <p>{player.firstName} <br/> {player.position}</p>
+                </Col>
+              ))}
+              </Row>
+            
+          </Row>
+          <Row >
+            
+              <Row>
+              {sortedPlayers
+              .filter((player) => player.position === 'MF')
+              .map((player, index) => (
+                <Col key={` ${player.id} ${index}`} md={3}>
+                  <p>{player.firstName} <br/> {player.position}</p>
+                </Col>
+              ))}
+              </Row>
+            
+          </Row>
+          <Row >
+            
+              <Row>
+              {sortedPlayers
+              .filter((player) => player.position === 'FW')
+              .map((player,index) => (
+                <Col key={`${player.id} ${index}`} md={6}>
+                  <p>{player.firstName} <br/> {player.position}</p>
+                </Col>
+              ))}
+              </Row>
+            
           </Row>
 
 
