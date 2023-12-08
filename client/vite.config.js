@@ -6,7 +6,15 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:3000'
-    }
+      // Their own API
+      '/api': 'http://localhost:3000',
+      // 3rd party
+      '/rest': {
+        target: 'https://fantasy.premierleague.com/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/rest/, '/api'),
+        
+      }
   }
+}
 })
