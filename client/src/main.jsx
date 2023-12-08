@@ -20,6 +20,7 @@ import SingleFootballer from '../src/components/SingleFootballer.jsx';
 
 // Style imports
 import './index.css'
+import { getMyTeam } from '../utils/loader.js';
 
 const router = createBrowserRouter(
 [  {
@@ -48,7 +49,7 @@ const router = createBrowserRouter(
       {
         path: '/myteam/:teamId',
         element: <MyTeam />,
-        // add loadMyTeam loader function
+        loader: async ({ params }) => getMyTeam(params.teamId)
       },  
       {
         path: '/myteam/newteam',
