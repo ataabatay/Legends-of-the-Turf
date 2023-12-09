@@ -1,9 +1,9 @@
-
+import axios from 'axios'
 
 //fetch userteam from database
 
-export async function getMyTeam(_Id){
-  const res = await fetch(`/api/myteam/${_Id}`)
+export async function getMyTeam(teamId){
+  const res = await fetch(`/api/myteam/${teamId}`)
   return res.json()
 }
 
@@ -18,3 +18,7 @@ export async function  getSinglePlayer(id){
   return res.json()
 }
 
+export async function Fixtures(){
+  const res = await axios.get('/rest/fixtures/')
+  return res.data
+}
