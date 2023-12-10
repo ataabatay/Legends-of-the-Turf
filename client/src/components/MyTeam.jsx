@@ -15,6 +15,12 @@ export default function MyTeam() {
     return positionOrder[a] - positionOrder[b]
   })
   console.log(teamName)
+
+  function teamJersey(players) {
+if (players.teamName === 'arsenal'){
+  return{ backgroundImage: ('./assets/images/arsenal.png')}
+}
+  }
   return (
     <>
       <h2>Lets Go {teamName}! </h2>
@@ -27,7 +33,7 @@ export default function MyTeam() {
               {sortedPlayers
                 .filter((player) => player.position === 'GK')
                 .map((player) => (
-                  <Col key={`${player.id}`} md={12}>
+                  <Col key={`${player.id}`} md={12} style={teamJersey(players)}>
                     <p>{player.firstName} <br /> {player.position}</p>
                   </Col>
                 ))}
