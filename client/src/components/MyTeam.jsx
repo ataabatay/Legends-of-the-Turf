@@ -1,8 +1,30 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { useLoaderData } from 'react-router-dom'
 
+import { useLoaderData } from 'react-router-dom'
+//images
+
+import Arsenal from '../assets/images/arsenal.png'
+import AstonVilla from '../assets/images/astonVilla.png'
+import Bournemouth from '../assets/images/bournemouth.png'
+import Brentford from '../assets/images/brentford.png'
+import Brighton from '../assets/images/brighton.png'
+import Burnley from '../assets/images/burnley.png'
+import Chelsea from '../assets/images/chelsea.png'
+import Everton from '../assets/images/everton.png'
+import Fulham from '../assets/images/fulham.png'
+import Liverpool from '../assets/images/liverpool.png'
+import LutonTown from '../assets/images/luton.png'
+import ManchesterCity from '../assets/images/mancity.png'
+import ManchesterUnited from '../assets/images/manu.png'
+import NewcastleUnited from '../assets/images/newcastle.png'
+import NottinghamForest from '../assets/images/nottsforest.png'
+import CrystalPalace from '../assets/images/palace.png'
+import SheffieldUnited from '../assets/images/sheffield.png'
+import TottenhamHotspur from '../assets/images/tottenham.png'
+import WestHamUnited from '../assets/images/westham.png'
+import WolverhamptonWanderers from '../assets/images/wolves.png'
 
 export default function MyTeam() {
   const usersTeam = useLoaderData()
@@ -14,27 +36,65 @@ export default function MyTeam() {
 
     return positionOrder[a] - positionOrder[b]
   })
-  console.log(teamName)
+  console.log(players)
 
-  function teamJersey(players) {
-if (players.teamName === 'arsenal'){
-  return{ backgroundImage: ('./assets/images/arsenal.png')}
-}
+  // function to add images to each player using player.teamName
+  function teamJersey(player) {
+    const teamJerseys = {
+      'Arsenal': Arsenal,
+      'Aston Villa': AstonVilla,
+      'Bournemouth': Bournemouth,
+      'Brentford': Brentford,
+      'Brighton': Brighton,
+      'Burnley': Burnley,
+      'Chelsea': Chelsea,
+      'Everton': Everton,
+      'Fulham': Fulham,
+      'Liverpool': Liverpool,
+      'Luton Town': LutonTown,
+      'Manchester City': ManchesterCity,
+      'Manchester United': ManchesterUnited,
+      'Newcastle United': NewcastleUnited,
+      'Nottingham Forest': NottinghamForest,
+      'Crystal Palace': CrystalPalace,
+      'Sheffield United': SheffieldUnited,
+      'Tottenham Hotspur': TottenhamHotspur,
+      'West Ham United': WestHamUnited,
+      'Wolverhampton Wanderers': WolverhamptonWanderers,
+
+    }
+
+    const jerseySrc = teamJerseys[player.teamName]
+    console.log(jerseySrc)
+    if (jerseySrc) {
+      return <img src={jerseySrc} key={player.id} />
+    }
+
+
   }
   return (
     <>
-      <h2>Lets Go {teamName}! </h2>
-      <section className='players'>
-        <p>{teamName}</p>
-        <Container fluid>
 
+
+
+
+
+      <section className='players'>
+        <h2>Lets Go {teamName}! </h2>
+        
+        <Container fluid className='teams' style={{ display: 'flex', justifyContent: 'center'}}>
+        <div style={{ marginRight: '20px', flexShrink: 0 }}>
+            
+            <p>{teamName} <br /></p>
+          </div>
+          <div style={{flexDirection: 'column', width: 700}}>
           <Col key={_id} className="card" md={12}>
             <Row>
               {sortedPlayers
                 .filter((player) => player.position === 'GK')
                 .map((player) => (
-                  <Col key={`${player.id}`} md={12} style={teamJersey(players)}>
-                    <p>{player.firstName} <br /> {player.position}</p>
+                  <Col key={`${player.id}`} md={12} >
+                    <p>{teamJersey(player)}  <br /> {player.firstName} <br /> {player.lastName} <br /> {player.position}</p>
                   </Col>
                 ))}
             </Row>
@@ -45,9 +105,9 @@ if (players.teamName === 'arsenal'){
             <Row>
               {sortedPlayers
                 .filter((player) => player.position === 'DF')
-                .map((player, index) =>  (
+                .map((player, index) => (
                   <Col key={`${player.id} ${index}`} className="card" md={3}>
-                    <p>{player.firstName} <br /> {player.position}</p>
+                    <p>{teamJersey(player)}  <br />{player.firstName} <br />  {player.lastName} <br />{player.position}</p>
 
                   </Col>
 
@@ -64,7 +124,7 @@ if (players.teamName === 'arsenal'){
                 .filter((player) => player.position === 'MF')
                 .map((player, index) => (
                   <Col key={` ${player.id} ${index}`} className="card" md={3}>
-                    <p>{player.firstName} <br /> {player.position}</p>
+                    <p>{teamJersey(player)}  <br />{player.firstName} <br />  {player.lastName} <br />{player.position}</p>
                   </Col>
                 ))}
             </Row>
@@ -79,7 +139,7 @@ if (players.teamName === 'arsenal'){
                 .filter((player) => player.position === 'FW')
                 .map((player, index) => (
                   <Col key={`${player.id} ${index}`} className="card" md={6}>
-                    <p>{player.firstName} <br /> {player.position}</p>
+                    <p>{teamJersey(player)} <br />{player.firstName} <br />  {player.lastName} <br />{player.position}</p>
                   </Col>
                 ))}
             </Row>
@@ -87,9 +147,9 @@ if (players.teamName === 'arsenal'){
           </div>
 
 
-
+          </div>
         </Container>
-
+        <button>Delete Team</button>
       </section>
     </>
   )

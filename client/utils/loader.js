@@ -18,6 +18,7 @@ export async function  getSinglePlayer(id){
   return res.json()
 }
 
+
 export async function Fixtures(){
   const [ fixturesRes, teamsRes ] = await Promise.all([
     axios.get('/rest/fixtures/?future=1'),
