@@ -44,8 +44,8 @@ export default function MyTeam() {
       'Arsenal': Arsenal,
       'Aston Villa': AstonVilla,
       'Bournemouth': Bournemouth,
-      'Brentford': Brentford, 
-      'Brighton': Brighton,                                
+      'Brentford': Brentford,
+      'Brighton': Brighton,
       'Burnley': Burnley,
       'Chelsea': Chelsea,
       'Everton': Everton,
@@ -63,27 +63,31 @@ export default function MyTeam() {
       'Wolverhampton Wanderers': WolverhamptonWanderers,
 
     }
-  
+
     const jerseySrc = teamJerseys[player.teamName]
     console.log(jerseySrc)
     if (jerseySrc) {
       return <img src={jerseySrc} key={player.id} />
     }
-  
-    
+
+
   }
   return (
     <>
 
-      <div>
 
-        <h2>Lets Go {teamName}! </h2>
-<p>{teamName}</p>
-      </div>
+
+
+
       <section className='players'>
+        <h2>Lets Go {teamName}! </h2>
         
-        <Container fluid className='teams' >
-
+        <Container fluid className='teams' style={{ display: 'flex', justifyContent: 'center'}}>
+        <div style={{ marginRight: '20px', flexShrink: 0 }}>
+            
+            <p>{teamName} <br /></p>
+          </div>
+          <div style={{flexDirection: 'column', width: 700}}>
           <Col key={_id} className="card" md={12}>
             <Row>
               {sortedPlayers
@@ -143,7 +147,7 @@ export default function MyTeam() {
           </div>
 
 
-
+          </div>
         </Container>
         <button>Delete Team</button>
       </section>

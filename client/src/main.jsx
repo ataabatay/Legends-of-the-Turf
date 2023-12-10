@@ -23,6 +23,7 @@ import { Fixtures } from '../utils/loader.js';
 // Style imports
 import './index.css'
 import { getMyTeam } from '../utils/loader.js';
+import { deleteTeam } from '../utils/actions/teams.js'
 
 
 const router = createBrowserRouter(
@@ -57,7 +58,8 @@ const router = createBrowserRouter(
       {
         path: '/myteam/:teamId',
         element: <MyTeam />,
-        loader: async ({ params }) => getMyTeam(params.teamId)
+        loader: async ({ params }) => getMyTeam(params.teamId),
+        action: async ({ params }) => deleteTeam(params.teamId)
       },  
       {
         path: '/myteam/newteam',
