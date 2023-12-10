@@ -18,17 +18,9 @@ export async function  getSinglePlayer(id){
   return res.json()
 }
 
-export async function deleteBread(teamId){
-  await axios.delete(`/api/myteam/${teamId}`, {
-    validateStatus: () => true,
-    headers: {
-      Authorization: `Bearer ${getToken()}`
-    }
-  })
-  return redirect('/bread')
-}
 
 export async function Fixtures(){
   const res = await axios.get('/rest/fixtures/?future=1')
   return res.data
 }
+
