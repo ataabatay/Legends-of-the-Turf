@@ -1,31 +1,52 @@
-import { useLoaderData } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { useLoaderData } from 'react-router-dom'
+import { format } from 'date-fns'
+import ListGroup from 'react-bootstrap/ListGroup'
+import Card from 'react-bootstrap/Card'
+
 
 export default function Fixtures() {
-  const fixtures = useLoaderData();
 
-  console.log('All Fixtures:', fixtures);
+  const fixtures = useLoaderData()
+  const [currentGameWeek, setCurrentGameWeek] = useState()
+  const [weeklyFixtures, setWeeklyFixtures] = useState([])
+  console.log(fixtures)
 
-  const currentGameWeek = fixtures && fixtures.events && fixtures.events.length > 0
-    ? fixtures.events[0]?.id
-    : null;
+  useEffect(() => {
+    if (fixtures && fixtures.length > 0) {
+      const today = new Date().toISOString()
+      const upcomingFixtures = fixtures.filter(
+        fixture => !fixture.started && fixture.kickoff_time > today
+      )
+      if (upcomingFixtures.length > 0) {
+        upcomingFixtures.sort((a, b) => (a.kickoff_time > b.kickoff_time ? 1 : -1))
 
-  console.log('Current Game Week:', currentGameWeek);
+        const closestFixture = upcomingFixtures[0]
+        setCurrentGameWeek(closestFixture.event)
 
-  const weeklyFixtures = fixtures && fixtures.events
-    ? fixtures.events.filter((fixture) => fixture.id === currentGameWeek)
-    : [];
+        const fixturesForTheCurrentWeek = fixtures.filter(
+          fixture => fixture.event === closestFixture.event
+        ) 
+        setWeeklyFixtures(fixturesForTheCurrentWeek)
+      }
+    }
+  }, [fixtures])
 
-  console.log('Weekly Fixtures:', weeklyFixtures);
 
   return (
     <div>
-      <h2>Fixtures Of The Week</h2>
-      {weeklyFixtures.map((fixture) => (
+      <Card style={{ width: '35rem' }}>
+      <ListGroup>
+      <ListGroup.Item>Fixtures Of The Week</ListGroup.Item>
+      {weeklyFixtures && weeklyFixtures.map(fixture => (
         <div key={fixture.id}>
-          <h3>{`${fixture.team_h} vs ${fixture.team_a}`}</h3>
-          <p>{`${fixture.started ? 'Started' : 'Starts'} at: ${fixture.kickoff_time}`}</p>
+          <ListGroup.Item action variant="light">{`${fixture.team_h} vs ${fixture.team_a}`}</ListGroup.Item>
+          <ListGroup.Item>{`${fixture.started ? 'Started' : 'Starts'} at: ${format(new Date(fixture.kickoff_time), 'PP, HH:mm')}`}</ListGroup.Item>
         </div>
       ))}
+      </ListGroup>
+      </Card>
     </div>
-  );
+  )
 }
+

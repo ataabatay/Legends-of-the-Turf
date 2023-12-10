@@ -19,6 +19,6 @@ export async function  getSinglePlayer(id){
 }
 
 export async function Fixtures(){
-  const res = await axios.get('/rest/fixtures/')
+  const res = await axios.get('/rest/fixtures/?future=1')
   return res.data
 }
