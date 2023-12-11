@@ -1,16 +1,21 @@
 import { useState, useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import { format } from 'date-fns'
-import ListGroup from 'react-bootstrap/ListGroup'
-import Card from 'react-bootstrap/Card'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 export default function Fixtures() {
 
-  const fixtures = useLoaderData()
+  const { fixtures, teams } = useLoaderData()
   const [currentGameWeek, setCurrentGameWeek] = useState()
   const [weeklyFixtures, setWeeklyFixtures] = useState([])
   console.log(fixtures)
+  console.log(teams)
+
+  
 
   useEffect(() => {
     if (fixtures && fixtures.length > 0) {
@@ -35,17 +40,30 @@ export default function Fixtures() {
 
   return (
     <div>
-      <Card style={{ width: '35rem' }}>
-      <ListGroup>
-      <ListGroup.Item>Fixtures Of The Week</ListGroup.Item>
-      {weeklyFixtures && weeklyFixtures.map(fixture => (
-        <div key={fixture.id}>
-          <ListGroup.Item action variant="light">{`${fixture.team_h} vs ${fixture.team_a}`}</ListGroup.Item>
-          <ListGroup.Item>{`${fixture.started ? 'Started' : 'Starts'} at: ${format(new Date(fixture.kickoff_time), 'PP, HH:mm')}`}</ListGroup.Item>
-        </div>
-      ))}
-      </ListGroup>
-      </Card>
+      <Container className='fixture-container'>
+      <Row className='fixture-header'>
+      <Col>Fixtures Of The Week</ Col>
+      </Row>
+      
+      {weeklyFixtures.map(fixture => {
+
+        const homeTeam = teams.find(team => team.id === fixture.team_h)
+        const awayTeam = teams.find(team => team.id === fixture.team_a)
+      
+        return (
+        <Row key={fixture.id} className='fixture-row'>
+          <Col sm={8} className='d-flex'><img src={`https://resources.premierleague.com/premierleague/badges/50/t${homeTeam.code}.png`}
+          alt={homeTeam.name} className='team-logo'/> <span>{homeTeam.name}</span></Col>
+          
+          <Col sm={8} className='d-flex'><img src={`https://resources.premierleague.com/premierleague/badges/50/t${awayTeam.code}.png`}
+          alt={awayTeam.name} className='team-logo'/><span> {awayTeam.name}</span></Col>
+          <Col className='kickoff' sm={4}> {format(new Date(fixture.kickoff_time), 'eee, d MMM, HH:mm')}</Col>
+        </Row>
+        )
+      
+      })}
+      
+      </Container>
     </div>
   )
 }

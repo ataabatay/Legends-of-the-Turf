@@ -20,7 +20,16 @@ export async function  getSinglePlayer(id){
 
 
 export async function Fixtures(){
-  const res = await axios.get('/rest/fixtures/?future=1')
-  return res.data
+  const [ fixturesRes, teamsRes ] = await Promise.all([
+    axios.get('/rest/fixtures/?future=1'),
+    axios.get('rest/bootstrap-static/') ])
+  return {
+    fixtures: fixturesRes.data,
+    teams: teamsRes.data.teams
+  }
 }
 
+export async function LeagueTable(){
+  const res = await axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
+  return res.data
+}
