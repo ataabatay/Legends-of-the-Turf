@@ -28,3 +28,8 @@ export async function Fixtures(){
     teams: teamsRes.data.teams
   }
 }
+
+export async function LeagueTable(){
+  const res = await axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
+  return res.data
+}
