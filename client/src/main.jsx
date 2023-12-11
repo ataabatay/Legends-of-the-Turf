@@ -18,10 +18,14 @@ import NewTeam from '../src/components/NewTeam.jsx';
 import PlayerSelection from '../src/components/PlayerSelection.jsx';
 import Footballers from '../src/components/Footballers.jsx';
 import SingleFootballer from '../src/components/SingleFootballer.jsx';
+import { Fixtures , LeagueTable } from '../utils/loader.js';
 
 // Style imports
 import './index.css'
 import { getMyTeam, getAllFootballers } from '../utils/loader.js';
+import { deleteTeam } from '../utils/actions/teams.js'
+import { loginUser } from '../utils/actions/auth.js';
+
 
 const router = createBrowserRouter(
 [  {
@@ -36,13 +40,18 @@ const router = createBrowserRouter(
       {
         path: '/login',
         element: <Login />,
-        // add loginUser action function
+        action: async ({ request }) => loginUser(request)
       },
       {
         path: '/home',
         element: <Home />,
+        loader: Fixtures, LeagueTable
         // add loadHomePage loader function
       },
+      // {
+      //   path: '/fixtures/',
+      //   element: <Fixtures />   
+      // },
       {
         path: '/rules',
         element: <Rules />,
@@ -50,7 +59,8 @@ const router = createBrowserRouter(
       {
         path: '/myteam/:teamId',
         element: <MyTeam />,
-        loader: async ({ params }) => getMyTeam(params.teamId)
+        loader: async ({ params }) => getMyTeam(params.teamId),
+        action: async ({ params }) => deleteTeam(params.teamId)
       },  
       {
         path: '/myteam/newteam',

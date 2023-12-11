@@ -1,3 +1,6 @@
+import Fixtures from "./Fixtures";
+import LeagueTable from "./LeagueTable";
+
 
 
 export default function Home(){
@@ -5,8 +8,9 @@ export default function Home(){
 
   return (
     <>
-    <section>Fixtures of the week</section>
-    <section>League Table</section>
+    <Fixtures />
+    <LeagueTable />
+    
     </>
   )
 }
