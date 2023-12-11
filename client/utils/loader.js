@@ -16,17 +16,14 @@ export async function getAllFootballers() {
   return playersFromThirdParty
 }
 
-export async function Fixtures(){
-  const [ fixturesRes, teamsRes ] = await Promise.all([
+export async function FixturesAndLeagueTable(){
+  const [ fixturesRes, teamsRes, leagueRes ] = await Promise.all([
     axios.get('/rest/fixtures/?future=1'),
-    axios.get('rest/bootstrap-static/') ])
+    axios.get('rest/bootstrap-static/'), 
+    axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')])
   return {
     fixtures: fixturesRes.data,
-    teams: teamsRes.data.teams
+    teams: teamsRes.data.teams,
+    leagueTable: leagueRes.data
   }
-}
-
-export async function LeagueTable(){
-  const res = await axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
-  return res.data
 }
