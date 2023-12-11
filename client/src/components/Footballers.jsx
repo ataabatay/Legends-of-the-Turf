@@ -1,4 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import Table from 'react-bootstrap/esm/Table'
 
 import ARS from '../assets/images/arsenal.png'
@@ -20,12 +21,16 @@ import CRY from '../assets/images/palace.png'
 import SHU from '../assets/images/sheffield.png'
 import TOT from '../assets/images/tottenham.png'
 import WHU from '../assets/images/westham.png'
-import WOL from '../assets/images/wolves.png' 
+import WOL from '../assets/images/wolves.png'
+
+import Pagetoggle from './Pagination'
 
 
 export default function Footballers() {
+  // ! Using and making the loader data usable
+  // All data upon initial load
   const loaderData = useLoaderData()
-  
+
   // Getting the teams, positions, logos from fetched data to add to players for ease
   const teamlogos = [
     { team: 'ARS', logo: ARS },
@@ -49,14 +54,13 @@ export default function Footballers() {
     { team: 'WHU', logo: WHU },
     { team: 'WOL', logo: WOL },
   ];
-  const teams = loaderData.playersFromThirdParty.data.teams.map(team => {return team.short_name})  
-  const positions = loaderData.playersFromThirdParty.data.element_types.map(position => {return position.singular_name_short})
+  const teams = loaderData.data.teams.map(team => { return team.short_name })
+  const positions = loaderData.data.element_types.map(position => { return position.singular_name_short })
 
-  // Making the loader data usable for rendering
-  const { playersFromThirdParty: {data: {elements: publicPlayersData} }} = loaderData
-
-  const playersToRender = publicPlayersData.map(player => {
+  const { data: { elements: PlayersData } } = loaderData
+  const playersDataToRender = PlayersData.map(player => {
     return {
+      id: player.id,
       firstName: player.first_name,
       lastName: player.second_name,
       teamName: teams[player.team - 1],
@@ -69,12 +73,28 @@ export default function Footballers() {
     }
   })
 
+  // ! Pagination helpers
+  // Current page state
+  const [currentPage, setCurrentPage] = useState(1);
+  // Items to show per page (30 players per page)
+  const [recordsPerPage] = useState(30);
+
+  // index of the last item on page (based on the current page number multiplied by how number of items per page)
+  const indexOfLast = currentPage * recordsPerPage
+  // index of the first item on page
+  const indexOfFirst = indexOfLast - recordsPerPage
+  // total number of pages
+  const nPages = Math.ceil(playersDataToRender.length / recordsPerPage)
+
+  // active items to show
+  const activePlayersToRender = playersDataToRender.slice(indexOfFirst, indexOfLast)
+
   return (
     <>
       <h1>Players</h1>
       <Table hover>
         <thead>
-          <tr style={{textAlign: 'left'}}>       
+          <tr style={{ textAlign: 'left' }}>
             <th>Name</th>
             <th>Position</th>
             <th>Team</th>
@@ -85,10 +105,10 @@ export default function Footballers() {
           </tr>
         </thead>
         <tbody>
-          {playersToRender.map(player => {
+          {activePlayersToRender.map((player, idx) => {
             return (
-              <tr key={player.id} style={{textAlign: 'left'}}>
-                <td>{<img style={{ width: '40px', marginRight: '10px'}} src={player.teamLogo} alt="team jersey"/>}{player.firstName} {player.lastName}</td>
+              <tr key={idx} style={{ textAlign: 'left' }}>
+                <td>{<img style={{ width: '40px', marginRight: '10px' }} src={player.teamLogo} alt="team jersey" />}{player.firstName} {player.lastName}</td>
                 <td>{player.position}</td>
                 <td>{player.teamName}</td>
                 <td>{player.price}</td>
@@ -100,6 +120,11 @@ export default function Footballers() {
           })}
         </tbody>
       </Table>
+      <Pagetoggle
+        nPages={nPages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </>
   )
 }
