@@ -24,6 +24,7 @@ import { Fixtures } from '../utils/loader.js';
 import './index.css'
 import { getMyTeam } from '../utils/loader.js';
 import { deleteTeam } from '../utils/actions/teams.js'
+import { loginUser } from '../utils/actions/auth.js';
 
 
 const router = createBrowserRouter(
@@ -39,7 +40,7 @@ const router = createBrowserRouter(
       {
         path: '/login',
         element: <Login />,
-        // add loginUser action function
+        action: async ({ request }) => loginUser(request)
       },
       {
         path: '/home',

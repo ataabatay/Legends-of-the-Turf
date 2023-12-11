@@ -38,7 +38,7 @@ userSchema.virtual('passwordConfirmation')
 //pre validate
 //for custom validation 
 userSchema.pre('validate', function (next) {
-  // ismodifed passwords esures this only relates to password
+  // ismodifed passwords ensures this only relates to password
   if (this.isModified('password') && this.password !== this._passwordConfirmation) {
     this.validate('passwordConfirmation', 'make sure passwords match')
   }
@@ -54,7 +54,6 @@ userSchema.pre('save', function (next) {
   next()
 })
 
-//assign schema to model
-//this always comes last as it creates copy of schema
+
 
 export default mongoose.model('User', userSchema)

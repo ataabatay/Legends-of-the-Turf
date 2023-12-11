@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate, useParams } from 'react-router-dom'
-
+// import { activeUser } from '../../utils/helpers/common'
 
 
 
@@ -11,10 +11,10 @@ export default function Navigation() {
   const navigate = useNavigate
   const { teamId } = useParams()
     
-  
-  
+  // const user = activeUser()
+  // console.log('User Information:', user)
   const handleClick = () => {
-    if (teamId) {
+    if (user && user.teamId) {
       navigate(`/myteam/${teamId}`)
     } else {
       navigate('/myteam/newteam')
