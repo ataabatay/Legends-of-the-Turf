@@ -1,5 +1,5 @@
 .team-logo {
-  width: 35px;
+  width: 30px;
   margin-right: 0.5em;
 }
 
@@ -23,3 +23,28 @@
   border-left: solid lightgrey 2px;
   justify-content: center;
 }
+
+.ltable-logo {
+  width: 30px;
+  margin-right: 0.3em;
+}
+
+.plt-logo {
+  width: 15px;
+  margin-right: 0.2em;
+}
+
+.table-container {
+  border: solid rgba(212, 212, 212, 0.5) 1px;
+  margin-top: 4em;
+  
+}
+
+h2 {
+  padding: 20px;
+}
+.container-wrapper {
+  display: flex;
+  gap: 100px;
+}
+  
