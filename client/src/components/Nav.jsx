@@ -4,10 +4,8 @@ import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate } from 'react-router-dom'
 import { activeUser, getToken } from '../../utils/helpers/common'
 import axios from 'axios'
-import { useEffect } from 'react'
 
-
-export default function Navigation({allTeams}) {
+export default function Navigation() {
 
   const navigate = useNavigate()
 
@@ -31,29 +29,32 @@ export default function Navigation({allTeams}) {
 
   const assignId = async () => {
     activeUserTeamId = await getActiveUserTeamId()
-    console.log(activeUserTeamId)
   }
   assignId()
 
-
-  
-  const handleClick = () => {
-    if (!activeUserId ) {
-      navigate('/myteam/newteam')
+  const handleClick= (e) => {
+    console.log(e.target.id)
+    if (e.target.id !== '/myteam') {
+      navigate(`${e.target.id}`)
     } else {
-      navigate(`/myteam/${activeUserTeamId}`)
+      if (!activeUserId ) {
+        navigate('/myteam/newteam')
+      } else {
+        navigate(`/myteam/${activeUserTeamId}`)
+      }
     }
+
   };
   return (
     <>
     <Navbar className="navbar" bg="primary" data-bs-theme="dark">
       <Container>
         <Nav className="me-auto">
-          <Nav.Link href="/home"><button type='button' className='btn btn-primary'>Home</button></Nav.Link>
-          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary'>My Team</button></Nav.Link>
-          <Nav.Link href="/footballers"><button type='button' className='btn btn-primary'>Player Stats</button></Nav.Link>
-          <Nav.Link href="/rules"><button type='button' className='btn btn-primary'>Rules</button></Nav.Link>
-          <Nav.Link href="#"><button type='button' className='btn btn-primary'>Sign out</button></Nav.Link>
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/footballers'>Player Stats</button></Nav.Link>
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/rules'>Rules</button></Nav.Link>
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/signout'>Sign out</button></Nav.Link>
         </Nav>
       </Container>
     </Navbar>

@@ -30,7 +30,6 @@ import field from '../assets/images/field.jpg'
 
 export default function MyTeam() {
   const usersTeam = useLoaderData()
-  console.log(usersTeam)
   const { _id, teamName, players } = usersTeam
 
   const sortedPlayers = players.sort((a, b) => {
@@ -38,7 +37,6 @@ export default function MyTeam() {
 
     return positionOrder[a] - positionOrder[b]
   })
-  console.log(players)
 
   // function to add images to each player using player.teamName
   function teamJersey(player) {
@@ -67,7 +65,6 @@ export default function MyTeam() {
     }
 
     const jerseySrc = teamJerseys[player.teamName]
-    console.log(jerseySrc)
     if (jerseySrc) {
       return <img src={jerseySrc} alt={player.teamName} style={{ width: '100px', height: '100px' }} key={player.id} />
     }
