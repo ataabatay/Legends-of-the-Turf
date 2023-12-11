@@ -24,7 +24,7 @@ import { Fixtures , LeagueTable } from '../utils/loader.js';
 import './index.css'
 import { getMyTeam } from '../utils/loader.js';
 import { deleteTeam } from '../utils/actions/teams.js'
-import { loginUser } from '../utils/actions/auth.js';
+import { loginUser, registerUser } from '../utils/actions/auth.js';
 
 
 const router = createBrowserRouter(
@@ -35,7 +35,7 @@ const router = createBrowserRouter(
       {
         path: '/register',
         element: <Register />,
-        // add registerUser action function
+        action: async ({ request }) => registerUser(request)
       },
       {
         path: '/login',
