@@ -18,7 +18,7 @@ import NewTeam from '../src/components/NewTeam.jsx';
 import PlayerSelection from '../src/components/PlayerSelection.jsx';
 import Footballers from '../src/components/Footballers.jsx';
 import SingleFootballer from '../src/components/SingleFootballer.jsx';
-import { Fixtures , LeagueTable } from '../utils/loader.js';
+import { FixturesAndLeagueTable } from '../utils/loader.js';
 
 // Style imports
 import './index.css'
@@ -44,7 +44,7 @@ const router = createBrowserRouter(
       {
         path: '/home',
         element: <Home />,
-        loader: Fixtures, LeagueTable
+        loader: FixturesAndLeagueTable
         // add loadHomePage loader function
       },
       // {
