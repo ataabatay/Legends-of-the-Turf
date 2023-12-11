@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { activeUser } from '../../utils/helpers/common'
 
 
-export default function Navigation() {
+export default function Navigation({allTeams}) {
 
   const navigate = useNavigate()
   const user = activeUser()

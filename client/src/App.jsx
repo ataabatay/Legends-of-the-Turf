@@ -1,18 +1,18 @@
 import './App.css'
 import Navigation from './components/Nav'
 import { Outlet, useLocation } from 'react-router-dom'
-
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function App() {
-
+  const [allTeams, setAllTeams] = useState()
   const currentPage = useLocation().pathname
 
   return (
     <>
       {currentPage !== '/' ? 
       <>
-        <Navigation />
+        <Navigation allTeams={allTeams}/>
         <main>
           <Outlet />
         </main>
