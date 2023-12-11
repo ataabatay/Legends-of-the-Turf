@@ -7,6 +7,7 @@ import mongoose from 'mongoose'
 // Path: '/myteam/newteam'
 export const createTeam = async (req, res) => {
   try {
+    req.body.owner = req.currentUser._id
     const teamToCreate = await Team.create(req.body)
     return res.status(201).json(teamToCreate)
   } catch (error) {
@@ -49,7 +50,7 @@ export const addPlayersToTeam = async (req, res) => {
 export const getMyTeam = async (req, res) => {
   try {
     const teamToFetch = await Team.findById(req.params.teamId).populate('players')
-    if (!teamToFetch) return res.status(404).json({message: 'Team not found'})
+    if (!teamToFetch) return res.status(404).json({ message: 'Team not found' })
     return res.status(200).json(teamToFetch)
   } catch (error) {
     return res.status(400).json(error)
@@ -64,7 +65,7 @@ export const getSinglePlayer = async (req, res) => {
     // find the footballer by the id provided in the params 
     const footballer = await Footballer.findById(req.params.playerId)
     // if can't find the footballer by id return not found error
-    if (!footballer) return res.status(401).json({message: 'Footballer not found!'})
+    if (!footballer) return res.status(401).json({ message: 'Footballer not found!' })
     // else return succes and the footballer with the details
     return res.status(200).json(footballer)
   } catch (error) {
@@ -98,7 +99,7 @@ export const deleteTeam = async (req, res) => {
 export const changeTeamDetails = async (req, res) => {
   try {
     const teamToEdit = await Team.findById(req.params.teamId)
-    if (!teamToEdit) return res.status(404).json({message: 'Team not found'})
+    if (!teamToEdit) return res.status(404).json({ message: 'Team not found' })
 
     //* TO ADD: validation to match owner is same as current user to allow changes
     Object.assign(teamToEdit, req.body)
