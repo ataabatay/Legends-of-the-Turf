@@ -21,7 +21,7 @@ userSchema.set('toJSON', {
 
 userSchema
   .virtual('teamsCreated', {
-    ref: 'Product',
+    ref: 'Team',
     localField: '_id',
     foreignField: 'owner',
   })

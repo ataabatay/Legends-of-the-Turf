@@ -12,7 +12,8 @@ import {
 
 import {
   login,
-  register
+  register,
+  getProfile
 } from '../controllers/users.js'
 
 import secureRoute from './secureRoute.js'
@@ -45,6 +46,10 @@ router.route('/register')
   .post(register)
 
 router.route('/login')
-  .post( login)
+  .post(login)
+
+// User
+router.route('/profile')
+  .get(secureRoute, getProfile)
 
 export default router

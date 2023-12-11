@@ -14,6 +14,7 @@ export default async function secureRoute(req, res, next){
     const userToVerify = await User.findById(payload.sub)
     if (!userToVerify) throw new Error('User not found')
     // 6. If we find the user still exists, then pass the request on to the final controller with next()
+    req.currentUser = userToVerify
     next()
   } catch (error) {
     console.log(error)
