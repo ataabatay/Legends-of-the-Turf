@@ -1,7 +1,15 @@
-import {Form} from 'react-router-dom'
+import {Form, useActionData, useNavigate} from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function Register(){
+  const res = useActionData()
+  const navigate = useNavigate()
   
+  useEffect(() => {
+    if (res?.status === 201) {
+      navigate('/login')
+    }
+  }, [res, navigate])
   return (
     <>
     <h1 className="text-center bold display-3 mb-4">Register</h1>
@@ -13,7 +21,7 @@ export default function Register(){
         <input type="password" name="password" placeholder='Password' />
         <input type="password" name="passwordConfirmation" placeholder='Confirm password' />
         <button className='btn btn-blue' type="submit">Register</button>
-        {/* {res && <p className='danger'>{res.data.message}</p>} */}
+        {res && <p className='danger'>{res.data.message}</p>}
       </Form>
     </>
   )

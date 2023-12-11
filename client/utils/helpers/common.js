@@ -1,4 +1,4 @@
-const tokenName = ' LEGENDS-OF-THE-TURF-TOKEN'
+const tokenName = 'LEGENDS-OF-THE-TURF-TOKEN'
 
 // This function takes a request object and returns form data as a JS object
 export async function formToObj(request){

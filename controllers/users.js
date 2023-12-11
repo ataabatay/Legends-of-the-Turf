@@ -20,10 +20,10 @@ export const register = async (req, res) => {
 // Path: '/login'
 export const login = async (req, res) => {
   try {
-    const { email, password } = req.body
-    const userToLogin = await User.findOne({ email: email })
-
-    if (!userToLogin || !bcrypt.compareSync(password, userToLogin.password)) {
+    console.log(req.body.email)
+    const userToLogin = await User.findOne({ email: req.body.email })
+    
+    if (!userToLogin || !bcrypt.compareSync(req.body.password, userToLogin.password)) {
       throw new Error(!userToLogin ? 'Email not found' : 'Passwords don\'t match')
 
     }
@@ -36,3 +36,13 @@ export const login = async (req, res) => {
 }
 
 
+export const getProfile = async (req, res) => {
+  try {
+    // We can't populate req.currentUser as it's not a Query. So we'll get a query by using findById, populating the response with moviesCreated
+    const profile = await User.findById(req.currentUser._id).populate('teamsCreated')
+    return res.json(profile)
+  } catch (error) {
+    console.log(error)
+    return res.status(500).json(error)
+  }
+}

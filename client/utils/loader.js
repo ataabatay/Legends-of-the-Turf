@@ -1,5 +1,4 @@
-import axios from 'axios'
-
+import axios from "axios"
 //fetch userteam from database
 
 export async function getMyTeam(teamId){
@@ -18,6 +17,10 @@ export async function  getSinglePlayer(id){
   return res.json()
 }
 
+export async function getAllFootballers() {
+  const res = await axios.get('/api/players')
+  return res
+}
 
 export async function FixturesAndLeagueTable(){
   const [ fixturesRes, teamsRes, leagueRes ] = await Promise.all([

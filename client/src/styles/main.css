@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+  padding: 2em;
+}
+
+.navbar, .container {
+  width: 100%;
+}
+
+.teams img {
+  height: 100px;
+  width: 100px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import ImageUploadField from './ImageUploadField'
 
-
 export default function NewTeam() {
   const [ formData, setFormData ] = useState({
     teamName: '',

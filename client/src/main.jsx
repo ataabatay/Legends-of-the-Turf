@@ -22,8 +22,9 @@ import { FixturesAndLeagueTable } from '../utils/loader.js';
 
 // Style imports
 import './index.css'
-import { getMyTeam } from '../utils/loader.js';
+import { getMyTeam, getAllFootballers } from '../utils/loader.js';
 import { deleteTeam } from '../utils/actions/teams.js'
+import { loginUser, registerUser } from '../utils/actions/auth.js';
 
 
 const router = createBrowserRouter(
@@ -34,12 +35,12 @@ const router = createBrowserRouter(
       {
         path: '/register',
         element: <Register />,
-        // add registerUser action function
+        action: async ({ request }) => registerUser(request)
       },
       {
         path: '/login',
         element: <Login />,
-        // add loginUser action function
+        action: async ({ request }) => loginUser(request)
       },
       {
         path: '/home',
@@ -75,7 +76,7 @@ const router = createBrowserRouter(
       {
         path: '/footballers',
         element: <Footballers />,
-        // add loadAllPlayers loader function
+        loader: getAllFootballers,
       },
       {
         path: '/footballers/:footballerId',
