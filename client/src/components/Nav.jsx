@@ -1,18 +1,18 @@
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import { useNavigate, useParams } from 'react-router-dom'
-// import { activeUser } from '../../utils/helpers/common'
-
+import { useNavigate } from 'react-router-dom'
+import { activeUser } from '../../utils/helpers/common'
+import { getToken } from '../../utils/helpers/common'
 
 
 export default function Navigation() {
-
+ console.log(getToken())
   const navigate = useNavigate
-  const { teamId } = useParams()
+  
     
-  // const user = activeUser()
-  // console.log('User Information:', user)
+  const user = activeUser()
+  console.log('User Information:', user)
   const handleClick = () => {
     if (user && user.teamId) {
       navigate(`/myteam/${teamId}`)
@@ -36,3 +36,4 @@ export default function Navigation() {
     </>
   )
 }
+
