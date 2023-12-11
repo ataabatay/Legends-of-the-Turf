@@ -6,33 +6,24 @@ export async function getMyTeam(teamId){
   return res.json()
 }
 
-//fetch all players
-export async function getAllPlayers(){
-  const res = await fetch('/api/players')
-  return res.json()
-}
-
 export async function  getSinglePlayer(id){
   const res = await fetch(`/api/players/${id}`)
   return res.json()
 }
 
 export async function getAllFootballers() {
-  const res = await axios.get('/api/players')
-  return res
+  const playersFromThirdParty = await axios.get('rest/bootstrap-static/')
+  return playersFromThirdParty
 }
 
-export async function Fixtures(){
-  const [ fixturesRes, teamsRes ] = await Promise.all([
+export async function FixturesAndLeagueTable(){
+  const [ fixturesRes, teamsRes, leagueRes ] = await Promise.all([
     axios.get('/rest/fixtures/?future=1'),
-    axios.get('rest/bootstrap-static/') ])
+    axios.get('rest/bootstrap-static/'), 
+    axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')])
   return {
     fixtures: fixturesRes.data,
-    teams: teamsRes.data.teams
+    teams: teamsRes.data.teams,
+    leagueTable: leagueRes.data
   }
-}
-
-export async function LeagueTable(){
-  const res = await axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
-  return res.data
 }

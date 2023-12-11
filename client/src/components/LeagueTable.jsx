@@ -3,16 +3,15 @@ import Table from 'react-bootstrap/Table'
 import Container from 'react-bootstrap/Container'
 
 export default function LeagueTable(){
-  const tableleague = useLoaderData()
-console.log(tableleague)
-const plTable = tableleague?.items?.[0]?.table
+  const leagueTable = useLoaderData()
+console.log(leagueTable)
 
-const tableContent = plTable?.rows || []
+
+const tableContent = leagueTable.standings
 
 return (
 <Container>
 <h2>Premier League Table</h2>
-{tableContent.length > 0 ? (
   <Table>
     <thead>
       <tr>
@@ -28,24 +27,24 @@ return (
       </tr>
     </thead>
     <tbody>
-      {tableContent.map(row => (
-        <tr key={row.position}>
-        <td>{row.position}</td>
-        <td>{row.clubName}</td>
-        <td>{row.played}</td>
-        <td>{row.points}</td>
-        <td>{row.won}</td>
-        <td>{row.draw}</td>
-        <td>{row.lost}</td>
-        <td>{row.goalDifference}</td>
-        <td>{row.recentForm?.length > 0 ? row.recentForm.join(' ') : '--'}</td>
+      {tableContent?.standings?.[0].table.length
+      ? tableContent.standings[0].table.map(team => (
+        <tr key={team.team.id}>
+        <td>{team.position}</td>
+        <td>{team.team.name}</td>
+        <td>{team.playedGames}</td>
+        <td>{team.points}</td>
+        <td>{team.won}</td>
+        <td>{team.draw}</td>
+        <td>{team.lost}</td>
+        <td>{team.goalDifference}</td>
+        
         </tr>
-      ))}
+      ))
+    : <tr><td>No data</td></tr>}
     </tbody>
   </Table>
-  ) : (
-    <p>{plTable ? 'No data available' : 'Loading... '}</p>
-  )}
+
 </ Container>
 )
 }

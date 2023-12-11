@@ -4,7 +4,7 @@ export default function ImageUploadField({ formData, setFormData }){
 
   async function handleImageUpload(e){
     const preset = import.meta.env.VITE_UPLOAD_PRESET
-    const file = e.target.file[0]
+    const file = e.target.files[0]
     const endpoint = import.meta.env.VITE_UPLOAD_URL
 
     // Create a new form to send to Cloudinary
