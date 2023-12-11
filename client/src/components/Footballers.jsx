@@ -1,6 +1,6 @@
 import { useLoaderData } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Table from 'react-bootstrap/esm/Table'
+import Filters from './Footballersfilters'
 
 import ARS from '../assets/images/arsenal.png'
 import AVL from '../assets/images/astonVilla.png'
@@ -23,16 +23,18 @@ import TOT from '../assets/images/tottenham.png'
 import WHU from '../assets/images/westham.png'
 import WOL from '../assets/images/wolves.png'
 
+// React bootstrap components
 import Pagetoggle from './Pagination'
-
+import Table from 'react-bootstrap/esm/Table'
+import Footer from './Footer'
 
 export default function Footballers() {
   // ! Using and making the loader data usable
   // All data upon initial load
   const loaderData = useLoaderData()
 
-  // Getting the teams, positions, logos from fetched data to add to players for ease
-  const teamlogos = [
+  // Getting the teams, player positions and logos from fetched data to add to players for ease of display
+  const teamLogos = [
     { team: 'ARS', logo: ARS },
     { team: 'AVL', logo: AVL },
     { team: 'BOU', logo: BOU },
@@ -56,28 +58,31 @@ export default function Footballers() {
   ];
   const teams = loaderData.data.teams.map(team => { return team.short_name })
   const positions = loaderData.data.element_types.map(position => { return position.singular_name_short })
-
   const { data: { elements: PlayersData } } = loaderData
   const playersDataToRender = PlayersData.map(player => {
+    const matchedTeam = teamLogos.find(teamLogo => teamLogo.team === teams[player.team - 1])
     return {
       id: player.id,
       firstName: player.first_name,
       lastName: player.second_name,
       teamName: teams[player.team - 1],
-      teamLogo: teamlogos[player.team - 1].logo,
+      teamLogo: matchedTeam.logo,
       position: positions[player.element_type - 1],
       price: player.now_cost / 10,
       totalPoints: player.total_points,
       form: player.form,
       ownership: player.selected_by_percent,
     }
-  })
+  }).sort((a, b) => b.price - a.price)
 
   // ! Pagination helpers
+  // * STATES
   // Current page state
   const [currentPage, setCurrentPage] = useState(1);
   // Items to show per page (30 players per page)
   const [recordsPerPage] = useState(30);
+  // Filter states
+  const [filters, setFilters] = useState()
 
   // index of the last item on page (based on the current page number multiplied by how number of items per page)
   const indexOfLast = currentPage * recordsPerPage
@@ -89,15 +94,21 @@ export default function Footballers() {
   // active items to show
   const activePlayersToRender = playersDataToRender.slice(indexOfFirst, indexOfLast)
 
+  console.log(activePlayersToRender)
   return (
     <>
-      <h1>Players</h1>
+      <h1 style={{ marginTop: '40px' }}>Player Statistics</h1>
+      <Filters
+        filters={filters}
+        setFilters={setFilters}
+        positions={positions}
+        teams={teams}
+      />
       <Table hover>
         <thead>
           <tr style={{ textAlign: 'left' }}>
+            <th></th>
             <th>Name</th>
-            <th>Position</th>
-            <th>Team</th>
             <th>Price</th>
             <th>Points</th>
             <th>Form</th>
@@ -108,9 +119,9 @@ export default function Footballers() {
           {activePlayersToRender.map((player, idx) => {
             return (
               <tr key={idx} style={{ textAlign: 'left' }}>
-                <td>{<img style={{ width: '40px', marginRight: '10px' }} src={player.teamLogo} alt="team jersey" />}{player.firstName} {player.lastName}</td>
-                <td>{player.position}</td>
-                <td>{player.teamName}</td>
+                <td style={{ width: '40px' }}>{<img style={{ width: 'inherit', marginRight: '10px' }} src={player.teamLogo} alt="team jersey" />}</td>
+                <td>{player.firstName} {player.lastName} <br />
+                  <span style={{ fontWeight: 'lighter', fontStyle: 'italic' }}>{player.teamName} {player.position}</span></td>
                 <td>{player.price}</td>
                 <td>{player.totalPoints}</td>
                 <td>{player.form}</td>
@@ -120,11 +131,13 @@ export default function Footballers() {
           })}
         </tbody>
       </Table>
-      <Pagetoggle
-        nPages={nPages}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
+      <div className='paginationdiv'>
+        <Pagetoggle
+          nPages={nPages}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      </div>
     </>
   )
 }

@@ -1,0 +1,12 @@
+.paginationdiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  
+  .pagination {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

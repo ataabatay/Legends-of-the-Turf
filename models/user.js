@@ -9,8 +9,6 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
 })
 
-
-
 // Whenever the user collection is queried and a user document is converted to JSON, we will remove the password from the response
 userSchema.set('toJSON', {
   virtuals: true,
@@ -34,7 +32,6 @@ userSchema.virtual('passwordConfirmation')
     //setter is similar to useeffect  only it tracks a virtual field
   })
 
-
 //pre validate
 //for custom validation 
 userSchema.pre('validate', function (next) {
@@ -42,7 +39,6 @@ userSchema.pre('validate', function (next) {
   if (this.isModified('password') && this.password !== this._passwordConfirmation) {
     this.validate('passwordConfirmation', 'make sure passwords match')
   }
-
   next()
 })
 
@@ -53,7 +49,5 @@ userSchema.pre('save', function (next) {
   }
   next()
 })
-
-
 
 export default mongoose.model('User', userSchema)

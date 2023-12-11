@@ -15,8 +15,6 @@ export default function Fixtures() {
   console.log(fixtures)
   console.log(teams)
 
-  
-
   useEffect(() => {
     if (fixtures && fixtures.length > 0) {
       const today = new Date().toISOString()
@@ -41,7 +39,7 @@ export default function Fixtures() {
   return (
     <div>
       <Container className='fixture-container'>
-      <Row className='fixture-header'>
+      <Row className='fixture-header' style={{margin: '50px',padding: '0', border: 'none', fontWeight: 'bold', fontSize: '2em'}}>
       <Col>Fixtures Of The Week</ Col>
       </Row>
       
