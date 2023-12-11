@@ -21,7 +21,7 @@ import SingleFootballer from '../src/components/SingleFootballer.jsx';
 
 // Style imports
 import './index.css'
-import { getMyTeam } from '../utils/loader.js';
+import { getMyTeam, getAllFootballers } from '../utils/loader.js';
 
 const router = createBrowserRouter(
 [  {
@@ -66,7 +66,7 @@ const router = createBrowserRouter(
       {
         path: '/footballers',
         element: <Footballers />,
-        // add loadAllPlayers loader function
+        loader: getAllFootballers,
       },
       {
         path: '/footballers/:footballerId',
