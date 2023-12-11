@@ -11,7 +11,7 @@ export default function Login(){
   useEffect(() => {
     if (res?.status === 202){
       setToken(res.data.token)
-      navigate('/home')
+      navigate('/Home')
     }
   }, [res, navigate])
   return (

@@ -12,8 +12,6 @@ export default function Fixtures() {
   const { fixtures, teams } = useLoaderData()
   const [currentGameWeek, setCurrentGameWeek] = useState()
   const [weeklyFixtures, setWeeklyFixtures] = useState([])
-  console.log(fixtures)
-  console.log(teams)
 
   useEffect(() => {
     if (fixtures && fixtures.length > 0) {

@@ -6,10 +6,10 @@ export default function Footer() {
     <>
       <footer>
         <Link to='https://github.com/ataabatay'>
-          <p><img src={GitHub} style={{ width: '1.5vh' }}></img> Adrienn Szabo</p>
+          <p><img src={GitHub} style={{ width: '1.5vh' }}></img> Ata Abatay</p>
         </Link>
         <Link to='https://github.com/aszab1'>
-          <p><img src={GitHub} style={{ width: '1.5vh' }}></img> Ata Abatay</p>
+          <p><img src={GitHub} style={{ width: '1.5vh' }}></img> Adrienn Szabo</p>
         </Link>
         <Link to='https://github.com/Jerrellbb'>
           <p><img src={GitHub} style={{ width: '1.5vh' }}></img> Jerrell Boyer</p>

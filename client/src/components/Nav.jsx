@@ -2,19 +2,46 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate } from 'react-router-dom'
-import { activeUser } from '../../utils/helpers/common'
+import { activeUser, getToken } from '../../utils/helpers/common'
+import axios from 'axios'
+import { useEffect } from 'react'
 
 
 export default function Navigation({allTeams}) {
 
   const navigate = useNavigate()
-  const user = activeUser()
+
+  // get the details of the active user from id
+  const activeUserId = activeUser()
+  const token = getToken()
+  let activeUserTeamId = null
+
+
+  // fetch the teamId given the userId
+  const getActiveUserTeamId = async () => {
+    try {
+      const res = await axios.get('/api/profile', {headers: {
+        Authorization: `Bearer ${token}`
+      }})
+      return res.data.teamsCreated[0]._id
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  const assignId = async () => {
+    activeUserTeamId = await getActiveUserTeamId()
+    console.log(activeUserTeamId)
+  }
+  assignId()
+
+
   
   const handleClick = () => {
-    if (!user ) {
+    if (!activeUserId ) {
       navigate('/myteam/newteam')
     } else {
-      navigate(`/myteam/${user}`)
+      navigate(`/myteam/${activeUserTeamId}`)
     }
   };
   return (

@@ -26,7 +26,6 @@ import WOL from '../assets/images/wolves.png'
 // React bootstrap components
 import Pagetoggle from './Pagination'
 import Table from 'react-bootstrap/esm/Table'
-import Footer from './Footer'
 
 export default function Footballers() {
   // ! Using and making the loader data usable

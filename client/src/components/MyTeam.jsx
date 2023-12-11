@@ -1,10 +1,11 @@
+// react bootstrap components
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import { useLoaderData } from 'react-router-dom'
-//images
 
+//images
 import Arsenal from '../assets/images/arsenal.png'
 import AstonVilla from '../assets/images/astonVilla.png'
 import Bournemouth from '../assets/images/bournemouth.png'
