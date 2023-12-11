@@ -18,8 +18,14 @@ export async function  getSinglePlayer(id){
 }
 
 export async function getAllFootballers() {
-  const res = await axios.get('/api/players')
-  return res
+  const [playersFromDatabase, playersFromThirdParty] = await Promise.all([
+    axios.get('/api/players'),
+    axios.get('rest/bootstrap-static/')
+  ]) 
+  return {
+    playersFromDatabase,
+    playersFromThirdParty,
+  }
 }
 
 export async function Fixtures(){
