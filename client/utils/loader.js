@@ -6,26 +6,14 @@ export async function getMyTeam(teamId){
   return res.json()
 }
 
-//fetch all players
-export async function getAllPlayers(){
-  const res = await fetch('/api/players')
-  return res.json()
-}
-
 export async function  getSinglePlayer(id){
   const res = await fetch(`/api/players/${id}`)
   return res.json()
 }
 
 export async function getAllFootballers() {
-  const [playersFromDatabase, playersFromThirdParty] = await Promise.all([
-    axios.get('/api/players'),
-    axios.get('rest/bootstrap-static/')
-  ]) 
-  return {
-    playersFromDatabase,
-    playersFromThirdParty,
-  }
+  const playersFromThirdParty = await axios.get('rest/bootstrap-static/')
+  return playersFromThirdParty
 }
 
 export async function FixturesAndLeagueTable(){

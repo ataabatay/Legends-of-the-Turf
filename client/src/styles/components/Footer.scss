@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0 4em;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: 20px 0;
+  margin-bottom: 10px 0;
+
+  p {
+    margin-bottom: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: lighter;
+    margin: 0 20px;
+
+    :hover {
+      font-weight: bold;
+      color: burlywood;
+    }
+  }
+}

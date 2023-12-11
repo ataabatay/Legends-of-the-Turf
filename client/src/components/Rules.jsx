@@ -2,15 +2,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Accordion from 'react-bootstrap/Accordion'
 import Table from 'react-bootstrap/Table';
 
-
-
 export default function Rules() {
 
   return (
     <>
       <h2>Rules</h2>
       <Accordion>
-
         {/* Selection Initial Squad */}
         <Accordion.Item eventKey="0">
           <Accordion.Header>Selecting Your Initial Squad</Accordion.Header>
@@ -496,7 +493,6 @@ export default function Rules() {
             </p>
           </Accordion.Body>
         </Accordion.Item>
-
       </Accordion>
     </>
   )
