@@ -27,7 +27,7 @@ export default function Fixtures() {
 
         const fixturesForTheCurrentWeek = fixtures.filter(
           fixture => fixture.event === closestFixture.event
-        ) 
+        )
         setWeeklyFixtures(fixturesForTheCurrentWeek)
       }
     }
@@ -37,28 +37,32 @@ export default function Fixtures() {
   return (
     <div>
       <Container className='fixture-container'>
-      <Row className='fixture-header' style={{margin: '50px',padding: '0', border: 'none', fontWeight: 'bold', fontSize: '2em'}}>
-      <Col>Fixtures Of The Week</ Col>
-      </Row>
-      
-      {weeklyFixtures.map(fixture => {
-
-        const homeTeam = teams.find(team => team.id === fixture.team_h)
-        const awayTeam = teams.find(team => team.id === fixture.team_a)
-      
-        return (
-        <Row key={fixture.id} className='fixture-row'>
-          <Col sm={8} className='d-flex'><img src={`https://resources.premierleague.com/premierleague/badges/50/t${homeTeam.code}.png`}
-          alt={homeTeam.name} className='team-logo'/> <span>{homeTeam.name}</span></Col>
-          
-          <Col sm={8} className='d-flex'><img src={`https://resources.premierleague.com/premierleague/badges/50/t${awayTeam.code}.png`}
-          alt={awayTeam.name} className='team-logo'/><span> {awayTeam.name}</span></Col>
-          <Col className='kickoff' sm={4}> {format(new Date(fixture.kickoff_time), 'eee, d MMM, HH:mm')}</Col>
+        <Row className='fixture-header' style={{ margin: '50px', padding: '0', border: 'none', fontWeight: 'bold', fontSize: '2em' }}>
+          <Col>Fixtures Of The Week</ Col>
         </Row>
-        )
-      
-      })}
-      
+
+        {weeklyFixtures.map(fixture => {
+
+          const homeTeam = teams.find(team => team.id === fixture.team_h)
+          const awayTeam = teams.find(team => team.id === fixture.team_a)
+
+          return (
+            <Row key={fixture.id} className='fixture-row'>
+              <div className='teams-against' style={{flexShrink: '1'}}>
+                <Col sm={8} className='d-flex'><img src={`https://resources.premierleague.com/premierleague/badges/50/t${homeTeam.code}.png`}
+                  alt={homeTeam.name} className='team-logo' /> <span>{homeTeam.name}</span></Col>
+
+                <Col sm={8} className='d-flex'><img src={`https://resources.premierleague.com/premierleague/badges/50/t${awayTeam.code}.png`}
+                  alt={awayTeam.name} className='team-logo' /><span> {awayTeam.name}</span></Col>
+              </div>
+              <div className='fixture-details' style={{flexShrink: '0'}}>
+                <Col className='kickoff' sm={4}> {format(new Date(fixture.kickoff_time), 'eee, d MMM, HH:mm')}</Col>
+              </div>
+            </Row>
+          )
+
+        })}
+
       </Container>
     </div>
   )
