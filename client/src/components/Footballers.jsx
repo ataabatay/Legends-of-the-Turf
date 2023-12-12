@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Filters from './Filters.jsx'
 
 import ARS from '../assets/images/arsenal.png'
@@ -28,6 +28,7 @@ import Pagetoggle from './Pagination'
 import Table from 'react-bootstrap/esm/Table'
 
 export default function Footballers() {
+
   // ! Using and making the loader data usable
   // All data upon initial load
   const loaderData = useLoaderData()
@@ -55,10 +56,14 @@ export default function Footballers() {
     { team: 'WHU', logo: WHU },
     { team: 'WOL', logo: WOL },
   ];
+
+  // Getting a set of unique team names
   const teams = loaderData.data.teams.map(team => { return team.short_name })
   const positions = loaderData.data.element_types.map(position => { return position.singular_name_short })
-  const { data: { elements: PlayersData } } = loaderData
-  const playersDataToRender = PlayersData.map(player => {
+  
+  // Creating a new player pseudomodel to use out of the loaderData for ease
+  const { data: { elements: rawLoaderDataOfprettifiedAllFootballers } } = loaderData
+  const cleanedFootballersData = rawLoaderDataOfprettifiedAllFootballers.map(player => {
     const matchedTeam = teamLogos.find(teamLogo => teamLogo.team === teams[player.team - 1])
     return {
       id: player.id,
@@ -74,34 +79,34 @@ export default function Footballers() {
     }
   }).sort((a, b) => b.price - a.price)
 
+
+  // ! Filters and states for them
+  // state of active players to show initially set to all players
+  const [filteredFootballers, setfilteredFootballers] = useState(cleanedFootballersData)
+  
   // ! Pagination helpers
-  // * STATES
   // Current page state
   const [currentPage, setCurrentPage] = useState(1);
   // Items to show per page (30 players per page)
   const [recordsPerPage] = useState(30);
-  // Filter states
-  const [filters, setFilters] = useState({})
-
   // index of the last item on page (based on the current page number multiplied by how number of items per page)
   const indexOfLast = currentPage * recordsPerPage
   // index of the first item on page
   const indexOfFirst = indexOfLast - recordsPerPage
   // total number of pages
-  const nPages = Math.ceil(playersDataToRender.length / recordsPerPage)
-
-  // active items to show
-  const activePlayersToRender = playersDataToRender.slice(indexOfFirst, indexOfLast)
+  const nPages = Math.ceil(cleanedFootballersData.length / recordsPerPage)
+  
+  // final result of players to show on per page (30 items) after filtering is done
+  const activePlayersToRender = filteredFootballers.slice(indexOfFirst, indexOfLast)
 
   return (
     <>
       <h1 style={{ marginTop: '40px' }}>Player Statistics</h1>
       <Filters
-        filters={filters}
-        setFilters={setFilters}
         positions={positions}
         teams={teams}
-        playersDataToRender={playersDataToRender}
+        cleanedFootballersData={cleanedFootballersData}
+        setfilteredFootballers={setfilteredFootballers}
       />
       <Table hover>
         <thead>

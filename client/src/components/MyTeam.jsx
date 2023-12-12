@@ -135,7 +135,6 @@ export default function MyTeam() {
                     </Col>
                   ))}
               </Row>
-
             </div>
 
             <div>
@@ -157,13 +156,9 @@ export default function MyTeam() {
             </div>
           </div>
         </Container>
-<<<<<<< HEAD
-        <button style={{ marginTop: '5px' }}>Delete Team</button>
-=======
         <Form method='POST'>
-        <button style={{ marginTop: '5px'}}>Delete Team</button>
+          <button style={{ marginTop: '5px' }}>Delete Team</button>
         </Form>
->>>>>>> development
       </section>
     </>
   )
