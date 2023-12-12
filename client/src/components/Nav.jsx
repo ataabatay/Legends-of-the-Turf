@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate } from 'react-router-dom'
-import { getToken } from '../../utils/helpers/common'
+import { activeUser, getToken, removeToken } from '../../utils/helpers/common'
 import axios from 'axios'
 
 export default function Navigation() {
@@ -43,8 +43,14 @@ export default function Navigation() {
         navigate(`/myteam/${activeUserTeamId}`)
       }
     }
+  }
 
-  };
+  
+  const handleSignOut = () => {
+    removeToken()
+    navigate('/signout')
+  }
+
   return (
     <>
     <Navbar className="navbar" bg="primary" data-bs-theme="dark">
@@ -54,7 +60,7 @@ export default function Navigation() {
           <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>
           <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/footballers'>Player Stats</button></Nav.Link>
           <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/rules'>Rules</button></Nav.Link>
-          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/signout'>Sign out</button></Nav.Link>
+          <Nav.Link onClick={handleSignOut}><button type='button' className='btn btn-primary' id='/signout'>Sign out</button></Nav.Link>
         </Nav>
       </Container>
     </Navbar>
