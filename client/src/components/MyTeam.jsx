@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import { useLoaderData } from 'react-router-dom'
+import { Form, useLoaderData, useActionData, useNavigation } from 'react-router-dom'
 
 //images
 import Arsenal from '../assets/images/arsenal.png'
@@ -29,6 +29,7 @@ import WolverhamptonWanderers from '../assets/images/wolves.png'
 import field from '../assets/images/field.jpg'
 
 export default function MyTeam() {
+  const deleteTeam = useActionData()
   const usersTeam = useLoaderData()
   const { _id, teamName, players } = usersTeam
 
@@ -172,7 +173,9 @@ export default function MyTeam() {
 
           </div>
         </Container>
+        <Form method='POST'>
         <button style={{ marginTop: '5px'}}>Delete Team</button>
+        </Form>
       </section>
     </>
   )
