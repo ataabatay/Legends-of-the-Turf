@@ -48,10 +48,6 @@ const router = createBrowserRouter(
         loader: FixturesAndLeagueTable
         // add loadHomePage loader function
       },
-      // {
-      //   path: '/fixtures/',
-      //   element: <Fixtures />   
-      // },
       {
         path: '/rules',
         element: <Rules />,
@@ -61,7 +57,7 @@ const router = createBrowserRouter(
         element: <MyTeam />,
         loader: async ({ params }) => getMyTeam(params.teamId),
         action: async ({ params }) => deleteTeam(params.teamId)
-      },  
+      },
       {
         path: '/myteam/newteam',
         element: <NewTeam />,

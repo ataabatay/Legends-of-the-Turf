@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Filters from './Filters.jsx'
 
 import ARS from '../assets/images/arsenal.png'
@@ -81,7 +81,7 @@ export default function Footballers() {
   // Items to show per page (30 players per page)
   const [recordsPerPage] = useState(30);
   // Filter states
-  const [filters, setFilters] = useState()
+  const [filters, setFilters] = useState({})
 
   // index of the last item on page (based on the current page number multiplied by how number of items per page)
   const indexOfLast = currentPage * recordsPerPage
@@ -93,7 +93,6 @@ export default function Footballers() {
   // active items to show
   const activePlayersToRender = playersDataToRender.slice(indexOfFirst, indexOfLast)
 
-  console.log(activePlayersToRender)
   return (
     <>
       <h1 style={{ marginTop: '40px' }}>Player Statistics</h1>
@@ -102,6 +101,7 @@ export default function Footballers() {
         setFilters={setFilters}
         positions={positions}
         teams={teams}
+        playersDataToRender={playersDataToRender}
       />
       <Table hover>
         <thead>

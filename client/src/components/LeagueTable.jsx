@@ -1,4 +1,3 @@
-import { useLoaderData } from 'react-router-dom'
 import Table from 'react-bootstrap/Table'
 import Container from 'react-bootstrap/Container'
 import green from '../assets/images/green.png'
@@ -39,10 +38,10 @@ export default function LeagueTable({leagueTable}) {
               <td>{team.goalsAgainst}</td>
               <td>{team.goalDifference}</td>
               <td>{team.points}</td>
-              <td>{team.recentForm.map(result =>
-                result === 'W' ? <img className='plt-logo' src={green} /> :
-                  result === 'D' ? <img className='plt-logo' src={draw} /> :
-                    result === 'L' ? <img className='plt-logo' src={red} /> :
+              <td>{team.recentForm.map((result, idx) =>
+                result === 'W' ? <img className='plt-logo' src={green} key={idx}/> :
+                  result === 'D' ? <img className='plt-logo' src={draw} key={idx}/> :
+                    result === 'L' ? <img className='plt-logo' src={red} key={idx}/> :
                       result)}
               </td>
             </tr>

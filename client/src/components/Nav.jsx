@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate } from 'react-router-dom'
-import { activeUser, getToken } from '../../utils/helpers/common'
+import { getToken } from '../../utils/helpers/common'
 import axios from 'axios'
 
 export default function Navigation() {
@@ -10,34 +10,34 @@ export default function Navigation() {
   const navigate = useNavigate()
 
   // get the details of the active user from id
-  const activeUserId = activeUser()
   const token = getToken()
   let activeUserTeamId = null
-
 
   // fetch the teamId given the userId
   const getActiveUserTeamId = async () => {
     try {
-      const res = await axios.get('/api/profile', {headers: {
+      let response = await axios.get('/api/profile', {headers: {
         Authorization: `Bearer ${token}`
       }})
-      return res.data.teamsCreated[0]._id
+      if (!response) {
+        response = null
+        return response
+      }
+      return response.data.teamsCreated[0]._id
     } catch (error) {
       console.log(error)
     }
   }
-
   const assignId = async () => {
     activeUserTeamId = await getActiveUserTeamId()
   }
   assignId()
 
   const handleClick= (e) => {
-    console.log(e.target.id)
     if (e.target.id !== '/myteam') {
       navigate(`${e.target.id}`)
     } else {
-      if (!activeUserId ) {
+      if (!activeUserTeamId ) {
         navigate('/myteam/newteam')
       } else {
         navigate(`/myteam/${activeUserTeamId}`)

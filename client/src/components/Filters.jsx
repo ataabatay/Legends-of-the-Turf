@@ -1,7 +1,7 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
-export default function Filters({ positions, teams, filters, setFilters }) {
+export default function Filters({ positions, teams, filters, setFilters, playersDataToRender }) {
 
   return (
     <>

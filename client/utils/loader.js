@@ -13,18 +13,14 @@ export async function  getSinglePlayer(id){
 }
 
 export async function getAllFootballers() {
-  const playersFromThirdParty = await axios.get('rest/bootstrap-static/')
+  const playersFromThirdParty = await axios.get('/rest/bootstrap-static/')
   return playersFromThirdParty
 }
 
 export async function FixturesAndLeagueTable(){
-  const activeUserId = activeUser()
-  const token = getToken()
-  console.log(token)
-  console.log(activeUserId)
   const [ fixturesRes, teamsRes, leagueRes ] = await Promise.all([
     axios.get('/rest/fixtures/?future=1'),
-    axios.get('rest/bootstrap-static/'), 
+    axios.get('/rest/bootstrap-static/'), 
     axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
   ])
   return {
