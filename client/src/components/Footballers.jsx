@@ -1,6 +1,6 @@
 import { useLoaderData } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Filters from './Footballersfilters'
+import Filters from './Filters.jsx'
 
 import ARS from '../assets/images/arsenal.png'
 import AVL from '../assets/images/astonVilla.png'
