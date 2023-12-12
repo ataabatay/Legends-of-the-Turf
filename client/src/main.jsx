@@ -24,7 +24,8 @@ import { FixturesAndLeagueTable } from '../utils/loader.js';
 import './index.css'
 import { getMyTeam, getAllFootballers } from '../utils/loader.js';
 import { deleteTeam } from '../utils/actions/teams.js'
-import { loginUser, registerUser } from '../utils/actions/auth.js';
+import { loginUser, registerUser, signoutUser } from '../utils/actions/auth.js';
+import Signout from './components/Signout.jsx';
 
 
 const router = createBrowserRouter(
@@ -41,6 +42,11 @@ const router = createBrowserRouter(
         path: '/login',
         element: <Login />,
         action: async ({ request }) => loginUser(request)
+      },
+      {
+        path: '/signout',
+        element: <Signout />,
+        action: async () => signoutUser()
       },
       {
         path: '/home',
