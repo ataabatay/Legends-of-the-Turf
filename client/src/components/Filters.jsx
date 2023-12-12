@@ -87,11 +87,12 @@ export default function Filters({ positions, teams, cleanedFootballersData, setf
           title="Sort by"
           id="dropdown-menu-align-end"
           style={{ margin: '20px' }}
+          onSelect={handleChange}
         >
-          <Dropdown.Item eventKey="1">Price</Dropdown.Item>
-          <Dropdown.Item eventKey="2">Points</Dropdown.Item>
-          <Dropdown.Item eventKey="3">Form</Dropdown.Item>
-          <Dropdown.Item eventKey="4">Owned by</Dropdown.Item>
+          <Dropdown.Item eventKey="Price">Price</Dropdown.Item>
+          <Dropdown.Item eventKey="Points">Points</Dropdown.Item>
+          <Dropdown.Item eventKey="Form">Form</Dropdown.Item>
+          <Dropdown.Item eventKey="Ownership">Ownership</Dropdown.Item>
         </DropdownButton>
       </div>
     </>
