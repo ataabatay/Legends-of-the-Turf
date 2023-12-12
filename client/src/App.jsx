@@ -7,14 +7,13 @@ import { Link } from 'react-router-dom'
 import Typewriter from './components/Typewriter'
 
 export default function App() {
-  const [allTeams, setAllTeams] = useState()
   const currentPage = useLocation().pathname
 
   return (
     <>
       {currentPage !== '/' ? 
       <>
-        <Navigation allTeams={allTeams}/>
+        <Navigation/>
         <main>
           <Outlet />
         </main>

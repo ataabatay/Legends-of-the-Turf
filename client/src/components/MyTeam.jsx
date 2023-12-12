@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import { useLoaderData } from 'react-router-dom'
+import { Form, useLoaderData, useActionData, useNavigation } from 'react-router-dom'
 
 //images
 import Arsenal from '../assets/images/arsenal.png'
@@ -29,12 +29,12 @@ import WolverhamptonWanderers from '../assets/images/wolves.png'
 import field from '../assets/images/field.jpg'
 
 export default function MyTeam() {
+  const deleteTeam = useActionData()
   const usersTeam = useLoaderData()
   const { _id, teamName, players } = usersTeam
 
   const sortedPlayers = players.sort((a, b) => {
     const positionOrder = { 'GK': 1, 'DF': 2, 'MF': 3, 'FW': 4 }
-
     return positionOrder[a] - positionOrder[b]
   })
 
@@ -61,23 +61,16 @@ export default function MyTeam() {
       'Tottenham Hotspur': TottenhamHotspur,
       'West Ham United': WestHamUnited,
       'Wolverhampton Wanderers': WolverhamptonWanderers,
-
     }
 
     const jerseySrc = teamJerseys[player.teamName]
     if (jerseySrc) {
       return <img src={jerseySrc} alt={player.teamName} style={{ width: '100px', height: '100px' }} key={player.id} />
     }
-
-
   }
+
   return (
     <>
-
-
-
-
-
       <section className='players'>
         <h2>Lets Go {teamName}! </h2>
 
@@ -94,7 +87,7 @@ export default function MyTeam() {
                   .map((player) => (
                     <Col key={`${player.id}`} md={12} >
                       <p style={{ color: 'black', fontWeight: 'bold', lineHeight: '1.3' }}>
-                        {teamJersey(player)}  
+                        {teamJersey(player)}
                         <br />
                         <span style={{ backgroundColor: 'royalblue', display: 'inline-block', width: '100px' }}>
                           {player.firstName}<br />{player.lastName}</span>
@@ -113,7 +106,7 @@ export default function MyTeam() {
                   .map((player, index) => (
                     <Col key={`${player.id} ${index}`} md={3}>
                       <p style={{ color: 'black', fontWeight: 'bold', lineHeight: '1.3' }}>
-                        {teamJersey(player)}  
+                        {teamJersey(player)}
                         <br />
                         <span style={{ backgroundColor: 'royalblue', display: 'inline-block', width: '100px' }}>
                           {player.firstName}<br />{player.lastName}</span>
@@ -126,17 +119,14 @@ export default function MyTeam() {
               </Row>
             </div>
 
-
             <div>
-
-
               <Row>
                 {sortedPlayers
                   .filter((player) => player.position === 'MF')
                   .map((player, index) => (
                     <Col key={` ${player.id} ${index}`} md={3}>
                       <p style={{ color: 'black', fontWeight: 'bold', lineHeight: '1.3' }}>
-                        {teamJersey(player)}  
+                        {teamJersey(player)}
                         <br />
                         <span style={{ backgroundColor: 'royalblue', display: 'inline-block', width: '100px' }}>
                           {player.firstName}<br />{player.lastName}</span>
@@ -145,19 +135,16 @@ export default function MyTeam() {
                     </Col>
                   ))}
               </Row>
-
-
             </div>
 
             <div>
-
               <Row>
                 {sortedPlayers
                   .filter((player) => player.position === 'FW')
                   .map((player, index) => (
                     <Col key={`${player.id} ${index}`} md={6}>
                       <p style={{ color: 'black', fontWeight: 'bold', lineHeight: '1.3' }}>
-                        {teamJersey(player)}  
+                        {teamJersey(player)}
                         <br />
                         <span style={{ backgroundColor: 'royalblue', display: 'inline-block', width: '100px' }}>
                           {player.firstName}<br />{player.lastName}</span>
@@ -166,13 +153,12 @@ export default function MyTeam() {
                     </Col>
                   ))}
               </Row>
-
             </div>
-
-
           </div>
         </Container>
-        <button style={{ marginTop: '5px'}}>Delete Team</button>
+        <Form method='POST'>
+          <button style={{ marginTop: '5px' }}>Delete Team</button>
+        </Form>
       </section>
     </>
   )
