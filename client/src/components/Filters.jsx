@@ -1,60 +1,27 @@
+/* eslint-disable react/prop-types */
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import { useEffect, useState } from 'react';
 
-export default function Filters({ positions, teams, cleanedFootballersData, setfilteredFootballers }) {
+export default function Filters({ positions, teams, filters, setFilters}) {
 
-  // ! States
-  const [filters, setFilters] = useState({
-    filterBy: 'All Players',
-    sortBy: ''
-  })
-
-  // ! Functions 
-  function handleChange(e) {
-    let newObj = {}
-    // if e is null then set filterby to all players
-    if (e) {
-      newObj = {
-        ...filters,
-        filterBy: e
-      }
-    } else {
-      newObj = {
-        ...filters,
-        filterBy: 'All players',
-        sortBy: ''
-      }
+  function handleFilterChange(e) {
+    let newFilter = {}
+    newFilter = {
+      ...filters,
+      filterBy: e
     }
-    setFilters(newObj)
-    console.log(newObj)
+    setFilters(newFilter)
   }
 
-  // !Effects
-  useEffect(() => { // apply filter based on dropdown selection and show relevant players only
-    // checking to see if the applied filter is a position or a team
-    // if below is falsy that means the applied filter is a team
-    let filteredFootballersArray = null
-    if (filters.filterBy === 'All players') {
-      filteredFootballersArray = cleanedFootballersData
-    } else {
-      if (!positions.find(position => position === filters.filterBy)) {
-        filteredFootballersArray = cleanedFootballersData.filter(player => {
-          return player.teamName === filters.filterBy
-        })
-      } else {
-        filteredFootballersArray = cleanedFootballersData.filter(player => {
-          return player.position === filters.filterBy
-        })
-      }
+  function handleSortChange(e) {
+    let newFilter = {}
+    newFilter = {
+      ...filters,
+      sortBy: e
     }
-    console.log(filteredFootballersArray)
-    setfilteredFootballers(filteredFootballersArray)
-  }, [positions, filters, cleanedFootballersData, setfilteredFootballers])
-
-  useEffect(() => { // load all players on initial componenet render
-    setfilteredFootballers(cleanedFootballersData)
-  }, [])
+    setFilters(newFilter)
+    console.log(filters)
+  }
 
   return (
     <>
@@ -66,9 +33,9 @@ export default function Filters({ positions, teams, cleanedFootballersData, setf
           title={`${filters.filterBy}`}
           id="dropdown-menu-align-end"
           style={{ margin: '20px' }}
-          onSelect={handleChange}
+          onSelect={handleFilterChange}
         >
-          <Dropdown.Item>All Players</Dropdown.Item>
+          <Dropdown.Item eventKey={'ALL'}>All Players</Dropdown.Item>
           <Dropdown.Divider />
           <Dropdown.Header style={{ fontSize: '1.2em', fontWeight: 'bold', color: 'black' }}>By Position</Dropdown.Header>
           {positions.map((position, idx) => {
@@ -84,10 +51,10 @@ export default function Filters({ positions, teams, cleanedFootballersData, setf
         {/* Sort button */}
         <DropdownButton
           align="end"
-          title="Sort by"
+          title={`${filters.sortBy}`}
           id="dropdown-menu-align-end"
           style={{ margin: '20px' }}
-          onSelect={handleChange}
+          onSelect={handleSortChange}
         >
           <Dropdown.Item eventKey="Price">Price</Dropdown.Item>
           <Dropdown.Item eventKey="Points">Points</Dropdown.Item>

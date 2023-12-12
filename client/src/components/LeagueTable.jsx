@@ -2,7 +2,7 @@ import Table from 'react-bootstrap/Table'
 import Container from 'react-bootstrap/Container'
 import green from '../assets/images/green.png'
 import draw from '../assets/images/draw.png'
-import red from '../assets/images/red.jpg'
+import red from '../assets/images/red.png'
 
 export default function LeagueTable({leagueTable}) {
 

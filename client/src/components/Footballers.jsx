@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useSyncExternalStore } from 'react'
 import Filters from './Filters.jsx'
 
 import ARS from '../assets/images/arsenal.png'
@@ -27,77 +27,133 @@ import WOL from '../assets/images/wolves.png'
 import Pagetoggle from './Pagination'
 import Table from 'react-bootstrap/esm/Table'
 
-export default function Footballers() {
+// Getting the teams, player positions and logos from fetched data to add to players for ease of display
+const teamLogos = [
+  { team: 'ARS', logo: ARS },
+  { team: 'AVL', logo: AVL },
+  { team: 'BOU', logo: BOU },
+  { team: 'BRE', logo: BRE },
+  { team: 'BHA', logo: BHA },
+  { team: 'BUR', logo: BUR },
+  { team: 'CHE', logo: CHE },
+  { team: 'EVE', logo: EVE },
+  { team: 'FUL', logo: FUL },
+  { team: 'LIV', logo: LIV },
+  { team: 'LUT', logo: LUT },
+  { team: 'MCI', logo: MCI },
+  { team: 'MUN', logo: MUN },
+  { team: 'NEW', logo: NEW },
+  { team: 'NFO', logo: NFO },
+  { team: 'CRY', logo: CRY },
+  { team: 'SHU', logo: SHU },
+  { team: 'TOT', logo: TOT },
+  { team: 'WHU', logo: WHU },
+  { team: 'WOL', logo: WOL },
+];
 
+export default function Footballers() {
   // ! Using and making the loader data usable
   // All data upon initial load
   const loaderData = useLoaderData()
 
-  // Getting the teams, player positions and logos from fetched data to add to players for ease of display
-  const teamLogos = [
-    { team: 'ARS', logo: ARS },
-    { team: 'AVL', logo: AVL },
-    { team: 'BOU', logo: BOU },
-    { team: 'BRE', logo: BRE },
-    { team: 'BHA', logo: BHA },
-    { team: 'BUR', logo: BUR },
-    { team: 'CHE', logo: CHE },
-    { team: 'EVE', logo: EVE },
-    { team: 'FUL', logo: FUL },
-    { team: 'LIV', logo: LIV },
-    { team: 'LUT', logo: LUT },
-    { team: 'MCI', logo: MCI },
-    { team: 'MUN', logo: MUN },
-    { team: 'NEW', logo: NEW },
-    { team: 'NFO', logo: NFO },
-    { team: 'CRY', logo: CRY },
-    { team: 'SHU', logo: SHU },
-    { team: 'TOT', logo: TOT },
-    { team: 'WHU', logo: WHU },
-    { team: 'WOL', logo: WOL },
-  ];
+  // ! States 
+  const [positions, setPositions] = useState([])
+  const [teams, setTeams] = useState([])
+  const [filters, setFilters] = useState({
+    filterBy: 'View By',
+    sortBy: 'Sort By'
+  })
 
-  // Getting a set of unique team names
-  const teams = loaderData.data.teams.map(team => { return team.short_name })
-  const positions = loaderData.data.element_types.map(position => { return position.singular_name_short })
-  
-  // Creating a new player pseudomodel to use out of the loaderData for ease
-  const { data: { elements: rawLoaderDataOfprettifiedAllFootballers } } = loaderData
-  const cleanedFootballersData = rawLoaderDataOfprettifiedAllFootballers.map(player => {
-    const matchedTeam = teamLogos.find(teamLogo => teamLogo.team === teams[player.team - 1])
-    return {
-      id: player.id,
-      firstName: player.first_name,
-      lastName: player.second_name,
-      teamName: teams[player.team - 1],
-      teamLogo: matchedTeam.logo,
-      position: positions[player.element_type - 1],
-      price: player.now_cost / 10,
-      totalPoints: player.total_points,
-      form: player.form,
-      ownership: player.selected_by_percent,
-    }
-  }).sort((a, b) => b.price - a.price)
-
-
-  // ! Filters and states for them
-  // state of active players to show initially set to all players
-  const [filteredFootballers, setfilteredFootballers] = useState(cleanedFootballersData)
-  
   // ! Pagination helpers
   // Current page state
   const [currentPage, setCurrentPage] = useState(1);
   // Items to show per page (30 players per page)
   const [recordsPerPage] = useState(30);
-  // index of the last item on page (based on the current page number multiplied by how number of items per page)
-  const indexOfLast = currentPage * recordsPerPage
-  // index of the first item on page
-  const indexOfFirst = indexOfLast - recordsPerPage
   // total number of pages
-  const nPages = Math.ceil(cleanedFootballersData.length / recordsPerPage)
-  
-  // final result of players to show on per page (30 items) after filtering is done
-  const activePlayersToRender = filteredFootballers.slice(indexOfFirst, indexOfLast)
+  const [nPages, setNPages] = useState(0)
+
+  // ! Filters and states for them
+  // state of active players to show initially set to all players
+  const [filteredFootballers, setfilteredFootballers] = useState([])
+
+  function sortData(data, sortBy) {
+    const sortedData = [...data]
+
+    switch (sortBy) {
+      case 'Price':
+        sortedData.sort((a, b) => b.price - a.price)
+        break
+      case 'Points':
+        sortedData.sort((a, b) => b.totalPoints - a.totalPoints)
+        break
+      case 'Form':
+        sortedData.sort((a, b) => b.form - a.form)
+        break
+      case 'Ownership':
+        sortedData.sort((a, b) => b.ownership - a.ownership)
+        break
+      default:
+        return data
+    }
+    return sortedData
+  }
+
+  useEffect(() => {
+    // Getting a set of unique team names
+    const teamNames = loaderData.data.teams.map(team => { return team.short_name })
+    setTeams(teamNames)
+
+    // Getting a set of unique footballer positions
+    const positionNames = loaderData.data.element_types.map(position => { return position.singular_name_short })
+    setPositions(positionNames)
+
+    // Creating a new player pseudomodel to use out of the loaderData for ease
+    const { data: { elements: rawLoaderDataOfprettifiedAllFootballers } } = loaderData
+    const cleanedFootballersData = rawLoaderDataOfprettifiedAllFootballers.map(player => {
+      const matchedTeam = teamLogos.find(teamLogo => teamLogo.team === teamNames[player.team - 1])
+      return {
+        id: player.id,
+        firstName: player.first_name,
+        lastName: player.second_name,
+        teamName: teamNames[player.team - 1],
+        teamLogo: matchedTeam.logo,
+        position: positionNames[player.element_type - 1],
+        price: player.now_cost / 10,
+        totalPoints: player.total_points,
+        form: player.form,
+        ownership: player.selected_by_percent,
+      }
+    }).sort((a, b) => b.price - a.price)
+
+    // filter the cleanedFootballersData
+    let playersToDisplay = []
+    // if seeing all the players
+    if (filters.filterBy === 'ALL' || filters.filterBy === 'View By') {
+      playersToDisplay = cleanedFootballersData
+      // if filtering by teamname
+    } else if (teamNames.find(teamName => teamName === filters.filterBy)) {
+      playersToDisplay = cleanedFootballersData.filter(player => {
+        return player.teamName === filters.filterBy
+      })
+      // if filtering by position
+    } else {
+      playersToDisplay = cleanedFootballersData.filter(player => {
+        return player.position === filters.filterBy
+      })
+    }
+    playersToDisplay = sortData(playersToDisplay, filters.sortBy)
+
+    // Set the number of pages that will be shown in the pagination
+    setNPages(Math.ceil(cleanedFootballersData.length / recordsPerPage))
+    // index of the last item on page (based on the current page number multiplied by how number of items per page)
+    const indexOfLast = currentPage * recordsPerPage
+    // index of the first item on page
+    const indexOfFirst = indexOfLast - recordsPerPage
+
+    // final result of players to show on per page (30 items) after filtering is done
+    const activePlayersToRender = playersToDisplay.slice(indexOfFirst, indexOfLast)
+    setfilteredFootballers(activePlayersToRender)
+  }, [loaderData, recordsPerPage, currentPage, filters])
 
   return (
     <>
@@ -105,7 +161,9 @@ export default function Footballers() {
       <Filters
         positions={positions}
         teams={teams}
-        cleanedFootballersData={cleanedFootballersData}
+        filters={filters}
+        setFilters={setFilters}
+        filteredFootballers={filteredFootballers}
         setfilteredFootballers={setfilteredFootballers}
       />
       <Table hover>
@@ -120,7 +178,7 @@ export default function Footballers() {
           </tr>
         </thead>
         <tbody>
-          {activePlayersToRender.map((player, idx) => {
+          {filteredFootballers.map((player, idx) => {
             return (
               <tr key={idx} style={{ textAlign: 'left' }}>
                 <td style={{ width: '40px' }}>{<img style={{ width: 'inherit', marginRight: '10px' }} src={player.teamLogo} alt="team jersey" />}</td>
