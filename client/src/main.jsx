@@ -72,9 +72,7 @@ const router = createBrowserRouter(
       {
         path: '/myteam/:teamId/edit/players',
         element: <PlayerSelection />,
-        loaders: [async ({ params }) => getMyTeam(params.teamId),
-          getAllPlayers],
-
+        loader: getAllPlayers,
         action: async ({ request, params }) => editTeam(request, params.teamId),
       },
       {
