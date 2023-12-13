@@ -1,9 +1,14 @@
 nav {
   @include flex-between(row);
-  background-color: red;
   padding: 2em;
 }
 
-.navbar, .container {
+.navbar {
   width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg, #02ffff 0%, #2318be 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }

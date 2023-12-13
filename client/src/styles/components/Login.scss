@@ -25,3 +25,9 @@
   margin-top: 2rem;  
   cursor: pointer;
 }
+
+input#email.form-control, input#password.form-control {
+  background: #EFEFEF;
+  border-radius: 3px 3px 0px 0px;
+}
+
