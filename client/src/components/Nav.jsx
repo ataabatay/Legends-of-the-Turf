@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate } from 'react-router-dom'
 import { activeUser, getToken, removeToken } from '../../utils/helpers/common'
 import axios from 'axios'
-
+import premLogo from '../assets/images/prem.png'
 export default function Navigation() {
 
   const navigate = useNavigate()
@@ -55,6 +55,7 @@ export default function Navigation() {
     <>
     <Navbar className="navbar" bg="primary" data-bs-theme="dark">
       <Container>
+        <img src={premLogo} alt="Prem-Logo"/>
         <Nav className="me-auto">
           <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
           <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>
