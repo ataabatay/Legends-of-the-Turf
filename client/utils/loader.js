@@ -12,6 +12,22 @@ export async function  getSinglePlayer(id){
   return res.json()
 }
 
+export async function getAllPlayers(){
+  const res = await fetch('/api/players')
+  return res.json()
+}
+
+// export async function getAllPlayersAndUserTeam(teamId){
+//   const [ playersRes, userTeamRes ] = await Promise.all([
+//     axios.get('/api/players'),
+//     axios.get(`/api/myteam/${teamId}`)
+//   ])
+//   return {
+//     allPlayers: playersRes.data,
+//     userTeam: userTeamRes.data
+//   }
+// }
+
 export async function getAllFootballers() {
   const playersFromThirdParty = await axios.get('/rest/bootstrap-static/')
   return playersFromThirdParty
