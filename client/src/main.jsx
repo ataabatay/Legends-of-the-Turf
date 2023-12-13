@@ -23,7 +23,7 @@ import { FixturesAndLeagueTable } from '../utils/loader.js';
 // Style imports
 import './index.css'
 import { getMyTeam, getAllFootballers } from '../utils/loader.js';
-import { deleteTeam } from '../utils/actions/teams.js'
+import { deleteTeam, createTeam } from '../utils/actions/teams.js'
 import { loginUser, registerUser, signoutUser } from '../utils/actions/auth.js';
 import Signout from './components/Signout.jsx';
 
@@ -67,12 +67,12 @@ const router = createBrowserRouter(
       {
         path: '/myteam/newteam',
         element: <NewTeam />,
-        // add createTeam action function
+        action: async ({ request }) => createTeam(request)
       },
       {
-        path: '/myteam/newteam/footballerselection',
+        path: '/myteam/:teamId/edit/players',
         element: <PlayerSelection />,
-        // add loadAllPlayers loader function,
+        loader: async ({ params }) => getMyTeam(params.teamId),
         // add addPlayersToTeam action function,
       },
       {

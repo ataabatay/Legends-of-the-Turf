@@ -8,7 +8,13 @@ export default function Signout () {
 
 
   useEffect(() => {
+
+
+    
     handleSignOut()
+
+
+
   }, [])
   
   const handleSignOut = async () => {

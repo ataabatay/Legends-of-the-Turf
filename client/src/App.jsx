@@ -26,11 +26,11 @@ export default function App() {
 
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Link to={'/login'}>
-          <button className='login' type="button" class="btn btn-outline-primary btn-md m-2">Login</button>
+          <button className='login' type="button" class='btn btn-outline-primary btn-md m-2'>Login</button>
         </Link>
 
         <Link to={'/register'}>
-          <button class="btn btn-outline-primary btn-md m-2">Register</button>
+          <button class='btn btn-outline-primary btn-md m-2'>Register</button>
         </Link>
         </div>
         </div>
