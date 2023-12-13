@@ -27,6 +27,7 @@ import TottenhamHotspur from '../assets/images/tottenham.png'
 import WestHamUnited from '../assets/images/westham.png'
 import WolverhamptonWanderers from '../assets/images/wolves.png'
 import field from '../assets/images/Pitch.png'
+import { useTransition } from 'react'
 
 export default function MyTeam() {
   const deleteTeam = useActionData()
@@ -71,13 +72,17 @@ export default function MyTeam() {
 
   return (
     <>
+      <section className='team-details'>
+        <img src="" alt="" />
+        <div className='team-name'>Lets Go {teamName}!</div>
+        <Form method='DELETE'>
+          <button style={{ marginTop: '5px' }}>Delete Team</button>
+        </Form>
+      </section>
+
       <section className='players'>
-        <h2>Lets Go {teamName}! </h2>
-
         <Container fluid className='teams' style={{ display: 'flex', justifyContent: 'center', backgroundImage: `url(${field})`}}>
-
           <section className='field'>
-
             <Row className='goalkeepers'>
               {sortedPlayers
                 .filter((player) => player.position === 'GK')
@@ -135,10 +140,6 @@ export default function MyTeam() {
             </Row>
           </section>
         </Container>
-
-        <Form method='DELETE'>
-          <button style={{ marginTop: '5px' }}>Delete Team</button>
-        </Form>
       </section>
     </>
   )

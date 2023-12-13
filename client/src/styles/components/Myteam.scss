@@ -1,20 +1,50 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 150px;
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+  }
+
+}
+
 .players {
+  margin: 50px;
+  margin-top: 50px;
+  min-width: 700px;
+  max-width: 800px;
+
   h2 {
     margin: 50px 0;
   }
-  p{
+
+  p {
     font-size: 0.85em;
     font-weight: 500;
   }
 }
 
+.team-details {
+  margin: 50px;
+  padding: 0;
+
+  .team-name {
+    margin: 25px;
+  }
+}
+
 .teams.container-fluid {
-  min-width: 400px;
-  max-width: 700px;
   background-position: center;
   background-size: 120%;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .col-md-3,
@@ -30,16 +60,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 120px;
 
   .player-jersey {
     img {
-      width: 90%; 
+      width: 90%;
       height: 90px;
     }
   }
 
   .player-name {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 75%;
+    line-height: 1.5;
     display: flex;
     padding: 5.2px 41.405px 5.2px 41.595px;
     flex-direction: column;
@@ -47,12 +80,13 @@
     align-self: stretch;
     background-color: #37003C;
     color: white;
-    width: 100%;
     margin: 0;
     padding: 5px 10px;
   }
 
   .player-position {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
     padding: 2px 38.83px 2px 38.32px;
     justify-content: center;
