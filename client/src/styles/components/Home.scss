@@ -1,50 +1,7 @@
-.team-logo {
-  width: 30px;
-  margin-right: 0.5em;
-}
+@import './Fixtures.scss';
+@import './Leaguetable.scss';
 
-.fixture-container {
-  margin-top: 4em;
-}
-
-.fixture-header {
-  border: solid purple 5px;
-  border-radius: 0.7em;
-  padding: 2em;
-}
-
-.fixture-row {
-  border: solid rgba(212, 212, 212, 0.5) 1px; 
-  border-radius: 0.7em;
-  padding: 1em;
-}
-
-.kickoff {
-  border-left: solid lightgrey 2px;
-  justify-content: center;
-}
-
-.ltable-logo {
-  width: 30px;
-  margin-right: 0.3em;
-}
-
-.plt-logo {
-  width: 15px;
-  margin-right: 0.2em;
-}
-
-.table-container {
-  border: solid rgba(212, 212, 212, 0.5) 1px;
-  margin-top: 4em;
-  
-}
-
-h2 {
-  padding: 20px;
-}
 .container-wrapper {
   display: flex;
   gap: 100px;
 }
-  

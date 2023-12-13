@@ -9,11 +9,12 @@ export default function LeagueTable({leagueTable}) {
   return (
     <Container className='table-container'>
       <h2>Premier League Table</h2>
-      <Table>
+      <Table style={{maxWidth: '70vh'}}>
         <thead>
           <tr>
             <th>Position</th>
-            <th className='d-flex'>Club</th>
+            <th></th>
+            <th style={{textAlign: 'left'}}>Club</th>
             <th>MP</th>
             <th>W</th>
             <th>D</th>
@@ -29,7 +30,8 @@ export default function LeagueTable({leagueTable}) {
           {leagueTable.map(team => (
             <tr key={team.clubId}>
               <td>{team.position}</td>
-              <td className='d-flex'><img className='ltable-logo' src={team.crestUrl} alt={team.clubName} />{team.clubName}</td>
+              <td><img className='ltable-logo' src={team.crestUrl} alt={team.clubName} /></td>
+              <td id='clubname' style={{marginTop: '500px'}}>{team.clubName}</td>
               <td>{team.played}</td>
               <td>{team.won}</td>
               <td>{team.drawn}</td>
@@ -37,7 +39,7 @@ export default function LeagueTable({leagueTable}) {
               <td>{team.goalsFor}</td>
               <td>{team.goalsAgainst}</td>
               <td>{team.goalDifference}</td>
-              <td>{team.points}</td>
+              <td style={{fontWeight: 'bold'}}>{team.points}</td>
               <td>{team.recentForm.map((result, idx) =>
                 result === 'W' ? <img className='plt-logo' src={green} key={idx}/> :
                   result === 'D' ? <img className='plt-logo' src={draw} key={idx}/> :
