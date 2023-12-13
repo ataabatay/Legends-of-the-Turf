@@ -1,5725 +1,6066 @@
 export default [
   {
-    firstName: 'Aaron',
-    lastName: 'Ramsdale',
-    teamName: 'Arsenal',
-    dob: '14/05/1998',
-    height: 190,
-    position: 'GK',
-    price: 5.5
-  },
-  {
-    firstName: 'Amario',
-    lastName: 'Cozier-Duberry',
-    teamName: 'Arsenal',
-    dob: '29/05/2005',
-    height: 170,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'White',
-    teamName: 'Arsenal',
-    dob: '08/10/1997',
-    height: 186,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Bradley',
-    lastName: 'Ibrahim',
-    teamName: 'Arsenal',
-    dob: '21/10/2004',
-    height: 179,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Bukayo',
-    lastName: 'Saka',
-    teamName: 'Arsenal',
-    dob: '05/09/2001',
-    height: 178,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'Cédric',
-    lastName: '',
-    teamName: 'Arsenal',
-    dob: '31/08/1991',
-    height: 171,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Charles',
-    lastName: 'Sagoe',
-    teamName: 'Arsenal',
-    dob: '24/07/2004',
-    height: 168,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'David',
-    lastName: 'Raya',
-    teamName: 'Arsenal',
-    dob: '15/09/1995',
-    height: 183,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Declan',
-    lastName: 'Rice',
-    teamName: 'Arsenal',
-    dob: '14/01/1999',
-    height: 185,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Eddie',
-    lastName: 'Nketiah',
-    teamName: 'Arsenal',
-    dob: '30/05/1999',
-    height: 180,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'Emile',
-    lastName: 'Smith-Rowe',
-    teamName: 'Arsenal',
-    dob: '28/07/2000',
-    height: 182,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Ethan',
-    lastName: 'Nwaneri',
-    teamName: 'Arsenal',
-    dob: '21/03/2007',
-    height: 176,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Fábio',
-    lastName: 'Vieira',
-    teamName: 'Arsenal',
-    dob: '30/05/2000',
-    height: 170,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Gabriel',
-    lastName: '',
-    teamName: 'Arsenal',
-    dob: '19/12/1997',
-    height: 190,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Gabriel',
-    lastName: 'Jesus',
-    teamName: 'Arsenal',
-    dob: '03/04/1997',
-    height: 175,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Gabriel',
-    lastName: 'Martinelli',
-    teamName: 'Arsenal',
-    dob: '18/06/2001',
-    height: 178,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'Jakub',
-    lastName: 'Kiwior',
-    teamName: 'Arsenal',
-    dob: '15/02/2000',
-    height: 189,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'James',
-    lastName: 'Sweet',
-    teamName: 'Arsenal',
-    dob: '03/11/2004',
-    height: 180,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Jorginho',
-    lastName: '',
-    teamName: 'Arsenal',
-    dob: '20/12/1991',
-    height: 178,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Jurriën',
-    lastName: 'Timber',
-    teamName: 'Arsenal',
-    dob: '17/06/2001',
-    height: 179,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Kai',
-    lastName: 'Havertz',
-    teamName: 'Arsenal',
-    dob: '11/06/1999',
-    height: 193,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Karl',
-    lastName: 'Hein',
-    teamName: 'Arsenal',
-    dob: '13/04/2002',
-    height: 193,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Leandro',
-    lastName: 'Trossard',
-    teamName: 'Arsenal',
-    dob: '04/12/1994',
-    height: 172,
-    position: 'FW',
-    price: 4
-  },
-  {
-    firstName: 'Martin',
-    lastName: 'Ødegaard',
-    teamName: 'Arsenal',
-    dob: '17/12/1998',
-    height: 178,
-    position: 'MF',
-    price: 9
+    firstName: 'Erling',
+    lastName: 'Haaland',
+    teamName: 'MCI',
+    position: 'FWD',
+    price: 14,
+    totalPoints: 112
   },
   {
     firstName: 'Mohamed',
-    lastName: 'Elneny',
-    teamName: 'Arsenal',
-    dob: '11/07/1992',
-    height: 179,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Myles',
-    lastName: 'Lewis-Skelly',
-    teamName: 'Arsenal',
-    dob: '26/09/2006',
-    height: 178,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Oleksandr',
-    lastName: 'Zinchenko',
-    teamName: 'Arsenal',
-    dob: '15/12/1996',
-    height: 175,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Reiss',
-    lastName: 'Nelson',
-    teamName: 'Arsenal',
-    dob: '10/12/1999',
-    height: 175,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Reuell',
-    lastName: 'Walters',
-    teamName: 'Arsenal',
-    dob: '16/12/2004',
-    height: 183,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Takehiro',
-    lastName: 'Tomiyasu',
-    teamName: 'Arsenal',
-    dob: '05/11/1998',
-    height: 188,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Thomas',
-    lastName: 'Partey',
-    teamName: 'Arsenal',
-    dob: '13/06/1993',
-    height: 185,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'William',
-    lastName: 'Saliba',
-    teamName: 'Arsenal',
-    dob: '24/03/2001',
-    height: 192,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Álex',
-    lastName: 'Moreno',
-    teamName: 'Aston Villa',
-    dob: '08/06/1993',
-    height: 179,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Bertrand',
-    lastName: 'Traoré',
-    teamName: 'Aston Villa',
-    dob: '06/09/1995',
-    height: 181,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Boubacar',
-    lastName: 'Kamara',
-    teamName: 'Aston Villa',
-    dob: '23/11/1999',
-    height: 184,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Calum',
-    lastName: 'Chambers',
-    teamName: 'Aston Villa',
-    dob: '20/01/1995',
-    height: 182,
-    position: 'DF',
-    price: 10
-  },
-  {
-    firstName: 'Clément',
-    lastName: 'Lenglet',
-    teamName: 'Aston Villa',
-    dob: '17/06/1995',
-    height: 186,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Diego',
-    lastName: 'Carlos',
-    teamName: 'Aston Villa',
-    dob: '15/03/1993',
-    height: 185,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Douglas',
-    lastName: 'Luiz',
-    teamName: 'Aston Villa',
-    dob: '09/05/1998',
-    height: 177,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Emiliano',
-    lastName: 'Buendia',
-    teamName: 'Aston Villa',
-    dob: '25/12/1996',
-    height: 172,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Emiliano',
-    lastName: 'Martínez',
-    teamName: 'Aston Villa',
-    dob: '02/09/1992',
-    height: 195,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Ezri',
-    lastName: 'Konsa',
-    teamName: 'Aston Villa',
-    dob: '23/10/1997',
-    height: 183,
-    position: 'DF',
-    price: 10
-  },
-  {
-    firstName: 'Filip',
-    lastName: 'Marshall',
-    teamName: 'Aston Villa',
-    dob: '24/04/2003',
-    height: 195,
-    position: 'GK',
-    price: 9
-  },
-  {
-    firstName: 'Jacob',
-    lastName: 'Ramsey',
-    teamName: 'Aston Villa',
-    dob: '28/05/2001',
-    height: 180,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Jhon',
-    lastName: 'Durán',
-    teamName: 'Aston Villa',
-    dob: '13/12/2003',
-    height: 185,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'John',
-    lastName: 'McGinn',
-    teamName: 'Aston Villa',
-    dob: '18/10/1994',
-    height: 178,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Josh',
-    lastName: 'Feeney',
-    teamName: 'Aston Villa',
-    dob: '06/05/2005',
-    height: 193,
-    position: 'DF',
-    price: 10
-  },
-  {
-    firstName: 'Kortney',
-    lastName: 'Hause',
-    teamName: 'Aston Villa',
-    dob: '16/07/1995',
-    height: 191,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Leander',
-    lastName: 'Dendoncker',
-    teamName: 'Aston Villa',
-    dob: '15/04/1995',
-    height: 188,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Leon',
-    lastName: 'Bailey',
-    teamName: 'Aston Villa',
-    dob: '09/08/1997',
-    height: 178,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Lucas',
-    lastName: 'Digne',
-    teamName: 'Aston Villa',
-    dob: '20/07/1993',
-    height: 178,
-    position: 'DF',
-    price: 4
-  },
-  {
-    firstName: 'Matty',
-    lastName: 'Cash',
-    teamName: 'Aston Villa',
-    dob: '07/08/1997',
-    height: 185,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Moussa',
-    lastName: 'Diaby',
-    teamName: 'Aston Villa',
-    dob: '07/07/1999',
-    height: 170,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Nicolò',
-    lastName: 'Zaniolo',
-    teamName: 'Aston Villa',
-    dob: '02/07/1999',
-    height: 190,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Ollie',
-    lastName: 'Watkins',
-    teamName: 'Aston Villa',
-    dob: '30/12/1995',
-    height: 180,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Omari',
-    lastName: 'Kellyman',
-    teamName: 'Aston Villa',
-    dob: '25/09/2005',
-    height: 175,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Pau',
-    lastName: 'Torres',
-    teamName: 'Aston Villa',
-    dob: '16/01/1997',
-    height: 191,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Robin',
-    lastName: 'Olsen',
-    teamName: 'Aston Villa',
-    dob: '08/01/1990',
-    height: 196,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Tim',
-    lastName: 'Iroegbunam',
-    teamName: 'Aston Villa',
-    dob: '30/06/2003',
-    height: 175,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Tommi',
-    lastName: 'O\'Reilly',
-    teamName: 'Aston Villa',
-    dob: '15/12/2003',
-    height: 179,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Tyrone',
-    lastName: 'Mings',
-    teamName: 'Aston Villa',
-    dob: '13/03/1993',
-    height: 196,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Youri',
-    lastName: 'Tielemans',
-    teamName: 'Aston Villa',
-    dob: '07/05/1997',
-    height: 176,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Adam',
-    lastName: 'Smith',
-    teamName: 'Bournemouth',
-    dob: '29/04/1991',
-    height: 180,
-    position: 'DF',
-    price: 4.5
-  },
-  {
-    firstName: 'Alex',
-    lastName: 'Scott',
-    teamName: 'Bournemouth',
-    dob: '21/08/2003',
-    height: 178,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Antoine',
-    lastName: 'Semenyo',
-    teamName: 'Bournemouth',
-    dob: '07/01/2000',
-    height: 185,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Greenwood',
-    teamName: 'Bournemouth',
-    dob: '20/02/2003',
-    height: 180,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Cameron',
-    lastName: 'Plain',
-    teamName: 'Bournemouth',
-    dob: '24/09/2001',
-    height: 182,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Chris',
-    lastName: 'Mepham',
-    teamName: 'Bournemouth',
-    dob: '05/11/1997',
-    height: 191,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Dango',
-    lastName: 'Ouattara',
-    teamName: 'Bournemouth',
-    dob: '11/02/2002',
-    height: 177,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Darren',
-    lastName: 'Randolph',
-    teamName: 'Bournemouth',
-    dob: '12/05/1987',
-    height: 188,
-    position: 'GK',
-    price: 5.5
-  },
-  {
-    firstName: 'David',
-    lastName: 'Brooks',
-    teamName: 'Bournemouth',
-    dob: '08/07/1997',
-    height: 173,
-    position: 'FW',
-    price: 6
-  },
-  {
-    firstName: 'Dominic',
-    lastName: 'Solanke',
-    teamName: 'Bournemouth',
-    dob: '14/09/1997',
-    height: 187,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Emiliano',
-    lastName: 'Marcondes',
-    teamName: 'Bournemouth',
-    dob: '09/03/1995',
-    height: 182,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Gavin',
-    lastName: 'Kilkenny',
-    teamName: 'Bournemouth',
-    dob: '01/02/2000',
-    height: 170,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Hamed',
-    lastName: 'Traorè',
-    teamName: 'Bournemouth',
-    dob: '16/02/2000',
-    height: 184,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Ilya',
-    lastName: 'Zabarnyi',
-    teamName: 'Bournemouth',
-    dob: '01/09/2002',
-    height: 187,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Ionuț',
-    lastName: 'Radu',
-    teamName: 'Bournemouth',
-    dob: '28/05/1997',
-    height: 188,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Joe',
-    lastName: 'Rothwell',
-    teamName: 'Bournemouth',
-    dob: '11/01/1995',
-    height: 185,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Justin',
-    lastName: 'Kluivert',
-    teamName: 'Bournemouth',
-    dob: '05/05/1999',
-    height: 172,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Kieffer',
-    lastName: 'Moore',
-    teamName: 'Bournemouth',
-    dob: '08/08/1992',
-    height: 195,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Lewis',
-    lastName: 'Cook',
-    teamName: 'Bournemouth',
-    dob: '03/02/1997',
-    height: 175,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Lloyd',
-    lastName: 'Kelly',
-    teamName: 'Bournemouth',
-    dob: '06/10/1998',
-    height: 190,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Luis',
-    lastName: 'Sinisterra',
-    teamName: 'Bournemouth',
-    dob: '17/06/1999',
-    height: 172,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Marcos',
-    lastName: 'Senesi',
-    teamName: 'Bournemouth',
-    dob: '10/05/1997',
-    height: 185,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Marcus',
-    lastName: 'Tavernier',
-    teamName: 'Bournemouth',
-    dob: '22/03/1999',
-    height: 178,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Mark',
-    lastName: 'Travers',
-    teamName: 'Bournemouth',
-    dob: '18/05/1999',
-    height: 191,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Max',
-    lastName: 'Aarons',
-    teamName: 'Bournemouth',
-    dob: '04/01/2000',
-    height: 178,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Milos',
-    lastName: 'Kerkez',
-    teamName: 'Bournemouth',
-    dob: '07/11/2003',
-    height: 176,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Neto',
-    lastName: '',
-    teamName: 'Bournemouth',
-    dob: '19/07/1989',
-    height: 190,
-    position: 'GK',
-    price: 5.5
-  },
-  {
-    firstName: 'Philip',
-    lastName: 'Billing',
-    teamName: 'Bournemouth',
-    dob: '11/06/1996',
-    height: 193,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Ryan',
-    lastName: 'Christie',
-    teamName: 'Bournemouth',
-    dob: '22/02/1995',
-    height: 178,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Ryan',
-    lastName: 'Fredericks',
-    teamName: 'Bournemouth',
-    dob: '10/10/1992',
-    height: 181,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Tyler',
-    lastName: 'Adams',
-    teamName: 'Bournemouth',
-    dob: '14/02/1999',
-    height: 175,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Aaron',
-    lastName: 'Hickey',
-    teamName: 'Brentford',
-    dob: '10/06/2002',
-    height: 185,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Mee',
-    teamName: 'Brentford',
-    dob: '21/09/1989',
-    height: 180,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Bryan',
-    lastName: 'Mbeumo',
-    teamName: 'Brentford',
-    dob: '07/08/1999',
-    height: 171,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Charlie',
-    lastName: 'Goode',
-    teamName: 'Brentford',
-    dob: '03/08/1995',
-    height: 196,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Christian',
-    lastName: 'Nørgaard',
-    teamName: 'Brentford',
-    dob: '10/03/1994',
-    height: 187,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Ellery',
-    lastName: 'Balcombe',
-    teamName: 'Brentford',
-    dob: '15/10/1999',
-    height: 190,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Ethan',
-    lastName: 'Brierley',
-    teamName: 'Brentford',
-    dob: '23/11/2003',
-    height: 175,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Ethan',
-    lastName: 'Pinnock',
-    teamName: 'Brentford',
-    dob: '29/05/1993',
-    height: 187,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Frank',
-    lastName: 'Onyeka',
-    teamName: 'Brentford',
-    dob: '01/01/1998',
-    height: 183,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Ivan',
-    lastName: 'Toney',
-    teamName: 'Brentford',
-    dob: '16/03/1996',
-    height: 179,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Ji-soo',
-    lastName: 'Kim',
-    teamName: 'Brentford',
-    dob: '24/12/2004',
-    height: 189,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Joshua',
-    lastName: 'Dasilva',
-    teamName: 'Brentford',
-    dob: '23/10/1998',
-    height: 184,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Keane',
-    lastName: 'Lewis-Potter',
-    teamName: 'Brentford',
-    dob: '22/02/2001',
-    height: 170,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Kevin',
-    lastName: 'Schade',
-    teamName: 'Brentford',
-    dob: '27/11/2001',
-    height: 183,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Kristoffer',
-    lastName: 'Ajer',
-    teamName: 'Brentford',
-    dob: '17/04/1998',
-    height: 196,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Mads',
-    lastName: 'Roerslev',
-    teamName: 'Brentford',
-    dob: '24/06/1999',
-    height: 184,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Mark',
-    lastName: 'Flekken',
-    teamName: 'Brentford',
-    dob: '13/06/1993',
-    height: 194,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Mathias',
-    lastName: 'Jensen',
-    teamName: 'Brentford',
-    dob: '01/01/1996',
-    height: 180,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Michael',
-    lastName: 'Olakigbe',
-    teamName: 'Brentford',
-    dob: '25/04/2004',
-    height: 180,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Mikkel',
-    lastName: 'Damsgaard',
-    teamName: 'Brentford',
-    dob: '03/07/2000',
-    height: 180,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Myles',
-    lastName: 'Peart-Harris',
-    teamName: 'Brentford',
-    dob: '18/09/2002',
-    height: 187,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Nathan',
-    lastName: 'Collins',
-    teamName: 'Brentford',
-    dob: '30/04/2001',
-    height: 193,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Neal',
-    lastName: 'Maupay',
-    teamName: 'Brentford',
-    dob: '14/08/1996',
-    height: 173,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Rico',
-    lastName: 'Henry',
-    teamName: 'Brentford',
-    dob: '08/07/1997',
-    height: 170,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Saman',
-    lastName: 'Ghoddos',
-    teamName: 'Brentford',
-    dob: '06/09/1993',
-    height: 176,
-    position: 'FW',
-    price: 6
-  },
-  {
-    firstName: 'Shandon',
-    lastName: 'Baptiste',
-    teamName: 'Brentford',
-    dob: '08/04/1998',
-    height: 175,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Thomas',
-    lastName: 'Strakosha',
-    teamName: 'Brentford',
-    dob: '19/03/1995',
-    height: 186,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Valentin',
-    lastName: 'Adedokun',
-    teamName: 'Brentford',
-    dob: '14/02/2003',
-    height: 175,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Vincent',
-    lastName: 'Angelini',
-    teamName: 'Brentford',
-    dob: '12/09/2003',
-    height: 189,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Vitaly',
-    lastName: 'Janelt',
-    teamName: 'Brentford',
-    dob: '10/05/1998',
-    height: 184,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Yegor',
-    lastName: 'Yarmolyuk',
-    teamName: 'Brentford',
-    dob: '01/03/2004',
-    height: 180,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Yoane',
-    lastName: 'Wissa',
-    teamName: 'Brentford',
-    dob: '03/09/1996',
-    height: 176,
-    position: 'FW',
-    price: 6
-  },
-  {
-    firstName: 'Zanka',
-    lastName: '',
-    teamName: 'Brentford',
-    dob: '23/04/1990',
-    height: 191,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Adam',
-    lastName: 'Lallana',
-    teamName: 'Brighton',
-    dob: '10/05/1988',
-    height: 172,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Adam',
-    lastName: 'Webster',
-    teamName: 'Brighton',
-    dob: '04/01/1995',
-    height: 191,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Ansu',
-    lastName: 'Fati',
-    teamName: 'Brighton',
-    dob: '31/10/2002',
-    height: 178,
-    position: 'FW',
-    price: 6
-  },
-  {
-    firstName: 'Bart',
-    lastName: 'Verbruggen',
-    teamName: 'Brighton',
-    dob: '18/08/2002',
-    height: 193,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Benicio',
-    lastName: 'Boaitey',
-    teamName: 'Brighton',
-    dob: '09/01/2004',
-    height: 160,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Benjamin',
-    lastName: 'Jackson',
-    teamName: 'Brighton',
-    dob: '03/09/2003',
-    height: 190,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Billy',
-    lastName: 'Gilmour',
-    teamName: 'Brighton',
-    dob: '11/06/2001',
-    height: 170,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Carlos',
-    lastName: 'Baleba',
-    teamName: 'Brighton',
-    dob: '03/01/2004',
-    height: 179,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Danny',
-    lastName: 'Welbeck',
-    teamName: 'Brighton',
-    dob: '26/11/1990',
-    height: 185,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Evan',
-    lastName: 'Ferguson',
-    teamName: 'Brighton',
-    dob: '19/10/2004',
-    height: 183,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Facundo',
-    lastName: 'Buonanotte',
-    teamName: 'Brighton',
-    dob: '23/12/2004',
-    height: 174,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Igor',
-    lastName: "",
-    teamName: 'Brighton',
-    dob: '07/02/1998',
-    height: 184,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Jack',
-    lastName: 'Hinchy',
-    teamName: 'Brighton',
-    dob: '30/01/2003',
-    height: 180,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Jack',
-    lastName: 'Hinshelwood',
-    teamName: 'Brighton',
-    dob: '11/04/2005',
-    height: 180,
-    position: 'MF',
-    price: 10
-  },
-  {
-    firstName: 'Jakub',
-    lastName: 'Moder',
-    teamName: 'Brighton',
-    dob: '07/04/1999',
-    height: 191,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'James',
-    lastName: 'Milner',
-    teamName: 'Brighton',
-    dob: '04/01/1986',
-    height: 175,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Jan Paul',
-    lastName: 'van Hecke',
-    teamName: 'Brighton',
-    dob: '08/06/2000',
-    height: 189,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Jason',
-    lastName: 'Steele',
-    teamName: 'Brighton',
-    dob: '18/08/1990',
-    height: 188,
-    position: 'GK',
-    price: 9
-  },
-  {
-    firstName: 'João',
-    lastName: 'Pedro',
-    teamName: 'Brighton',
-    dob: '26/09/2001',
-    height: 187,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Joël',
-    lastName: 'Veltman',
-    teamName: 'Brighton',
-    dob: '15/01/1992',
-    height: 184,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Joshua',
-    lastName: 'Duffus',
-    teamName: 'Brighton',
-    dob: '15/12/2004',
-    height: 183,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Julio',
-    lastName: 'Enciso',
-    teamName: 'Brighton',
-    dob: '23/01/2004',
-    height: 173,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Kaoru',
-    lastName: 'Mitoma',
-    teamName: 'Brighton',
-    dob: '20/05/1997',
-    height: 178,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Leigh',
-    lastName: 'Kavanagh',
-    teamName: 'Brighton',
-    dob: '27/12/2003',
-    height: 189,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Lewis',
-    lastName: 'Dunk',
-    teamName: 'Brighton',
-    dob: '21/11/1991',
-    height: 192,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Luca',
-    lastName: 'Barrington',
-    teamName: 'Brighton',
-    dob: '12/12/2004',
-    height: 175,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Mahmoud',
-    lastName: 'Dahoud',
-    teamName: 'Brighton',
-    dob: '01/01/1996',
-    height: 178,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Mark',
-    lastName: 'O\'Mahony',
-    teamName: 'Brighton',
-    dob: '14/01/2005',
-    height: 177,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Pascal',
-    lastName: 'Groß',
-    teamName: 'Brighton',
-    dob: '15/06/1991',
-    height: 181,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Pervis',
-    lastName: 'Estupiñán',
-    teamName: 'Brighton',
-    dob: '21/01/1998',
-    height: 175,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Samy',
-    lastName: 'Chouchane',
-    teamName: 'Brighton',
-    dob: '05/09/2003',
-    height: 180,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Simon',
-    lastName: 'Adingra',
-    teamName: 'Brighton',
-    dob: '01/01/2002',
-    height: 175,
-    position: 'FW',
-    price: 9.5
-  },
-  {
-    firstName: 'Solly',
-    lastName: 'March',
-    teamName: 'Brighton',
-    dob: '20/07/1994',
-    height: 180,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Tariq',
-    lastName: 'Lamptey',
-    teamName: 'Brighton',
-    dob: '30/09/2000',
-    height: 163,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Thomas',
-    lastName: 'McGill',
-    teamName: 'Brighton',
-    dob: '25/03/2000',
-    height: 185,
-    position: 'GK',
-    price: 5
-  },
-  {
-    firstName: 'Aaron',
-    lastName: 'Ramsey',
-    teamName: 'Burnley',
-    dob: '21/01/2003',
-    height: 180,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Ameen',
-    lastName: 'Al-Dakhil',
-    teamName: 'Burnley',
-    dob: '06/03/2002',
-    height: 187,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Anass',
-    lastName: 'Zaroury',
-    teamName: 'Burnley',
-    dob: '07/11/2000',
-    height: 176,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'Aro',
-    lastName: 'Murić',
-    teamName: 'Burnley',
-    dob: '07/11/1998',
-    height: 198,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Charlie',
-    lastName: 'Taylor',
-    teamName: 'Burnley',
-    dob: '18/09/1993',
-    height: 183,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'CJ',
-    lastName: 'Egan-Riley',
-    teamName: 'Burnley',
-    dob: '02/01/2003',
-    height: 183,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Connor',
-    lastName: 'Roberts',
-    teamName: 'Burnley',
-    dob: '23/09/1995',
-    height: 175,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Dara',
-    lastName: 'O\'Shea',
-    teamName: 'Burnley',
-    dob: '04/03/1999',
-    height: 189,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Darko',
-    lastName: 'Churlinov',
-    teamName: 'Burnley',
-    dob: '11/07/2000',
-    height: 180,
-    position: 'FW',
-    price: 9.5
-  },
-  {
-    firstName: 'Denis',
-    lastName: 'Franchi',
-    teamName: 'Burnley',
-    dob: '22/10/2002',
-    height: 189,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Enock',
-    lastName: 'Agyei',
-    teamName: 'Burnley',
-    dob: '13/01/2005',
-    height: 172,
-    position: 'FW',
-    price: 10.5
-  },
-  {
-    firstName: 'Han-Noah',
-    lastName: 'Massengo',
-    teamName: 'Burnley',
-    dob: '07/07/2001',
-    height: 178,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Hannes',
-    lastName: 'Delcroix',
-    teamName: 'Burnley',
-    dob: '28/02/1999',
-    height: 185,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Hjalmar',
-    lastName: 'Ekdal',
-    teamName: 'Burnley',
-    dob: '21/10/1998',
-    height: 188,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Jack',
-    lastName: 'Cork',
-    teamName: 'Burnley',
-    dob: '25/06/1989',
-    height: 185,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Jacob Bruun',
-    lastName: 'Larsen',
-    teamName: 'Burnley',
-    dob: '19/09/1998',
-    height: 183,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'James',
-    lastName: 'Trafford',
-    teamName: 'Burnley',
-    dob: '10/10/2002',
-    height: 197,
-    position: 'GK',
-    price: 5
-  },
-  {
-    firstName: 'Jay',
-    lastName: 'Rodriguez',
-    teamName: 'Burnley',
-    dob: '29/07/1989',
-    height: 185,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Jóhann',
-    lastName: 'Guðmundsson',
-    teamName: 'Burnley',
-    dob: '27/10/1990',
-    height: 186,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Jordan',
-    lastName: 'Beyer',
-    teamName: 'Burnley',
-    dob: '19/05/2000',
-    height: 187,
-    position: 'DF',
-    price: 5
-  },
-  {
-    firstName: 'Josh',
-    lastName: 'Brownhill',
-    teamName: 'Burnley',
-    dob: '19/12/1995',
-    height: 179,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Josh',
-    lastName: 'Cullen',
-    teamName: 'Burnley',
-    dob: '07/04/1996',
-    height: 175,
-    position: 'MF',
-    price: 5
-  },
-  {
-    firstName: 'Lawrence',
-    lastName: 'Vigouroux',
-    teamName: 'Burnley',
-    dob: '19/11/1993',
-    height: 194,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Luca',
-    lastName: 'Koleosho',
-    teamName: 'Burnley',
-    dob: '15/09/2004',
-    height: 175,
-    position: 'FW',
-    price: 10.5
-  },
-  {
-    firstName: 'Lyle',
-    lastName: 'Foster',
-    teamName: 'Burnley',
-    dob: '03/09/2000',
-    height: 185,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Manuel',
-    lastName: 'Benson',
-    teamName: 'Burnley',
-    dob: '28/03/1997',
-    height: 167,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Michael',
-    lastName: 'Obafemi',
-    teamName: 'Burnley',
-    dob: '06/07/2000',
-    height: 170,
-    position: 'FW',
-    price: 6.5
-  },
-  {
-    firstName: 'Mike',
-    lastName: 'Trésor',
-    teamName: 'Burnley',
-    dob: '28/05/1999',
-    height: 172,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Nathan',
-    lastName: 'Redmond',
-    teamName: 'Burnley',
-    dob: '06/03/1994',
-    height: 173,
-    position: 'FW',
-    price: 5
-  },
-  {
-    firstName: 'Sander',
-    lastName: 'Berge',
-    teamName: 'Burnley',
-    dob: '14/02/1998',
-    height: 195,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Vitinho',
-    lastName: "",
-    teamName: 'Burnley',
-    dob: '23/07/1999',
-    height: 175,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Wilson',
-    lastName: 'Odobert',
-    teamName: 'Burnley',
-    dob: '28/11/2004',
-    height: 183,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Zeki',
-    lastName: 'Amdouni',
-    teamName: 'Burnley',
-    dob: '04/12/2000',
-    height: 185,
-    position: 'FW',
-    price: 5.5
-  },
-  {
-    firstName: 'Alex',
-    lastName: 'Matos',
-    teamName: 'Chelsea',
-    dob: '03/10/2004',
-    height: 175,
-    position: 'FW',
-    price: 6.5
-  },
-  {
-    firstName: 'Alfie',
-    lastName: 'Gilchrist',
-    teamName: 'Chelsea',
-    dob: '28/11/2003',
-    height: 183,
-    position: 'DF',
-    price: 10.5
-  },
-  {
-    firstName: 'Armando',
-    lastName: 'Broja',
-    teamName: 'Chelsea',
-    dob: '10/09/2001',
-    height: 191,
-    position: 'FW',
-    price: 9.5
-  },
-  {
-    firstName: 'Axel',
-    lastName: 'Disasi',
-    teamName: 'Chelsea',
-    dob: '11/03/1998',
-    height: 190,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Chilwell',
-    teamName: 'Chelsea',
-    dob: '21/12/1996',
-    height: 181,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Benoît',
-    lastName: 'Badiashile',
-    teamName: 'Chelsea',
-    dob: '26/03/2001',
-    height: 194,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Carney',
-    lastName: 'Chukwuemeka',
-    teamName: 'Chelsea',
-    dob: '20/10/2003',
-    height: 187,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Christopher',
-    lastName: 'Nkunku',
-    teamName: 'Chelsea',
-    dob: '14/11/1997',
-    height: 175,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Cole',
-    lastName: 'Palmer',
-    teamName: 'Chelsea',
-    dob: '06/05/2002',
-    height: 182,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Conor',
-    lastName: 'Gallagher',
-    teamName: 'Chelsea',
-    dob: '06/02/2000',
-    height: 182,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Cucurella',
-    lastName: "",
-    teamName: 'Chelsea',
-    dob: '22/07/1998',
-    height: 173,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Deivid',
-    lastName: 'Washington',
-    teamName: 'Chelsea',
-    dob: '05/06/2005',
-    height: 187,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Đorđe',
-    lastName: 'Petrović',
-    teamName: 'Chelsea',
-    dob: '08/10/1999',
-    height: 194,
-    position: 'GK',
-    price: 9
-  },
-  {
-    firstName: 'Eddie',
-    lastName: 'Beach',
-    teamName: 'Chelsea',
-    dob: '14/11/2003',
-    height: 188,
-    position: 'GK',
-    price: 6.5
-  },
-  {
-    firstName: 'Enzo',
-    lastName: 'Fernández',
-    teamName: 'Chelsea',
-    dob: '17/01/2001',
-    height: 180,
-    position: 'MF',
-    price: 9.5
-  },
-  {
-    firstName: 'Ian',
-    lastName: 'Maatsen',
-    teamName: 'Chelsea',
-    dob: '10/03/2002',
-    height: 167,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Ishé',
-    lastName: 'Samuels-Smith',
-    teamName: 'Chelsea',
-    dob: '05/06/2006',
-    height: 178,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Joshua',
-    lastName: 'Brooking',
-    teamName: 'Chelsea',
-    dob: '01/09/2002',
-    height: 185,
-    position: 'DF',
-    price: 5
-  },
-  {
-    firstName: 'Leo',
-    lastName: 'Castledine',
-    teamName: 'Chelsea',
-    dob: '20/08/2005',
-    height: 179,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Lesley',
-    lastName: 'Ugochukwu',
-    teamName: 'Chelsea',
-    dob: '26/03/2004',
-    height: 191,
-    position: 'MF',
-    price: 10
-  },
-  {
-    firstName: 'Levi',
-    lastName: 'Colwill',
-    teamName: 'Chelsea',
-    dob: '26/02/2003',
-    height: 187,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Lucas',
-    lastName: 'Bergström',
-    teamName: 'Chelsea',
-    dob: '05/09/2002',
-    height: 205,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Malang',
-    lastName: 'Sarr',
-    teamName: 'Chelsea',
-    dob: '23/01/1999',
-    height: 182,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Malo',
-    lastName: 'Gusto',
-    teamName: 'Chelsea',
-    dob: '19/05/2003',
-    height: 179,
-    position: 'DF',
-    price: 5
-  },
-  {
-    firstName: 'Marcus',
-    lastName: 'Bettinelli',
-    teamName: 'Chelsea',
-    dob: '24/05/1992',
-    height: 193,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Moisés',
-    lastName: 'Caicedo',
-    teamName: 'Chelsea',
-    dob: '02/11/2001',
-    height: 178,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Mykhaylo',
-    lastName: 'Mudryk',
-    teamName: 'Chelsea',
-    dob: '05/01/2001',
-    height: 175,
-    position: 'MF',
-    price: 9.5
-  },
-  {
-    firstName: 'Nicolas',
-    lastName: 'Jackson',
-    teamName: 'Chelsea',
-    dob: '20/06/2001',
-    height: 186,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Noni',
-    lastName: 'Madueke',
-    teamName: 'Chelsea',
-    dob: '10/03/2002',
-    height: 182,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Raheem',
-    lastName: 'Sterling',
-    teamName: 'Chelsea',
-    dob: '08/12/1994',
-    height: 172,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Reece',
-    lastName: 'James',
-    teamName: 'Chelsea',
-    dob: '08/12/1999',
-    height: 179,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Robert',
-    lastName: 'Sánchez',
-    teamName: 'Chelsea',
-    dob: '18/11/1997',
-    height: 197,
-    position: 'GK',
-    price: 8.5
-  },
-  {
-    firstName: 'Roméo',
-    lastName: 'Lavia',
-    teamName: 'Chelsea',
-    dob: '06/01/2004',
-    height: 181,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Ronnie',
-    lastName: 'Stutter',
-    teamName: 'Chelsea',
-    dob: '06/01/2005',
-    height: 180,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Thiago',
-    lastName: 'Silva',
-    teamName: 'Chelsea',
-    dob: '22/09/1984',
-    height: 181,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Trevoh',
-    lastName: 'Chalobah',
-    teamName: 'Chelsea',
-    dob: '05/07/1999',
-    height: 192,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Wesley',
-    lastName: 'Fofana',
-    teamName: 'Chelsea',
-    dob: '17/12/2000',
-    height: 186,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Ademola',
-    lastName: 'Ola-Adebomi',
-    teamName: 'Crystal Palace',
-    dob: '03/09/2003',
-    height: 195,
-    position: 'FW',
-    price: 6.5
-  },
-  {
-    firstName: 'Cheick',
-    lastName: 'Doucouré',
-    teamName: 'Crystal Palace',
-    dob: '08/01/2000',
-    height: 180,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Chris',
-    lastName: 'Richards',
-    teamName: 'Crystal Palace',
-    dob: '28/03/2000',
-    height: 188,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'David',
-    lastName: 'Ozoh',
-    teamName: 'Crystal Palace',
-    dob: '06/05/2005',
-    height: 183,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Dean',
-    lastName: 'Henderson',
-    teamName: 'Crystal Palace',
-    dob: '12/03/1997',
-    height: 188,
-    position: 'GK',
-    price: 8
-  },
-  {
-    firstName: 'Eberechi',
-    lastName: 'Eze',
-    teamName: 'Crystal Palace',
-    dob: '29/06/1998',
-    height: 178,
-    position: 'MF',
-    price: 5
-  },
-  {
-    firstName: 'Jadan',
-    lastName: 'Raymond',
-    teamName: 'Crystal Palace',
-    dob: '15/10/2003',
-    height: 176,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Jaïro',
-    lastName: 'Riedewald',
-    teamName: 'Crystal Palace',
-    dob: '09/09/1996',
-    height: 182,
-    position: 'MF',
-    price: 5
-  },
-  {
-    firstName: 'James',
-    lastName: 'Tomkins',
-    teamName: 'Crystal Palace',
-    dob: '29/03/1989',
-    height: 192,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Jean-Philippe',
-    lastName: 'Mateta',
-    teamName: 'Crystal Palace',
-    dob: '28/06/1997',
-    height: 192,
-    position: 'FW',
-    price: 6.5
-  },
-  {
-    firstName: 'Jefferson',
-    lastName: 'Lerma',
-    teamName: 'Crystal Palace',
-    dob: '25/10/1994',
-    height: 179,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Jeffrey',
-    lastName: 'Schlupp',
-    teamName: 'Crystal Palace',
-    dob: '23/12/1992',
-    height: 178,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Jesurun',
-    lastName: 'Rak-Sakyi',
-    teamName: 'Crystal Palace',
-    dob: '05/10/2002',
-    height: 178,
-    position: 'MF',
-    price: 5
-  },
-  {
-    firstName: 'Joachim',
-    lastName: 'Andersen',
-    teamName: 'Crystal Palace',
-    dob: '31/05/1996',
-    height: 192,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Joe',
-    lastName: 'Whitworth',
-    teamName: 'Crystal Palace',
-    dob: '29/02/2004',
-    height: 192,
-    position: 'GK',
-    price: 6.5
-  },
-  {
-    firstName: 'Joel',
-    lastName: 'Ward',
-    teamName: 'Crystal Palace',
-    dob: '29/10/1989',
-    height: 186,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Jordan',
-    lastName: 'Ayew',
-    teamName: 'Crystal Palace',
-    dob: '11/09/1991',
-    height: 182,
-    position: 'FW',
-    price: 6
-  },
-  {
-    firstName: 'Luke',
-    lastName: 'Plange',
-    teamName: 'Crystal Palace',
-    dob: '04/11/2002',
-    height: 178,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Malcolm',
-    lastName: 'Ebiowei',
-    teamName: 'Crystal Palace',
-    dob: '04/09/2003',
-    height: 185,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Marc',
-    lastName: 'Guéhi',
-    teamName: 'Crystal Palace',
-    dob: '13/07/2000',
-    height: 182,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Matheus',
-    lastName: 'França',
-    teamName: 'Crystal Palace',
-    dob: '01/04/2004',
-    height: 184,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Michael',
-    lastName: 'Olise',
-    teamName: 'Crystal Palace',
-    dob: '12/12/2001',
-    height: 184,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Naouirou',
-    lastName: 'Ahamada',
-    teamName: 'Crystal Palace',
-    dob: '29/03/2002',
-    height: 183,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Nathan',
-    lastName: 'Ferguson',
-    teamName: 'Crystal Palace',
-    dob: '06/10/2000',
-    height: 184,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Nathaniel',
-    lastName: 'Clyne',
-    teamName: 'Crystal Palace',
-    dob: '05/04/1991',
-    height: 175,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Odsonne',
-    lastName: 'Édouard',
-    teamName: 'Crystal Palace',
-    dob: '16/01/1998',
-    height: 187,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Remi',
-    lastName: 'Matthews',
-    teamName: 'Crystal Palace',
-    dob: '10/02/1994',
-    height: 192,
-    position: 'GK',
-    price: 6.5
-  },
-  {
-    firstName: 'Rob',
-    lastName: 'Holding',
-    teamName: 'Crystal Palace',
-    dob: '20/09/1995',
-    height: 189,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Sam',
-    lastName: 'Johnstone',
-    teamName: 'Crystal Palace',
-    dob: '25/03/1993',
-    height: 193,
-    position: 'GK',
-    price: 8
-  },
-  {
-    firstName: 'Tyrick',
-    lastName: 'Mitchell',
-    teamName: 'Crystal Palace',
-    dob: '01/09/1999',
-    height: 175,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Will',
-    lastName: 'Hughes',
-    teamName: 'Crystal Palace',
-    dob: '17/04/1995',
-    height: 185,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Abdoulaye',
-    lastName: 'Doucouré',
-    teamName: 'Everton',
-    dob: '01/01/1993',
-    height: 183,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Amadou',
-    lastName: 'Onana',
-    teamName: 'Everton',
-    dob: '16/08/2001',
-    height: 195,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'André',
-    lastName: 'Gomes',
-    teamName: 'Everton',
-    dob: '30/07/1993',
-    height: 188,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Andy',
-    lastName: 'Lonergan',
-    teamName: 'Everton',
-    dob: '19/10/1983',
-    height: 193,
-    position: 'GK',
-    price: 8
-  },
-  {
-    firstName: 'Arnaut',
-    lastName: 'Danjuma',
-    teamName: 'Everton',
-    dob: '31/01/1997',
-    height: 178,
-    position: 'FW',
-    price: 6
-  },
-  {
-    firstName: 'Ashley',
-    lastName: 'Young',
-    teamName: 'Everton',
-    dob: '09/07/1985',
-    height: 175,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Godfrey',
-    teamName: 'Everton',
-    dob: '15/01/1998',
-    height: 184,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Beto',
-    teamName: 'Everton',
-    dob: '31/01/1998',
-    height: 194,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Dele',
-    lastName: 'Alli',
-    teamName: 'Everton',
-    dob: '11/04/1996',
-    height: 188,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Dominic',
-    lastName: 'Calvert-Lewin',
-    teamName: 'Everton',
-    dob: '16/03/1997',
-    height: 189,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Dwight',
-    lastName: 'McNeil',
-    teamName: 'Everton',
-    dob: '22/11/1999',
-    height: 183,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Idrissa',
-    lastName: 'Gueye',
-    teamName: 'Everton',
-    dob: '26/09/1989',
-    height: 174,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Jack',
-    lastName: 'Harrison',
-    teamName: 'Everton',
-    dob: '20/11/1996',
-    height: 175,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'James',
-    lastName: 'Garner',
-    teamName: 'Everton',
-    dob: '13/03/2001',
-    height: 186,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'James',
-    lastName: 'Tarkowski',
-    teamName: 'Everton',
-    dob: '19/11/1992',
-    height: 185,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Jarrad',
-    lastName: 'Branthwaite',
-    teamName: 'Everton',
-    dob: '27/06/2002',
-    height: 195,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'João',
-    lastName: 'Virgínia',
-    teamName: 'Everton',
-    dob: '10/10/1999',
-    height: 192,
-    position: 'GK',
-    price: 8.5
-  },
-  {
-    firstName: 'Jordan',
-    lastName: 'Pickford',
-    teamName: 'Everton',
-    dob: '07/03/1994',
-    height: 185,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Lewis',
-    lastName: 'Dobbin',
-    teamName: 'Everton',
-    dob: '03/01/2003',
-    height: 176,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Mackenzie',
-    lastName: 'Hunt',
-    teamName: 'Everton',
-    dob: '14/11/2001',
-    height: 173,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Michael',
-    lastName: 'Keane',
-    teamName: 'Everton',
-    dob: '11/01/1993',
-    height: 188,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Nathan',
-    lastName: 'Patterson',
-    teamName: 'Everton',
-    dob: '16/10/2001',
-    height: 189,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Séamus',
-    lastName: 'Coleman',
-    teamName: 'Everton',
-    dob: '11/10/1988',
-    height: 177,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Tyler',
-    lastName: 'Onyango',
-    teamName: 'Everton',
-    dob: '04/03/2003',
-    height: 196,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Vitaliy',
-    lastName: 'Mykolenko',
-    teamName: 'Everton',
-    dob: '29/05/1999',
-    height: 180,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Youssef',
-    lastName: 'Chermiti',
-    teamName: 'Everton',
-    dob: '24/05/2004',
-    height: 187,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Adama',
-    lastName: 'Traoré',
-    teamName: 'Fulham',
-    dob: '25/01/1996',
-    height: 178,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Alex',
-    lastName: 'Iwobi',
-    teamName: 'Fulham',
-    dob: '03/05/1996',
-    height: 183,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Andreas',
-    lastName: 'Pereira',
-    teamName: 'Fulham',
-    dob: '01/01/1996',
-    height: 178,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Antonee',
-    lastName: 'Robinson',
-    teamName: 'Fulham',
-    dob: '08/08/1997',
-    height: 183,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Bernd',
-    lastName: 'Leno',
-    teamName: 'Fulham',
-    dob: '04/03/1992',
-    height: 190,
-    position: 'GK',
-    price: 8.5
-  },
-  {
-    firstName: 'Bobby',
-    lastName: 'Decordova-Reid',
-    teamName: 'Fulham',
-    dob: '02/02/1993',
-    height: 170,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Calvin',
-    lastName: 'Bassey',
-    teamName: 'Fulham',
-    dob: '31/12/1999',
-    height: 185,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Carlos',
-    lastName: 'Vinícius',
-    teamName: 'Fulham',
-    dob: '25/03/1995',
-    height: 190,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Devan',
-    lastName: 'Tanton',
-    teamName: 'Fulham',
-    dob: '03/01/2004',
-    height: 190,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Fodé',
-    lastName: 'Ballo-Touré',
-    teamName: 'Fulham',
-    dob: '03/01/1997',
-    height: 182,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Harrison',
-    lastName: 'Reed',
-    teamName: 'Fulham',
-    dob: '27/01/1995',
-    height: 181,
-    position: 'MF',
-    price: 7.5
+    lastName: 'Salah',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 13.2,
+    totalPoints: 127
   },
   {
     firstName: 'Harry',
-    lastName: 'Wilson',
-    teamName: 'Fulham',
-    dob: '22/03/1997',
-    height: 173,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Issa',
-    lastName: 'Diop',
-    teamName: 'Fulham',
-    dob: '09/01/1997',
-    height: 194,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'João',
-    lastName: 'Palhinha',
-    teamName: 'Fulham',
-    dob: '09/07/1995',
-    height: 190,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Kenny',
-    lastName: 'Tete',
-    teamName: 'Fulham',
-    dob: '09/10/1995',
-    height: 180,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Luc',
-    lastName: 'De Fougerolles',
-    teamName: 'Fulham',
-    dob: '12/10/2005',
-    height: 180,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Luke',
-    lastName: 'Harris',
-    teamName: 'Fulham',
-    dob: '03/04/2005',
-    height: 168,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Marek',
-    lastName: 'Rodák',
-    teamName: 'Fulham',
-    dob: '13/12/1996',
-    height: 194,
-    position: 'GK',
-    price: 7.5
-  },
-  {
-    firstName: 'Matthew',
-    lastName: 'Dibley-Dias',
-    teamName: 'Fulham',
-    dob: '29/10/2003',
-    height: 183,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Raúl',
-    lastName: 'Jiménez',
-    teamName: 'Fulham',
-    dob: '05/05/1991',
-    height: 190,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Rodrigo',
-    lastName: 'Muniz',
-    teamName: 'Fulham',
-    dob: '04/05/2001',
-    height: 185,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Saša',
-    lastName: 'Lukić',
-    teamName: 'Fulham',
-    dob: '13/08/1996',
-    height: 182,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Steven',
-    lastName: 'Benda',
-    teamName: 'Fulham',
-    dob: '01/10/1998',
-    height: 192,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Tim',
-    lastName: 'Ream',
-    teamName: 'Fulham',
-    dob: '05/10/1987',
-    height: 186,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Timothy',
-    lastName: 'Castagne',
-    teamName: 'Fulham',
-    dob: '05/12/1995',
-    height: 185,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Tom',
-    lastName: 'Cairney',
-    teamName: 'Fulham',
-    dob: '20/01/1991',
-    height: 185,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Tosin',
-    lastName: 'Adarabioyo',
-    teamName: 'Fulham',
-    dob: '24/09/1997',
-    height: 196,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Tyrese',
-    lastName: 'Francois',
-    teamName: 'Fulham',
-    dob: '16/07/2000',
-    height: 173,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Willian',
-    lastName: "",
-    teamName: 'Fulham',
-    dob: '09/08/1988',
-    height: 175,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Adrián',
-    lastName: "",
-    teamName: 'Liverpool',
-    dob: '03/01/1987',
-    height: 190,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Alexis',
-    lastName: 'MacAllister',
-    teamName: 'Liverpool',
-    dob: '24/12/1998',
-    height: 174,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Alisson',
-    lastName: "",
-    teamName: 'Liverpool',
-    dob: '02/10/1992',
-    height: 191,
-    position: 'GK',
-    price: 9
-  },
-  {
-    firstName: 'Andy',
-    lastName: 'Robertson',
-    teamName: 'Liverpool',
-    dob: '11/03/1994',
-    height: 178,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Doak',
-    teamName: 'Liverpool',
-    dob: '11/11/2005',
-    height: 176,
-    position: 'FW',
-    price: 6
-  },
-  {
-    firstName: 'Calum',
-    lastName: 'Scanlon',
-    teamName: 'Liverpool',
-    dob: '14/02/2005',
-    height: 171,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Caoimhín',
-    lastName: 'Kelleher',
-    teamName: 'Liverpool',
-    dob: '23/11/1998',
-    height: 188,
-    position: 'GK',
-    price: 7.5
-  },
-  {
-    firstName: 'Cody',
-    lastName: 'Gakpo',
-    teamName: 'Liverpool',
-    dob: '07/05/1999',
-    height: 187,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Conor',
-    lastName: 'Bradley',
-    teamName: 'Liverpool',
-    dob: '09/07/2003',
-    height: 181,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Curtis',
-    lastName: 'Jones',
-    teamName: 'Liverpool',
-    dob: '30/01/2001',
-    height: 185,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Darwin',
-    lastName: 'Núñez',
-    teamName: 'Liverpool',
-    dob: '24/06/1999',
-    height: 187,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Diogo',
-    lastName: 'Jota',
-    teamName: 'Liverpool',
-    dob: '04/12/1996',
-    height: 178,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Dominik',
-    lastName: 'Szoboszlai',
-    teamName: 'Liverpool',
-    dob: '25/10/2000',
-    height: 186,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Fabian',
-    lastName: 'Mrozek',
-    teamName: 'Liverpool',
-    dob: '28/09/2003',
-    height: 192,
-    position: 'GK',
-    price: 7.5
-  },
-  {
-    firstName: 'Harvey',
-    lastName: 'Elliott',
-    teamName: 'Liverpool',
-    dob: '04/04/2003',
-    height: 170,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Ibrahima',
-    lastName: 'Konaté',
-    teamName: 'Liverpool',
-    dob: '25/05/1999',
-    height: 194,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'James',
-    lastName: 'McConnell',
-    teamName: 'Liverpool',
-    dob: '13/09/2004',
-    height: 188,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Jarell',
-    lastName: 'Quansah',
-    teamName: 'Liverpool',
-    dob: '29/01/2003',
-    height: 190,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Joe',
-    lastName: 'Gomez',
-    teamName: 'Liverpool',
-    dob: '23/05/1997',
-    height: 188,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Joel',
-    lastName: 'Matip',
-    teamName: 'Liverpool',
-    dob: '08/08/1991',
-    height: 195,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Kaide',
-    lastName: 'Gordon',
-    teamName: 'Liverpool',
-    dob: '05/10/2004',
-    height: 173,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Kostas',
-    lastName: 'Tsimikas',
-    teamName: 'Liverpool',
-    dob: '12/05/1996',
-    height: 179,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Luis',
-    lastName: 'Díaz',
-    teamName: 'Liverpool',
-    dob: '13/01/1997',
-    height: 180,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Luke',
-    lastName: 'Chambers',
-    teamName: 'Liverpool',
-    dob: '24/06/2004',
-    height: 181,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Marcelo',
-    lastName: "",
-    teamName: 'Liverpool',
-    dob: '20/12/2002',
-    height: 191,
-    position: 'GK',
-    price: 7.5
-  },
-  {
-    firstName: 'Mo',
-    lastName: 'Salah',
-    teamName: 'Liverpool',
-    dob: '15/06/1992',
-    height: 175,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Nathaniel',
-    lastName: 'Phillips',
-    teamName: 'Liverpool',
-    dob: '21/03/1997',
-    height: 190,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Ryan',
-    lastName: 'Gravenberch',
-    teamName: 'Liverpool',
-    dob: '16/05/2002',
-    height: 190,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Stefan',
-    lastName: 'Bajčetić',
-    teamName: 'Liverpool',
-    dob: '22/10/2004',
-    height: 185,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Thiago',
-    lastName: "",
-    teamName: 'Liverpool',
-    dob: '11/04/1991',
-    height: 174,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Trent',
-    lastName: 'Alexander-Arnold',
-    teamName: 'Liverpool',
-    dob: '07/10/1998',
-    height: 180,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Trey',
-    lastName: 'Nyoni',
-    teamName: 'Liverpool',
-    dob: '30/06/2007',
-    height: 175,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Virgil',
-    lastName: 'van Dijk',
-    teamName: 'Liverpool',
-    dob: '08/07/1991',
-    height: 193,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Vítězslav',
-    lastName: 'Jaroš',
-    teamName: 'Liverpool',
-    dob: '23/07/2001',
-    height: 187,
-    position: 'GK',
-    price: 7.5
-  },
-  {
-    firstName: 'Wataru',
-    lastName: 'Endo',
-    teamName: 'Liverpool',
-    dob: '09/02/1993',
-    height: 178,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Aiden',
-    lastName: 'Francis-Clarke',
-    teamName: 'Luton Town',
-    dob: '13/09/2005',
-    height: 175,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Albert',
-    lastName: 'Lokonga',
-    teamName: 'Luton Town',
-    dob: '22/10/1999',
-    height: 183,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Alfie',
-    lastName: 'Doughty',
-    teamName: 'Luton Town',
-    dob: '21/12/1999',
-    height: 183,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Amari\'i',
-    lastName: 'Bell',
-    teamName: 'Luton Town',
-    dob: '05/05/1994',
-    height: 180,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Carlton',
-    lastName: 'Morris',
-    teamName: 'Luton Town',
-    dob: '16/12/1995',
-    height: 185,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Cauley',
-    lastName: 'Woodrow',
-    teamName: 'Luton Town',
-    dob: '02/12/1994',
-    height: 184,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Chiedozie',
-    lastName: 'Ogbene',
-    teamName: 'Luton Town',
-    dob: '01/05/1997',
-    height: 181,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Dan',
-    lastName: 'Potts',
-    teamName: 'Luton Town',
-    dob: '13/04/1994',
-    height: 172,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Elijah',
-    lastName: 'Adebayo',
-    teamName: 'Luton Town',
-    dob: '07/01/1998',
-    height: 193,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Gabriel',
-    lastName: 'Osho',
-    teamName: 'Luton Town',
-    dob: '14/08/1998',
-    height: 185,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Issa',
-    lastName: 'Kabore',
-    teamName: 'Luton Town',
-    dob: '12/05/2001',
-    height: 180,
-    position: 'DF',
-    price: 9
-  },
-  {
-    firstName: 'Jacob',
-    lastName: 'Brown',
-    teamName: 'Luton Town',
-    dob: '10/04/1998',
-    height: 178,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'James',
-    lastName: 'Shea',
-    teamName: 'Luton Town',
-    dob: '16/06/1991',
-    height: 186,
-    position: 'GK',
-    price: 7.5
-  },
-  {
-    firstName: 'Jayden',
-    lastName: 'Luker',
-    teamName: 'Luton Town',
-    dob: '30/04/2005',
-    height: 182,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Jordan',
-    lastName: 'Clark',
-    teamName: 'Luton Town',
-    dob: '22/09/1993',
-    height: 183,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Joseph',
-    lastName: 'Johnson',
-    teamName: 'Luton Town',
-    dob: '21/02/2006',
-    height: 180,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Luke',
-    lastName: 'Berry',
-    teamName: 'Luton Town',
-    dob: '12/07/1992',
-    height: 177,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Mads',
-    lastName: 'Andersen',
-    teamName: 'Luton Town',
-    dob: '27/12/1997',
-    height: 194,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Marvelous',
-    lastName: 'Nakamba',
-    teamName: 'Luton Town',
-    dob: '19/01/1994',
-    height: 177,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Pelly-Ruddock',
-    lastName: 'Mpanzu',
-    teamName: 'Luton Town',
-    dob: '22/03/1994',
-    height: 175,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Reece',
-    lastName: 'Burke',
-    teamName: 'Luton Town',
-    dob: '02/09/1996',
-    height: 189,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Ross',
-    lastName: 'Barkley',
-    teamName: 'Luton Town',
-    dob: '05/12/1993',
-    height: 185,
-    position: 'MF',
-    price: 8.5
-  },
-  {
-    firstName: 'Ryan',
-    lastName: 'Giles',
-    teamName: 'Luton Town',
-    dob: '26/01/2000',
-    height: 179,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Tahith',
-    lastName: 'Chong',
-    teamName: 'Luton Town',
-    dob: '04/12/1999',
-    height: 185,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Teden',
-    lastName: 'Mengi',
-    teamName: 'Luton Town',
-    dob: '30/04/2002',
-    height: 186,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Thomas',
-    lastName: 'Kaminski',
-    teamName: 'Luton Town',
-    dob: '23/10/1992',
-    height: 190,
-    position: 'GK',
-    price: 7.5
-  },
-  {
-    firstName: 'Tim',
-    lastName: 'Krul',
-    teamName: 'Luton Town',
-    dob: '03/04/1988',
-    height: 188,
-    position: 'GK',
-    price: 9
-  },
-  {
-    firstName: 'Tom',
-    lastName: 'Lockyer',
-    teamName: 'Luton Town',
-    dob: '03/12/1994',
-    height: 185,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Zack',
-    lastName: 'Nelson',
-    teamName: 'Luton Town',
-    dob: '21/04/2005',
-    height: 170,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Bernardo',
-    lastName: 'Silva',
-    teamName: 'Manchester City',
-    dob: '10/08/1994',
-    height: 173,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Ederson',
-    lastName: '',
-    teamName: 'Manchester City',
-    dob: '17/08/1993',
-    height: 188,
-    position: 'GK',
-    price: 8.5
-  },
-  {
-    firstName: 'Erling',
-    lastName: 'Haaland',
-    teamName: 'Manchester City',
-    dob: '21/07/2000',
-    height: 194,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Jack',
-    lastName: 'Grealish',
-    teamName: 'Manchester City',
-    dob: '10/09/1995',
-    height: 175,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Jérémy',
-    lastName: 'Doku',
-    teamName: 'Manchester City',
-    dob: '27/05/2002',
-    height: 171,
-    position: 'FW',
-    price: 6.5
-  },
-  {
-    firstName: 'John',
-    lastName: 'Stones',
-    teamName: 'Manchester City',
-    dob: '28/05/1994',
-    height: 188,
-    position: 'DF',
-    price: 4.5
-  },
-  {
-    firstName: 'Joško',
-    lastName: 'Gvardiol',
-    teamName: 'Manchester City',
-    dob: '23/01/2002',
-    height: 185,
-    position: 'DF',
-    price: 4.5
-  },
-  {
-    firstName: 'Julián',
-    lastName: 'Álvarez',
-    teamName: 'Manchester City',
-    dob: '31/01/2000',
-    height: 170,
-    position: 'FW',
-    price: 11
-  },
-  {
-    firstName: 'Kalvin',
-    lastName: 'Phillips',
-    teamName: 'Manchester City',
-    dob: '02/12/1995',
-    height: 179,
-    position: 'MF',
-    price: 9.5
+    lastName: 'Kane',
+    teamName: 'TOT',
+    position: 'FWD',
+    price: 12.5,
+    totalPoints: 0
   },
   {
     firstName: 'Kevin',
     lastName: 'De Bruyne',
-    teamName: 'Manchester City',
-    dob: '28/06/1991',
-    height: 181,
-    position: 'MF',
-    price: 12
+    teamName: 'MCI',
+    position: 'MID',
+    price: 10.2,
+    totalPoints: 1
   },
   {
-    firstName: 'Kyle',
-    lastName: 'Walker',
-    teamName: 'Manchester City',
-    dob: '28/05/1990',
-    height: 178,
-    position: 'DF',
-    price: 5.5
+    firstName: 'Son',
+    lastName: 'Heung-min',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 9.6,
+    totalPoints: 113
   },
   {
-    firstName: 'Manuel',
-    lastName: 'Akanji',
-    teamName: 'Manchester City',
-    dob: '19/07/1995',
-    height: 187,
-    position: 'DF',
-    price: 7
+    firstName: 'Bukayo',
+    lastName: 'Saka',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 9,
+    totalPoints: 94
   },
   {
-    firstName: 'Mateo',
-    lastName: 'Kovačić',
-    teamName: 'Manchester City',
-    dob: '06/05/1994',
-    height: 177,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Matheus',
-    lastName: 'Nunes',
-    teamName: 'Manchester City',
-    dob: '27/08/1998',
-    height: 184,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Micah',
-    lastName: 'Hamilton',
-    teamName: 'Manchester City',
-    dob: '13/11/2003',
-    height: 177,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Nahuel',
-    lastName: 'Bustos',
-    teamName: 'Manchester City',
-    dob: '04/07/1998',
-    height: 176,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'Nathan',
-    lastName: 'Aké',
-    teamName: 'Manchester City',
-    dob: '18/02/1995',
-    height: 180,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Oscar',
-    lastName: 'Bobb',
-    teamName: 'Manchester City',
-    dob: '12/07/2003',
-    height: 169,
-    position: 'MF',
-    price: 6.5
-  },
-  {
-    firstName: 'Phil',
-    lastName: 'Foden',
-    teamName: 'Manchester City',
-    dob: '28/05/2000',
-    height: 171,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Rico',
-    lastName: 'Lewis',
-    teamName: 'Manchester City',
-    dob: '21/11/2004',
-    height: 175,
-    position: 'DF',
-    price: 4.5
-  },
-  {
-    firstName: 'Rodri',
-    lastName: '',
-    teamName: 'Manchester City',
-    dob: '22/06/1996',
-    height: 191,
-    position: 'MF',
-    price: 9.5
-  },
-  {
-    firstName: 'Rúben',
-    lastName: 'Dias',
-    teamName: 'Manchester City',
-    dob: '14/05/1997',
-    height: 187,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Scott',
-    lastName: 'Carson',
-    teamName: 'Manchester City',
-    dob: '03/09/1985',
-    height: 188,
-    position: 'GK',
-    price: 4
-  },
-  {
-    firstName: 'Sergio',
-    lastName: 'Gómez',
-    teamName: 'Manchester City',
-    dob: '04/09/2000',
-    height: 171,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Stefan',
-    lastName: 'Ortega',
-    teamName: 'Manchester City',
-    dob: '06/11/1992',
-    height: 185,
-    position: 'GK',
-    price: 4.5
-  },
-  {
-    firstName: 'Zack',
-    lastName: 'Steffen',
-    teamName: 'Manchester City',
-    dob: '02/04/1995',
-    height: 191,
-    position: 'GK',
-    price: 4.5
-  },
-  {
-    firstName: 'Aaron',
-    lastName: 'Wan-Bissaka',
-    teamName: 'Manchester United',
-    dob: '26/11/1997',
-    height: 183,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Alejandro',
-    lastName: 'Garnacho',
-    teamName: 'Manchester United',
-    dob: '01/07/2004',
-    height: 180,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Altay',
-    lastName: 'Bayındır',
-    teamName: 'Manchester United',
-    dob: '14/04/1998',
-    height: 198,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Amad',
-    lastName: '',
-    teamName: 'Manchester United',
-    dob: '11/07/2002',
-    height: 173,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'André',
-    lastName: 'Onana',
-    teamName: 'Manchester United',
-    dob: '02/04/1996',
-    height: 190,
-    position: 'GK',
-    price: 7.5
-  },
-  {
-    firstName: 'Anthony',
-    lastName: 'Martial',
-    teamName: 'Manchester United',
-    dob: '05/12/1995',
-    height: 181,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'Antony',
-    lastName: '',
-    teamName: 'Manchester United',
-    dob: '24/02/2000',
-    height: 172,
-    position: 'FW',
-    price: 9.5
-  },
-  {
-    firstName: 'Bruno',
-    lastName: 'Fernandes',
-    teamName: 'Manchester United',
-    dob: '08/09/1994',
-    height: 179,
-    position: 'MF',
-    price: 11
-  },
-  {
-    firstName: 'Casemiro',
-    lastName: '',
-    teamName: 'Manchester United',
-    dob: '23/02/1992',
-    height: 185,
-    position: 'MF',
-    price: 10
-  },
-  {
-    firstName: 'Christian',
-    lastName: 'Eriksen',
-    teamName: 'Manchester United',
-    dob: '14/02/1992',
-    height: 182,
-    position: 'MF',
-    price: 10
-  },
-  {
-    firstName: 'Daniel',
-    lastName: 'Gore',
-    teamName: 'Manchester United',
-    dob: '26/09/2004',
-    height: 170,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Diogo',
-    lastName: 'Dalot',
-    teamName: 'Manchester United',
-    dob: '18/03/1999',
-    height: 183,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Donny',
-    lastName: 'van de Beek',
-    teamName: 'Manchester United',
-    dob: '18/04/1997',
-    height: 184,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Facundo',
-    lastName: 'Pellistri',
-    teamName: 'Manchester United',
-    dob: '20/12/2001',
-    height: 174,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Hannibal',
-    lastName: 'Mejbri',
-    teamName: 'Manchester United',
-    dob: '21/01/2003',
-    height: 177,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Harry',
-    lastName: 'Maguire',
-    teamName: 'Manchester United',
-    dob: '05/03/1993',
-    height: 194,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Jadon',
-    lastName: 'Sancho',
-    teamName: 'Manchester United',
-    dob: '25/03/2000',
-    height: 180,
-    position: 'FW',
-    price: 12
-  },
-  {
-    firstName: 'Joe',
-    lastName: 'Hugill',
-    teamName: 'Manchester United',
-    dob: '19/10/2003',
-    height: 188,
-    position: 'FW',
-    price: 6.5
-  },
-  {
-    firstName: 'Jonny',
-    lastName: 'Evans',
-    teamName: 'Manchester United',
-    dob: '03/01/1988',
-    height: 188,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Kobbie',
-    lastName: 'Mainoo',
-    teamName: 'Manchester United',
-    dob: '19/04/2005',
-    height: 175,
-    position: 'MF',
-    price: 5
-  },
-  {
-    firstName: 'Lisandro',
-    lastName: 'Martínez',
-    teamName: 'Manchester United',
-    dob: '18/01/1998',
-    height: 175,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Luke',
-    lastName: 'Shaw',
-    teamName: 'Manchester United',
-    dob: '12/07/1995',
-    height: 178,
-    position: 'DF',
-    price: 6
+    firstName: 'Ollie',
+    lastName: 'Watkins',
+    teamName: 'AVL',
+    position: 'FWD',
+    price: 8.5,
+    totalPoints: 99
   },
   {
     firstName: 'Marcus',
     lastName: 'Rashford',
-    teamName: 'Manchester United',
-    dob: '31/10/1997',
-    height: 185,
-    position: 'FW',
-    price: 11
+    teamName: 'MUN',
+    position: 'MID',
+    price: 8.5,
+    totalPoints: 47
   },
   {
-    firstName: 'Mason',
-    lastName: 'Mount',
-    teamName: 'Manchester United',
-    dob: '10/01/1999',
-    height: 181,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Omari',
-    lastName: 'Forson',
-    teamName: 'Manchester United',
-    dob: '20/07/2004',
-    height: 179,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Radek',
-    lastName: 'Vítek',
-    teamName: 'Manchester United',
-    dob: '24/10/2003',
-    height: 198,
-    position: 'GK',
-    price: 4.5
-  },
-  {
-    firstName: 'Raphaël',
-    lastName: 'Varane',
-    teamName: 'Manchester United',
-    dob: '25/04/1993',
-    height: 191,
-    position: 'DF',
-    price: 8.5
-  },
-  {
-    firstName: 'Rasmus',
-    lastName: 'Højlund',
-    teamName: 'Manchester United',
-    dob: '04/02/2003',
-    height: 191,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'Reguilón',
-    lastName: '',
-    teamName: 'Manchester United',
-    dob: '16/12/1996',
-    height: 178,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Scott',
-    lastName: 'McTominay',
-    teamName: 'Manchester United',
-    dob: '08/12/1996',
-    height: 191,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Sofyan',
-    lastName: 'Amrabat',
-    teamName: 'Manchester United',
-    dob: '21/08/1996',
-    height: 185,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Tom',
-    lastName: 'Heaton',
-    teamName: 'Manchester United',
-    dob: '15/04/1986',
-    height: 188,
-    position: 'GK',
-    price: 4.5
-  },
-  {
-    firstName: 'Tyrell',
-    lastName: 'Malacia',
-    teamName: 'Manchester United',
-    dob: '17/08/1999',
-    height: 169,
-    position: 'DF',
-    price: 5
-  },
-  {
-    firstName: 'Victor',
-    lastName: 'Lindelöf',
-    teamName: 'Manchester United',
-    dob: '17/07/1994',
-    height: 187,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Aidan',
-    lastName: 'Harris',
-    teamName: 'Newcastle United',
-    dob: '16/12/2006',
-    height: 175,
-    position: 'GK',
-    price: 4
-  },
-  {
-    firstName: 'Alex',
-    lastName: 'Murphy',
-    teamName: 'Newcastle United',
-    dob: '25/06/2004',
-    height: 183,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Alexander',
-    lastName: 'Isak',
-    teamName: 'Newcastle United',
-    dob: '21/09/1999',
-    height: 192,
-    position: 'FW',
-    price: 10
-  },
-  {
-    firstName: 'Amadou',
-    lastName: 'Diallo',
-    teamName: 'Newcastle United',
-    dob: '15/02/2003',
-    height: 175,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Anthony',
-    lastName: 'Gordon',
-    teamName: 'Newcastle United',
-    dob: '24/02/2001',
-    height: 182,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Parkinson',
-    teamName: 'Newcastle United',
-    dob: '10/03/2005',
-    height: 183,
-    position: 'FW',
-    price: 6
+    firstName: 'Martin',
+    lastName: 'Ødegaard',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 8.3,
+    totalPoints: 68
   },
   {
     firstName: 'Bruno',
-    lastName: 'Guimarães',
-    teamName: 'Newcastle United',
-    dob: '16/11/1997',
-    height: 182,
-    position: 'MF',
-    price: 8.5
+    lastName: 'Borges Fernandes',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 8.3,
+    totalPoints: 64
+  },
+  {
+    firstName: 'Trent',
+    lastName: 'Alexander-Arnold',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 8.2,
+    totalPoints: 75
+  },
+  {
+    firstName: 'Gabriel',
+    lastName: 'Fernando de Jesus',
+    teamName: 'ARS',
+    position: 'FWD',
+    price: 7.9,
+    totalPoints: 35
+  },
+  {
+    firstName: 'Ivan',
+    lastName: 'Toney',
+    teamName: 'BRE',
+    position: 'FWD',
+    price: 7.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Gabriel',
+    lastName: 'Martinelli Silva',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 7.8,
+    totalPoints: 45
   },
   {
     firstName: 'Callum',
     lastName: 'Wilson',
-    teamName: 'Newcastle United',
-    dob: '27/02/1992',
-    height: 180,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Dan',
-    lastName: 'Burn',
-    teamName: 'Newcastle United',
-    dob: '09/05/1992',
-    height: 201,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Elliot',
-    lastName: 'Anderson',
-    teamName: 'Newcastle United',
-    dob: '06/11/2002',
-    height: 179,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Emil',
-    lastName: 'Krafth',
-    teamName: 'Newcastle United',
-    dob: '02/08/1994',
-    height: 184,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Fabian',
-    lastName: 'Schär',
-    teamName: 'Newcastle United',
-    dob: '20/12/1991',
-    height: 186,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Harvey',
-    lastName: 'Barnes',
-    teamName: 'Newcastle United',
-    dob: '09/12/1997',
-    height: 174,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Jacob',
-    lastName: 'Murphy',
-    teamName: 'Newcastle United',
-    dob: '24/02/1995',
-    height: 173,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Jamaal',
-    lastName: 'Lascelles',
-    teamName: 'Newcastle United',
-    dob: '11/11/1993',
-    height: 188,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'James',
-    lastName: 'Huntley',
-    teamName: 'Newcastle United',
-    dob: '02/03/2004',
-    height: 195,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Joe',
-    lastName: 'Willock',
-    teamName: 'Newcastle United',
-    dob: '20/08/1999',
-    height: 186,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Joelinton',
-    lastName: '',
-    teamName: 'Newcastle United',
-    dob: '14/08/1996',
-    height: 186,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Kieran',
-    lastName: 'Trippier',
-    teamName: 'Newcastle United',
-    dob: '19/09/1990',
-    height: 173,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Lewis',
-    lastName: 'Hall',
-    teamName: 'Newcastle United',
-    dob: '08/09/2004',
-    height: 179,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Lewis',
-    lastName: 'Miley',
-    teamName: 'Newcastle United',
-    dob: '01/05/2006',
-    height: 185,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Loris',
-    lastName: 'Karius',
-    teamName: 'Newcastle United',
-    dob: '22/06/1993',
-    height: 191,
-    position: 'GK',
-    price: 4.5
-  },
-  {
-    firstName: 'Lucas',
-    lastName: 'De Bolle',
-    teamName: 'Newcastle United',
-    dob: '22/10/2002',
-    height: 179,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Manquillo',
-    lastName: '',
-    teamName: 'Newcastle United',
-    dob: '05/05/1994',
-    height: 178,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Mark',
-    lastName: 'Gillespie',
-    teamName: 'Newcastle United',
-    dob: '27/03/1992',
-    height: 191,
-    position: 'GK',
-    price: 4
-  },
-  {
-    firstName: 'Martin',
-    lastName: 'Dúbravka',
-    teamName: 'Newcastle United',
-    dob: '15/01/1989',
-    height: 191,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Matt',
-    lastName: 'Ritchie',
-    teamName: 'Newcastle United',
-    dob: '10/09/1989',
-    height: 173,
-    position: 'DF',
-    price: 5
-  },
-  {
-    firstName: 'Matt',
-    lastName: 'Targett',
-    teamName: 'Newcastle United',
-    dob: '18/09/1995',
-    height: 183,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Michael',
-    lastName: 'Ndiweni',
-    teamName: 'Newcastle United',
-    dob: '02/12/2003',
-    height: 186,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Miguel',
-    lastName: 'Almirón',
-    teamName: 'Newcastle United',
-    dob: '10/02/1994',
-    height: 174,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Nick',
-    lastName: 'Pope',
-    teamName: 'Newcastle United',
-    dob: '19/04/1992',
-    height: 198,
-    position: 'GK',
-    price: 7
-  },
-  {
-    firstName: 'Paul',
-    lastName: 'Dummett',
-    teamName: 'Newcastle United',
-    dob: '26/09/1991',
-    height: 183,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Sandro',
-    lastName: 'Tonali',
-    teamName: 'Newcastle United',
-    dob: '08/05/2000',
-    height: 181,
-    position: 'MF',
-    price: 9
-  },
-  {
-    firstName: 'Sean',
-    lastName: 'Longstaff',
-    teamName: 'Newcastle United',
-    dob: '30/10/1997',
-    height: 181,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Sven',
-    lastName: 'Botman',
-    teamName: 'Newcastle United',
-    dob: '12/01/2000',
-    height: 195,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Tino',
-    lastName: 'Livramento',
-    teamName: 'Newcastle United',
-    dob: '12/11/2002',
-    height: 173,
-    position: 'DF',
-    price: 5
-  },
-  {
-    firstName: 'Andrew',
-    lastName: 'Omobamidele',
-    teamName: 'Nottingham Forest',
-    dob: '23/06/2002',
-    height: 190,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Andrey',
-    lastName: 'Santos',
-    teamName: 'Nottingham Forest',
-    dob: '03/05/2004',
-    height: 176,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Anthony',
-    lastName: 'Elanga',
-    teamName: 'Nottingham Forest',
-    dob: '27/04/2002',
-    height: 178,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Brandon',
-    lastName: 'Aguilera',
-    teamName: 'Nottingham Forest',
-    dob: '28/06/2003',
-    height: 168,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Callum',
-    lastName: 'Hudson-Odoi',
-    teamName: 'Nottingham Forest',
-    dob: '07/11/2000',
-    height: 177,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Cheikhou',
-    lastName: 'Kouyaté',
-    teamName: 'Nottingham Forest',
-    dob: '21/12/1989',
-    height: 189,
-    position: 'MF',
-    price: 6.5
-  },
-  {
-    firstName: 'Chris',
-    lastName: 'Wood',
-    teamName: 'Nottingham Forest',
-    dob: '07/12/1991',
-    height: 191,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Danilo',
-    lastName: '',
-    teamName: 'Nottingham Forest',
-    dob: '29/04/2001',
-    height: 177,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Divock',
-    lastName: 'Origi',
-    teamName: 'Nottingham Forest',
-    dob: '18/04/1995',
-    height: 189,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Ethan',
-    lastName: 'Horvath',
-    teamName: 'Nottingham Forest',
-    dob: '09/06/1995',
-    height: 193,
-    position: 'GK',
-    price: 5.5
-  },
-  {
-    firstName: 'Felipe',
-    lastName: 'Monteiro',
-    teamName: 'Nottingham Forest',
-    dob: '16/05/1989',
-    height: 190,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Gonzalo',
-    lastName: 'Montiel',
-    teamName: 'Nottingham Forest',
-    dob: '01/01/1997',
-    height: 176,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Harry',
-    lastName: 'Arter',
-    teamName: 'Nottingham Forest',
-    dob: '28/12/1989',
-    height: 177,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Harry',
-    lastName: 'Toffolo',
-    teamName: 'Nottingham Forest',
-    dob: '19/08/1995',
-    height: 183,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Ibrahim',
-    lastName: 'Sangaré',
-    teamName: 'Nottingham Forest',
-    dob: '02/12/1997',
-    height: 191,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Joe',
-    lastName: 'Worrall',
-    teamName: 'Nottingham Forest',
-    dob: '10/01/1997',
-    height: 190,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Matt',
-    lastName: 'Turner',
-    teamName: 'Nottingham Forest',
-    dob: '24/06/1994',
-    height: 191,
-    position: 'GK',
-    price: 4.5
-  },
-  {
-    firstName: 'Morgan',
-    lastName: 'Gibbs-White',
-    teamName: 'Nottingham Forest',
-    dob: '27/01/2000',
-    height: 171,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Moussa',
-    lastName: 'Niakhaté',
-    teamName: 'Nottingham Forest',
-    dob: '08/03/1996',
-    height: 190,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Murillo',
-    lastName: '',
-    teamName: 'Nottingham Forest',
-    dob: '04/07/2002',
-    height: 188,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Neco',
-    lastName: 'Williams',
-    teamName: 'Nottingham Forest',
-    dob: '13/04/2001',
-    height: 183,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Nicolás',
-    lastName: 'Domínguez',
-    teamName: 'Nottingham Forest',
-    dob: '28/06/1998',
-    height: 179,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Nuno',
-    lastName: 'Tavares',
-    teamName: 'Nottingham Forest',
-    dob: '26/01/2000',
-    height: 184,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Odisseas',
-    lastName: 'Vlachodimos',
-    teamName: 'Nottingham Forest',
-    dob: '26/04/1994',
-    height: 188,
-    position: 'GK',
-    price: 6
-  },
-  {
-    firstName: 'Ola',
-    lastName: 'Aina',
-    teamName: 'Nottingham Forest',
-    dob: '08/10/1996',
-    height: 184,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Orel',
-    lastName: 'Mangala',
-    teamName: 'Nottingham Forest',
-    dob: '18/03/1998',
-    height: 178,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Richie',
-    lastName: 'Laryea',
-    teamName: 'Nottingham Forest',
-    dob: '07/01/1995',
-    height: 175,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Ryan',
-    lastName: 'Yates',
-    teamName: 'Nottingham Forest',
-    dob: '21/11/1997',
-    height: 190,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Scott',
-    lastName: 'McKenna',
-    teamName: 'Nottingham Forest',
-    dob: '12/11/1996',
-    height: 189,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Sèrge',
-    lastName: 'Aurier',
-    teamName: 'Nottingham Forest',
-    dob: '24/12/1992',
-    height: 176,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'Taiwo',
-    lastName: 'Awoniyi',
-    teamName: 'Nottingham Forest',
-    dob: '12/08/1997',
-    height: 183,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Wayne',
-    lastName: 'Hennessey',
-    teamName: 'Nottingham Forest',
-    dob: '24/01/1987',
-    height: 198,
-    position: 'GK',
-    price: 5.5
-  },
-  {
-    firstName: 'Willy',
-    lastName: 'Boly',
-    teamName: 'Nottingham Forest',
-    dob: '03/02/1991',
-    height: 195,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Adam',
-    lastName: 'Davies',
-    teamName: 'Sheffield United',
-    dob: '17/07/1992',
-    height: 185,
-    position: 'GK',
-    price: 4.5
-  },
-  {
-    firstName: 'Andre',
-    lastName: 'Brooks',
-    teamName: 'Sheffield United',
-    dob: '20/08/2003',
-    height: 180,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Anel',
-    lastName: 'Ahmedhodžić',
-    teamName: 'Sheffield United',
-    dob: '26/03/1999',
-    height: 190,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Anis',
-    lastName: 'Ben Slimane',
-    teamName: 'Sheffield United',
-    dob: '16/03/2001',
-    height: 188,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Antwoine',
-    lastName: 'Hackford',
-    teamName: 'Sheffield United',
-    dob: '20/03/2004',
-    height: 177,
-    position: 'FW',
-    price: 6.5
-  },
-  {
-    firstName: 'Auston',
-    lastName: 'Trusty',
-    teamName: 'Sheffield United',
-    dob: '12/08/1998',
-    height: 191,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Osborn',
-    teamName: 'Sheffield United',
-    dob: '05/08/1994',
-    height: 176,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Bénie',
-    lastName: 'Traoré',
-    teamName: 'Sheffield United',
-    dob: '30/11/2002',
-    height: 172,
-    position: 'MF',
-    price: 6.5
-  },
-  {
-    firstName: 'Cameron',
-    lastName: 'Archer',
-    teamName: 'Sheffield United',
-    dob: '09/12/2001',
-    height: 175,
-    position: 'FW',
-    price: 7
-  },
-  {
-    firstName: 'Chris',
-    lastName: 'Basham',
-    teamName: 'Sheffield United',
-    dob: '20/07/1988',
-    height: 190,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Daniel',
-    lastName: 'Jebbison',
-    teamName: 'Sheffield United',
-    dob: '11/07/2003',
-    height: 190,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Femi',
-    lastName: 'Seriki',
-    teamName: 'Sheffield United',
-    dob: '28/04/2002',
-    height: 175,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'George',
-    lastName: 'Baldock',
-    teamName: 'Sheffield United',
-    dob: '09/03/1993',
-    height: 178,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Gustavo',
-    lastName: 'Hamer',
-    teamName: 'Sheffield United',
-    dob: '24/06/1997',
-    height: 169,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Ismaila',
-    lastName: 'Coulibaly',
-    teamName: 'Sheffield United',
-    dob: '25/12/2000',
-    height: 183,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Jack',
-    lastName: 'Robinson',
-    teamName: 'Sheffield United',
-    dob: '01/09/1993',
-    height: 168,
-    position: 'DF',
-    price: 5.5
-  },
-  {
-    firstName: 'James',
-    lastName: 'McAtee',
-    teamName: 'Sheffield United',
-    dob: '18/10/2002',
-    height: 180,
-    position: 'MF',
-    price: 6
-  },
-  {
-    firstName: 'Jayden',
-    lastName: 'Bogle',
-    teamName: 'Sheffield United',
-    dob: '27/07/2000',
-    height: 178,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Jili',
-    lastName: 'Buyabu',
-    teamName: 'Sheffield United',
-    dob: '16/10/2001',
-    height: 182,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'John',
-    lastName: 'Egan',
-    teamName: 'Sheffield United',
-    dob: '20/10/1992',
-    height: 185,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'John',
-    lastName: 'Fleck',
-    teamName: 'Sheffield United',
-    dob: '24/08/1991',
-    height: 170,
-    position: 'MF',
-    price: 6.5
-  },
-  {
-    firstName: 'Jordan',
-    lastName: 'Amissah',
-    teamName: 'Sheffield United',
-    dob: '02/08/2001',
-    height: 197,
-    position: 'GK',
-    price: 8
-  },
-  {
-    firstName: 'Luke',
-    lastName: 'Thomas',
-    teamName: 'Sheffield United',
-    dob: '10/06/2001',
-    height: 181,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Max',
-    lastName: 'Lowe',
-    teamName: 'Sheffield United',
-    dob: '11/05/1997',
-    height: 175,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Oliver',
-    lastName: 'McBurnie',
-    teamName: 'Sheffield United',
-    dob: '04/06/1996',
-    height: 188,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Oliver',
-    lastName: 'Norwood',
-    teamName: 'Sheffield United',
-    dob: '12/04/1991',
-    height: 180,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Rhian',
-    lastName: 'Brewster',
-    teamName: 'Sheffield United',
-    dob: '01/04/2000',
-    height: 180,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Rhys',
-    lastName: 'Norrington-Davies',
-    teamName: 'Sheffield United',
-    dob: '22/04/1999',
-    height: 181,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Ryan',
-    lastName: 'Oné',
-    teamName: 'Sheffield United',
-    dob: '26/06/2006',
-    height: 175,
-    position: 'FW',
-    price: 4.5
-  },
-  {
-    firstName: 'Tom',
-    lastName: 'Davies',
-    teamName: 'Sheffield United',
-    dob: '30/06/1998',
-    height: 180,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Vinicius',
-    lastName: 'Souza',
-    teamName: 'Sheffield United',
-    dob: '17/06/1999',
-    height: 187,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Wes',
-    lastName: 'Foderingham',
-    teamName: 'Sheffield United',
-    dob: '14/01/1991',
-    height: 185,
-    position: 'GK',
-    price: 5
-  },
-  {
-    firstName: 'William',
-    lastName: 'Osula',
-    teamName: 'Sheffield United',
-    dob: '04/08/2003',
-    height: 180,
-    position: 'FW',
-    price: 4.5
-  },
-  {
-    firstName: 'Yasser',
-    lastName: 'Larouci',
-    teamName: 'Sheffield United',
-    dob: '01/01/2001',
-    height: 176,
-    position: 'DF',
-    price: 5
-  },
-  {
-    firstName: 'Alejo',
-    lastName: 'Véliz',
-    teamName: 'Tottenham Hotspur',
-    dob: '19/09/2003',
-    height: 187,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Alfie',
-    lastName: 'Dorrington',
-    teamName: 'Tottenham Hotspur',
-    dob: '20/04/2005',
-    height: 182,
-    position: 'DF',
-    price: 5
-  },
-  {
-    firstName: 'Alfie',
-    lastName: 'Whiteman',
-    teamName: 'Tottenham Hotspur',
-    dob: '02/10/1998',
-    height: 189,
-    position: 'GK',
-    price: 5
-  },
-  {
-    firstName: 'Ashley',
-    lastName: 'Phillips',
-    teamName: 'Tottenham Hotspur',
-    dob: '26/06/2005',
-    height: 192,
-    position: 'DF',
-    price: 4.5
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Davies',
-    teamName: 'Tottenham Hotspur',
-    dob: '24/04/1993',
-    height: 181,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Brandon',
-    lastName: 'Austin',
-    teamName: 'Tottenham Hotspur',
-    dob: '08/01/1999',
-    height: 188,
-    position: 'GK',
-    price: 5
-  },
-  {
-    firstName: 'Brennan',
-    lastName: 'Johnson',
-    teamName: 'Tottenham Hotspur',
-    dob: '23/05/2001',
-    height: 179,
-    position: 'FW',
-    price: 7.5
-  },
-  {
-    firstName: 'Bryan',
-    lastName: 'Gil',
-    teamName: 'Tottenham Hotspur',
-    dob: '11/02/2001',
-    height: 175,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Cristian',
-    lastName: 'Romero',
-    teamName: 'Tottenham Hotspur',
-    dob: '27/04/1998',
-    height: 185,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Dejan',
-    lastName: 'Kulusevski',
-    teamName: 'Tottenham Hotspur',
-    dob: '25/04/2000',
-    height: 186,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Destiny',
-    lastName: 'Udogie',
-    teamName: 'Tottenham Hotspur',
-    dob: '28/11/2002',
-    height: 187,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Emerson',
-    lastName: 'Royal',
-    teamName: 'Tottenham Hotspur',
-    dob: '14/01/1999',
-    height: 183,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'Eric',
-    lastName: 'Dier',
-    teamName: 'Tottenham Hotspur',
-    dob: '15/01/1994',
-    height: 188,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Fraser',
-    lastName: 'Forster',
-    teamName: 'Tottenham Hotspur',
-    dob: '17/03/1988',
-    height: 201,
-    position: 'GK',
-    price: 5.5
-  },
-  {
-    firstName: 'Giovani',
-    lastName: 'Lo Celso',
-    teamName: 'Tottenham Hotspur',
-    dob: '09/04/1996',
-    height: 177,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Guglielmo',
-    lastName: 'Vicario',
-    teamName: 'Tottenham Hotspur',
-    dob: '07/10/1996',
-    height: 194,
-    position: 'GK',
-    price: 5.5
-  },
-  {
-    firstName: 'Heung-min',
-    lastName: 'Son',
-    teamName: 'Tottenham Hotspur',
-    dob: '08/07/1992',
-    height: 184,
-    position: 'FW',
-    price: 9
-  },
-  {
-    firstName: 'Hugo',
-    lastName: 'Lloris',
-    teamName: 'Tottenham Hotspur',
-    dob: '26/12/1986',
-    height: 188,
-    position: 'GK',
-    price: 6.5
-  },
-  {
-    firstName: 'Ivan',
-    lastName: 'Perišić',
-    teamName: 'Tottenham Hotspur',
-    dob: '02/02/1989',
-    height: 186,
-    position: 'MF',
-    price: 8.5
+    teamName: 'NEW',
+    position: 'FWD',
+    price: 7.8,
+    totalPoints: 50
   },
   {
     firstName: 'James',
     lastName: 'Maddison',
-    teamName: 'Tottenham Hotspur',
-    dob: '23/11/1996',
-    height: 175,
-    position: 'MF',
-    price: 8
+    teamName: 'TOT',
+    position: 'MID',
+    price: 7.8,
+    totalPoints: 63
   },
   {
-    firstName: 'Jamie',
-    lastName: 'Donley',
-    teamName: 'Tottenham Hotspur',
-    dob: '03/01/2005',
-    height: 183,
-    position: 'FW',
-    price: 5
-  },
-  {
-    firstName: 'Manor',
-    lastName: 'Solomon',
-    teamName: 'Tottenham Hotspur',
-    dob: '24/07/1999',
-    height: 167,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Micky',
-    lastName: 'van de Ven',
-    teamName: 'Tottenham Hotspur',
-    dob: '19/04/2001',
-    height: 193,
-    position: 'DF',
-    price: 7.5
-  },
-  {
-    firstName: 'Oliver',
-    lastName: 'Skipp',
-    teamName: 'Tottenham Hotspur',
-    dob: '16/09/2000',
-    height: 175,
-    position: 'MF',
-    price: 7
-  },
-  {
-    firstName: 'Pape',
-    lastName: 'Sarr',
-    teamName: 'Tottenham Hotspur',
-    dob: '14/09/2002',
-    height: 184,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Pedro',
-    lastName: 'Porro',
-    teamName: 'Tottenham Hotspur',
-    dob: '13/09/1999',
-    height: 176,
-    position: 'DF',
-    price: 8
-  },
-  {
-    firstName: 'Pierre-Emile',
-    lastName: 'Højbjerg',
-    teamName: 'Tottenham Hotspur',
-    dob: '05/08/1995',
-    height: 185,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Richarlison',
-    lastName: "",
-    teamName: 'Tottenham Hotspur',
-    dob: '10/05/1997',
-    height: 184,
-    position: 'FW',
-    price: 8.5
-  },
-  {
-    firstName: 'Rodrigo',
-    lastName: 'Bentancur',
-    teamName: 'Tottenham Hotspur',
-    dob: '25/06/1997',
-    height: 187,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Ryan',
-    lastName: 'Sessegnon',
-    teamName: 'Tottenham Hotspur',
-    dob: '18/05/2000',
-    height: 178,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Yago',
-    lastName: 'Santiago',
-    teamName: 'Tottenham Hotspur',
-    dob: '15/04/2003',
-    height: 177,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Yves',
-    lastName: 'Bissouma',
-    teamName: 'Tottenham Hotspur',
-    dob: '30/08/1996',
-    height: 182,
-    position: 'MF',
-    price: 8
-  },
-  {
-    firstName: 'Aaron',
-    lastName: 'Cresswell',
-    teamName: 'West Ham United',
-    dob: '15/12/1989',
-    height: 170,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Alphonse',
-    lastName: 'Aréola',
-    teamName: 'West Ham United',
-    dob: '27/02/1993',
-    height: 195,
-    position: 'GK',
-    price: 5
-  },
-  {
-    firstName: 'Angelo',
-    lastName: 'Ogbonna',
-    teamName: 'West Ham United',
-    dob: '23/05/1988',
-    height: 191,
-    position: 'DF',
-    price: 6.5
-  },
-  {
-    firstName: 'Ben',
-    lastName: 'Johnson',
-    teamName: 'West Ham United',
-    dob: '24/01/2000',
-    height: 175,
-    position: 'DF',
-    price: 6
-  },
-  {
-    firstName: 'Callum',
-    lastName: 'Marshall',
-    teamName: 'West Ham United',
-    dob: '28/11/2004',
-    height: 181,
-    position: 'FW',
-    price: 4.5
-  },
-  {
-    firstName: 'Conor',
-    lastName: 'Coventry',
-    teamName: 'West Ham United',
-    dob: '25/03/2000',
-    height: 177,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Daniel',
-    lastName: 'Chesters',
-    teamName: 'West Ham United',
-    dob: '04/04/2002',
-    height: 177,
-    position: 'MF',
-    price: 5.5
-  },
-  {
-    firstName: 'Danny',
-    lastName: 'Ings',
-    teamName: 'West Ham United',
-    dob: '23/07/1992',
-    height: 178,
-    position: 'FW',
-    price: 8
-  },
-  {
-    firstName: 'Divin',
-    lastName: 'Mubama',
-    teamName: 'West Ham United',
-    dob: '25/10/2004',
-    height: 183,
-    position: 'FW',
-    price: 4.5
-  },
-  {
-    firstName: 'Edson',
-    lastName: 'Álvarez',
-    teamName: 'West Ham United',
-    dob: '24/10/1997',
-    height: 187,
-    position: 'MF',
-    price: 7.5
-  },
-  {
-    firstName: 'Emerson',
-    lastName: "",
-    teamName: 'West Ham United',
-    dob: '03/08/1994',
-    height: 176,
-    position: 'DF',
-    price: 7
-  },
-  {
-    firstName: 'James',
-    lastName: 'Ward-Prowse',
-    teamName: 'West Ham United',
-    dob: '01/11/1994',
-    height: 177,
-    position: 'MF',
-    price: 7.5
+    firstName: 'Diogo',
+    lastName: 'Teixeira da Silva',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 7.7,
+    totalPoints: 44
   },
   {
     firstName: 'Jarrod',
     lastName: 'Bowen',
-    teamName: 'West Ham United',
-    dob: '20/12/1996',
-    height: 175,
-    position: 'FW',
-    price: 7.5
+    teamName: 'WHU',
+    position: 'MID',
+    price: 7.7,
+    totalPoints: 86
   },
   {
-    firstName: 'Joseph',
-    lastName: 'Anang',
-    teamName: 'West Ham United',
-    dob: '08/06/2000',
-    height: 190,
-    position: 'GK',
-    price: 5.5
+    firstName: 'Darwin',
+    lastName: 'Núñez Ribeiro',
+    teamName: 'LIV',
+    position: 'FWD',
+    price: 7.6,
+    totalPoints: 62
   },
   {
-    firstName: 'Kaelan',
-    lastName: 'Casey',
-    teamName: 'West Ham United',
-    dob: '28/10/2004',
-    height: 185,
-    position: 'DF',
-    price: 5
+    firstName: 'Phil',
+    lastName: 'Foden',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 7.6,
+    totalPoints: 71
   },
   {
-    firstName: 'Konstantinos',
-    lastName: 'Mavropanos',
-    teamName: 'West Ham United',
-    dob: '11/12/1997',
-    height: 194,
-    position: 'DF',
-    price: 7.5
+    firstName: 'Alexander',
+    lastName: 'Isak',
+    teamName: 'NEW',
+    position: 'FWD',
+    price: 7.6,
+    totalPoints: 58
   },
   {
-    firstName: 'Kurt',
-    lastName: 'Zouma',
-    teamName: 'West Ham United',
-    dob: '27/10/1994',
-    height: 190,
-    position: 'DF',
-    price: 8
+    firstName: 'Riyad',
+    lastName: 'Mahrez',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 7.5,
+    totalPoints: 0
   },
   {
-    firstName: 'Lewis',
-    lastName: 'Orford',
-    teamName: 'West Ham United',
-    dob: '18/02/2006',
-    height: 187,
-    position: 'MF',
-    price: 4.5
+    firstName: 'Aleksandar',
+    lastName: 'Mitrović',
+    teamName: 'FUL',
+    position: 'FWD',
+    price: 7.4,
+    totalPoints: 1
   },
   {
-    firstName: 'Lucas',
-    lastName: 'Paquetá',
-    teamName: 'West Ham United',
-    dob: '27/08/1997',
-    height: 180,
-    position: 'MF',
-    price: 7.5
+    firstName: 'Luis',
+    lastName: 'Díaz',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 7.4,
+    totalPoints: 46
   },
   {
-    firstName: 'Łukasz',
-    lastName: 'Fabiański',
-    teamName: 'West Ham United',
-    dob: '18/04/1985',
-    height: 190,
-    position: 'GK',
-    price: 7.5
+    firstName: 'Christopher',
+    lastName: 'Nkunku',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 7.3,
+    totalPoints: 0
   },
   {
-    firstName: 'Maxwel',
-    lastName: 'Cornet',
-    teamName: 'West Ham United',
-    dob: '27/09/1996',
-    height: 179,
-    position: 'MF',
-    price: 8.5
+    firstName: 'Cody',
+    lastName: 'Gakpo',
+    teamName: 'LIV',
+    position: 'FWD',
+    price: 7.2,
+    totalPoints: 29
   },
   {
-    firstName: 'Michail',
-    lastName: 'Antonio',
-    teamName: 'West Ham United',
-    dob: '28/03/1990',
-    height: 180,
-    position: 'FW',
-    price: 8.5
+    firstName: 'Jack',
+    lastName: 'Grealish',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 7.2,
+    totalPoints: 29
+  },
+  {
+    firstName: 'Kai',
+    lastName: 'Havertz',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 7.1,
+    totalPoints: 41
+  },
+  {
+    firstName: 'Raheem',
+    lastName: 'Sterling',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 7.1,
+    totalPoints: 71
+  },
+  {
+    firstName: 'Dominik',
+    lastName: 'Szoboszlai',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 7.1,
+    totalPoints: 65
+  },
+  {
+    firstName: 'Kieran',
+    lastName: 'Trippier',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 7,
+    totalPoints: 82
+  },
+  {
+    firstName: 'Dejan',
+    lastName: 'Kulusevski',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 7,
+    totalPoints: 63
+  },
+  {
+    firstName: 'Bryan',
+    lastName: 'Mbeumo',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 6.9,
+    totalPoints: 87
+  },
+  {
+    firstName: 'Nicolas',
+    lastName: 'Jackson',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 6.9,
+    totalPoints: 52
+  },
+  {
+    firstName: 'Julián',
+    lastName: 'Álvarez',
+    teamName: 'MCI',
+    position: 'FWD',
+    price: 6.9,
+    totalPoints: 80
+  },
+  {
+    firstName: 'Rasmus',
+    lastName: 'Højlund',
+    teamName: 'MUN',
+    position: 'FWD',
+    price: 6.9,
+    totalPoints: 20
+  },
+  {
+    firstName: 'Romelu',
+    lastName: 'Lukaku Bolingoli',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 6.8,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mason',
+    lastName: 'Mount',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 6.8,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Antony Matheus',
+    lastName: 'dos Santos',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 6.8,
+    totalPoints: 19
+  },
+  {
+    firstName: 'Moussa',
+    lastName: 'Diaby',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 6.7,
+    totalPoints: 72
+  },
+  {
+    firstName: 'Jérémy',
+    lastName: 'Doku',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 6.7,
+    totalPoints: 49
+  },
+  {
+    firstName: 'Jadon',
+    lastName: 'Sancho',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 6.7,
+    totalPoints: 3
   },
   {
     firstName: 'Mohammed',
     lastName: 'Kudus',
-    teamName: 'West Ham United',
-    dob: '02/08/2000',
-    height: 177,
-    position: 'FW',
-    price: 7.5
+    teamName: 'WHU',
+    position: 'MID',
+    price: 6.7,
+    totalPoints: 48
   },
   {
-    firstName: 'Nayef',
-    lastName: 'Aguerd',
-    teamName: 'West Ham United',
-    dob: '30/03/1996',
-    height: 190,
-    position: 'DF',
-    price: 6.5
+    firstName: 'Dominic',
+    lastName: 'Solanke',
+    teamName: 'BOU',
+    position: 'FWD',
+    price: 6.6,
+    totalPoints: 73
   },
   {
-    firstName: 'Oliver',
-    lastName: 'Scarles',
-    teamName: 'West Ham United',
-    dob: '12/12/2005',
-    height: 182,
-    position: 'MF',
-    price: 5
+    firstName: 'Richarlison',
+    lastName: 'de Andrade',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 6.6,
+    totalPoints: 47
   },
   {
-    firstName: 'Pablo',
-    lastName: 'Fornals',
-    teamName: 'West Ham United',
-    dob: '22/02/1996',
-    height: 178,
-    position: 'MF',
-    price: 7.5
+    firstName: 'Leandro',
+    lastName: 'Trossard',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 6.5,
+    totalPoints: 42
+  },
+  {
+    firstName: 'Kaoru',
+    lastName: 'Mitoma',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 6.5,
+    totalPoints: 60
+  },
+  {
+    firstName: 'Anssumane',
+    lastName: 'Fati Vieira',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 6.5,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Pierre-Emerick',
+    lastName: 'Aubameyang',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 6.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Pascal',
+    lastName: 'Groß',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 6.4,
+    totalPoints: 69
+  },
+  {
+    firstName: 'Andrew',
+    lastName: 'Robertson',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 6.4,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Bernardo',
+    lastName: 'Veiga de Carvalho e Silva',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 6.4,
+    totalPoints: 63
+  },
+  {
+    firstName: 'Anthony',
+    lastName: 'Martial',
+    teamName: 'MUN',
+    position: 'FWD',
+    price: 6.4,
+    totalPoints: 25
+  },
+  {
+    firstName: 'Mykhailo',
+    lastName: 'Mudryk',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 6.3,
+    totalPoints: 42
+  },
+  {
+    firstName: 'Taiwo',
+    lastName: 'Awoniyi',
+    teamName: 'NFO',
+    position: 'FWD',
+    price: 6.3,
+    totalPoints: 42
+  },
+  {
+    firstName: 'Virgil',
+    lastName: 'van Dijk',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 6.2,
+    totalPoints: 55
+  },
+  {
+    firstName: 'Miguel',
+    lastName: 'Almirón Rejala',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 6.2,
+    totalPoints: 47
+  },
+  {
+    firstName: 'Anthony',
+    lastName: 'Gordon',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 6.2,
+    totalPoints: 83
+  },
+  {
+    firstName: 'Harvey',
+    lastName: 'Barnes',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 6.2,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Solly',
+    lastName: 'March',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 6.1,
+    totalPoints: 39
+  },
+  {
+    firstName: 'James',
+    lastName: 'Ward-Prowse',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 6.1,
+    totalPoints: 67
+  },
+  {
+    firstName: 'Granit',
+    lastName: 'Xhaka',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 6,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Evan',
+    lastName: 'Ferguson',
+    teamName: 'BHA',
+    position: 'FWD',
+    price: 6,
+    totalPoints: 51
+  },
+  {
+    firstName: 'Eberechi',
+    lastName: 'Eze',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 6,
+    totalPoints: 36
+  },
+  {
+    firstName: 'Allan',
+    lastName: 'Saint-Maximin',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 6,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lucas',
+    lastName: 'Tolentino Coelho de Lima',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 6,
+    totalPoints: 43
+  },
+  {
+    firstName: 'Gianluca',
+    lastName: 'Scamacca',
+    teamName: 'WHU',
+    position: 'FWD',
+    price: 6,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jacob',
+    lastName: 'Ramsey',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5.9,
+    totalPoints: 11
+  },
+  {
+    firstName: 'Philippe',
+    lastName: 'Coutinho Correia',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5.8,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Yoane',
+    lastName: 'Wissa',
+    teamName: 'BRE',
+    position: 'FWD',
+    price: 5.8,
+    totalPoints: 54
+  },
+  {
+    firstName: 'Michael',
+    lastName: 'Olise',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 5.8,
+    totalPoints: 16
+  },
+  {
+    firstName: 'Dominic',
+    lastName: 'Calvert-Lewin',
+    teamName: 'EVE',
+    position: 'FWD',
+    price: 5.8,
+    totalPoints: 38
+  },
+  {
+    firstName: 'Alexis',
+    lastName: 'Mac Allister',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 5.8,
+    totalPoints: 31
+  },
+  {
+    firstName: 'João',
+    lastName: 'Cancelo',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 5.8,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Christian',
+    lastName: 'Eriksen',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 5.8,
+    totalPoints: 29
+  },
+  {
+    firstName: 'Bruno',
+    lastName: 'Guimarães Rodriguez Moura',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 5.8,
+    totalPoints: 41
+  },
+  {
+    firstName: 'Joelinton Cássio',
+    lastName: 'Apolinário de Lira',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 5.8,
+    totalPoints: 38
+  },
+  {
+    firstName: 'Brennan',
+    lastName: 'Johnson',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 5.8,
+    totalPoints: 35
+  },
+  {
+    firstName: 'Hwang',
+    lastName: 'Hee-chan',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 5.8,
+    totalPoints: 76
+  },
+  {
+    firstName: 'Emiliano',
+    lastName: 'Buendía Stati',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5.7,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Danny',
+    lastName: 'Welbeck',
+    teamName: 'BHA',
+    position: 'FWD',
+    price: 5.7,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Norberto Bercique',
+    lastName: 'Gomes Betuncal',
+    teamName: 'EVE',
+    position: 'FWD',
+    price: 5.7,
+    totalPoints: 18
+  },
+  {
+    firstName: 'Morgan',
+    lastName: 'Gibbs-White',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 5.7,
+    totalPoints: 50
+  },
+  {
+    firstName: 'Michail',
+    lastName: 'Antonio',
+    teamName: 'WHU',
+    position: 'FWD',
+    price: 5.7,
+    totalPoints: 38
+  },
+  {
+    firstName: 'Matheus',
+    lastName: 'Santos Carneiro Da Cunha',
+    teamName: 'WOL',
+    position: 'FWD',
+    price: 5.7,
+    totalPoints: 65
+  },
+  {
+    firstName: 'Benjamin',
+    lastName: 'White',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 5.6,
+    totalPoints: 61
+  },
+  {
+    firstName: 'Douglas Luiz',
+    lastName: 'Soares de Paulo',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5.6,
+    totalPoints: 74
+  },
+  {
+    firstName: 'Youri',
+    lastName: 'Tielemans',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5.6,
+    totalPoints: 29
+  },
+  {
+    firstName: 'Abdoulaye',
+    lastName: 'Doucouré',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 5.6,
+    totalPoints: 75
+  },
+  {
+    firstName: 'Alisson',
+    lastName: 'Ramses Becker',
+    teamName: 'LIV',
+    position: 'GKP',
+    price: 5.6,
+    totalPoints: 62
+  },
+  {
+    firstName: 'Rodrigo',
+    lastName: 'Hernandez',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 5.6,
+    totalPoints: 49
   },
   {
     firstName: 'Saïd',
     lastName: 'Benrahma',
-    teamName: 'West Ham United',
-    dob: '10/08/1995',
-    height: 172,
-    position: 'FW',
-    price: 8
+    teamName: 'WHU',
+    position: 'MID',
+    price: 5.6,
+    totalPoints: 18
   },
   {
-    firstName: 'Thilo',
-    lastName: 'Kehrer',
-    teamName: 'West Ham United',
-    dob: '21/09/1996',
-    height: 186,
-    position: 'DF',
-    price: 7.5
+    firstName: 'Danny',
+    lastName: 'Ings',
+    teamName: 'WHU',
+    position: 'FWD',
+    price: 5.6,
+    totalPoints: 9
   },
   {
-    firstName: 'Tomáš',
-    lastName: 'Souček',
-    teamName: 'West Ham United',
-    dob: '27/02/1995',
-    height: 192,
-    position: 'MF',
-    price: 8
+    firstName: 'Pedro',
+    lastName: 'Lomba Neto',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 5.6,
+    totalPoints: 52
   },
   {
-    firstName: 'Vladimír',
-    lastName: 'Coufal',
-    teamName: 'West Ham United',
-    dob: '22/08/1992',
-    height: 174,
-    position: 'DF',
-    price: 7.5
+    firstName: 'Eddie',
+    lastName: 'Nketiah',
+    teamName: 'ARS',
+    position: 'FWD',
+    price: 5.5,
+    totalPoints: 53
   },
   {
-    firstName: 'Boubacar',
-    lastName: 'Traoré II',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '20/08/2001',
-    height: 183,
-    position: 'MF',
-    price: 6
+    firstName: 'William',
+    lastName: 'Saliba',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 5.5,
+    totalPoints: 65
   },
   {
-    firstName: 'Craig',
-    lastName: 'Dawson',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '06/05/1990',
-    height: 188,
-    position: 'DF',
-    price: 5.5
+    firstName: 'Leon',
+    lastName: 'Bailey',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5.5,
+    totalPoints: 59
   },
   {
-    firstName: 'Daniel',
-    lastName: 'Bentley',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '13/07/1993',
-    height: 193,
-    position: 'GK',
-    price: 6.5
+    firstName: 'John',
+    lastName: 'McGinn',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5.5,
+    totalPoints: 66
   },
   {
-    firstName: 'Enso',
-    lastName: 'González',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '20/01/2005',
-    height: 169,
-    position: 'FW',
-    price: 4.5
+    firstName: 'Luis',
+    lastName: 'Sinisterra',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 5.5,
+    totalPoints: 19
+  },
+  {
+    firstName: 'Deniz',
+    lastName: 'Undav',
+    teamName: 'BHA',
+    position: 'FWD',
+    price: 5.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Wout',
+    lastName: 'Weghorst',
+    teamName: 'BUR',
+    position: 'FWD',
+    price: 5.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Christian',
+    lastName: 'Pulisic',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 5.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Cole',
+    lastName: 'Palmer',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 5.5,
+    totalPoints: 59
+  },
+  {
+    firstName: 'Odsonne',
+    lastName: 'Edouard',
+    teamName: 'CRY',
+    position: 'FWD',
+    price: 5.5,
+    totalPoints: 59
+  },
+  {
+    firstName: 'Jack',
+    lastName: 'Harrison',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 5.5,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Rúben',
+    lastName: 'Gato Alves Dias',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 5.5,
+    totalPoints: 34
+  },
+  {
+    firstName: 'Ederson',
+    lastName: 'Santana de Moraes',
+    teamName: 'MCI',
+    position: 'GKP',
+    price: 5.5,
+    totalPoints: 46
+  },
+  {
+    firstName: 'Iliman',
+    lastName: 'Ndiaye',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 5.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Fábio',
+    lastName: 'Ferreira Vieira',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Declan',
+    lastName: 'Rice',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 61
+  },
+  {
+    firstName: 'Nicolò',
+    lastName: 'Zaniolo',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 10
+  },
+  {
+    firstName: 'Marcus',
+    lastName: 'Tavernier',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 49
+  },
+  {
+    firstName: 'Mathias',
+    lastName: 'Jensen',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 58
+  },
+  {
+    firstName: 'Christian',
+    lastName: 'Nørgaard',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 38
+  },
+  {
+    firstName: 'João Pedro',
+    lastName: 'Junqueira de Jesus',
+    teamName: 'BHA',
+    position: 'FWD',
+    price: 5.4,
+    totalPoints: 50
+  },
+  {
+    firstName: 'Mike',
+    lastName: 'Trésor',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Chilwell',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 5.4,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Conor',
+    lastName: 'Gallagher',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 47
+  },
+  {
+    firstName: 'Reece',
+    lastName: 'James',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 5.4,
+    totalPoints: 9
+  },
+  {
+    firstName: 'Hakim',
+    lastName: 'Ziyech',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jordan',
+    lastName: 'Ayew',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 42
+  },
+  {
+    firstName: 'Dwight',
+    lastName: 'McNeil',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 48
+  },
+  {
+    firstName: 'Bobby',
+    lastName: 'De Cordova-Reid',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Wataru',
+    lastName: 'Endo',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 18
+  },
+  {
+    firstName: 'Carlos Henrique',
+    lastName: 'Casimiro',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Nick',
+    lastName: 'Pope',
+    teamName: 'NEW',
+    position: 'GKP',
+    price: 5.4,
+    totalPoints: 56
+  },
+  {
+    firstName: 'Oliver',
+    lastName: 'McBurnie',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 5.4,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Rodrigo',
+    lastName: 'Bentancur',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Pedro',
+    lastName: 'Porro',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 5.4,
+    totalPoints: 60
+  },
+  {
+    firstName: 'Alejo',
+    lastName: 'Véliz',
+    teamName: 'TOT',
+    position: 'FWD',
+    price: 5.4,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Gonçalo Manuel',
+    lastName: 'Ganchinho Guedes',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 5.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jorge Luiz',
+    lastName: 'Frello Filho',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Emile',
+    lastName: 'Smith Rowe',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 9
+  },
+  {
+    firstName: 'Vitaly',
+    lastName: 'Janelt',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Kevin',
+    lastName: 'Schade',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 19
+  },
+  {
+    firstName: 'Jay',
+    lastName: 'Rodriguez',
+    teamName: 'BUR',
+    position: 'FWD',
+    price: 5.3,
+    totalPoints: 31
+  },
+  {
+    firstName: 'Zeki',
+    lastName: 'Amdouni',
+    teamName: 'BUR',
+    position: 'FWD',
+    price: 5.3,
+    totalPoints: 41
+  },
+  {
+    firstName: 'Noni',
+    lastName: 'Madueke',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 7
+  },
+  {
+    firstName: 'Demarai',
+    lastName: 'Gray',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Alex',
+    lastName: 'Iwobi',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 45
+  },
+  {
+    firstName: 'Andreas',
+    lastName: 'Hoelgebaum Pereira',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 59
+  },
+  {
+    firstName: 'Harry',
+    lastName: 'Wilson',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 46
+  },
+  {
+    firstName: 'Raúl',
+    lastName: 'Jiménez',
+    teamName: 'FUL',
+    position: 'FWD',
+    price: 5.3,
+    totalPoints: 47
+  },
+  {
+    firstName: 'Willian',
+    lastName: 'Borges da Silva',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 60
+  },
+  {
+    firstName: 'John',
+    lastName: 'Stones',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 5.3,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Kyle',
+    lastName: 'Walker',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 5.3,
+    totalPoints: 50
+  },
+  {
+    firstName: 'Fabian',
+    lastName: 'Schär',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 5.3,
+    totalPoints: 53
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Willock',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Danilo',
+    lastName: 'dos Santos de Oliveira',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 12
   },
   {
     firstName: 'Fábio',
     lastName: 'Silva',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '19/07/2002',
-    height: 185,
-    position: 'FW',
-    price: 7.5
+    teamName: 'WOL',
+    position: 'FWD',
+    price: 5.3,
+    totalPoints: 8
   },
   {
-    firstName: 'Hee-chan',
-    lastName: 'Hwang',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '26/01/1996',
-    height: 177,
-    position: 'FW',
-    price: 8
+    firstName: 'Daniel',
+    lastName: 'Castelo Podence',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 5.3,
+    totalPoints: 0
   },
   {
-    firstName: 'Hugo',
-    lastName: 'Bueno',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '18/09/2002',
-    height: 180,
-    position: 'DF',
-    price: 5.5
+    firstName: 'Oleksandr',
+    lastName: 'Zinchenko',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 5.2,
+    totalPoints: 60
   },
   {
-    firstName: 'Jean',
-    lastName: 'Bellegarde',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '27/06/1998',
-    height: 172,
-    position: 'MF',
-    price: 5.5
+    firstName: 'Philip',
+    lastName: 'Billing',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 5.2,
+    totalPoints: 43
+  },
+  {
+    firstName: 'Manuel Benson',
+    lastName: 'Hedilazio',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 5.2,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Arnaut',
+    lastName: 'Danjuma Groeneveld',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 5.2,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Carlton',
+    lastName: 'Morris',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 5.2,
+    totalPoints: 54
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'Shaw',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 5.2,
+    totalPoints: 16
+  },
+  {
+    firstName: 'Sandro',
+    lastName: 'Tonali',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 5.2,
+    totalPoints: 16
+  },
+  {
+    firstName: 'Bénie',
+    lastName: 'Traoré',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 5.2,
+    totalPoints: 11
+  },
+  {
+    firstName: 'Pierre-Emile',
+    lastName: 'Højbjerg',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 5.2,
+    totalPoints: 16
+  },
+  {
+    firstName: 'Guglielmo',
+    lastName: 'Vicario',
+    teamName: 'TOT',
+    position: 'GKP',
+    price: 5.2,
+    totalPoints: 54
+  },
+  {
+    firstName: 'Maxwel',
+    lastName: 'Cornet',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 5.2,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Julio',
+    lastName: 'Enciso',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 5.1,
+    totalPoints: 8
+  },
+  {
+    firstName: 'Ian',
+    lastName: 'Maatsen',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 5.1,
+    totalPoints: 8
+  },
+  {
+    firstName: 'Diogo',
+    lastName: 'Dalot Teixeira',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 5.1,
+    totalPoints: 54
+  },
+  {
+    firstName: 'Manor',
+    lastName: 'Solomon',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 5.1,
+    totalPoints: 14
+  },
+  {
+    firstName: 'Alexandre',
+    lastName: 'Moreno Lopera',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 5,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Jhon',
+    lastName: 'Durán',
+    teamName: 'AVL',
+    position: 'FWD',
+    price: 5,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Boubacar',
+    lastName: 'Kamara',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5,
+    totalPoints: 29
+  },
+  {
+    firstName: 'Emiliano',
+    lastName: 'Martínez Romero',
+    teamName: 'AVL',
+    position: 'GKP',
+    price: 5,
+    totalPoints: 55
+  },
+  {
+    firstName: 'Bertrand',
+    lastName: 'Traoré',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Wesley',
+    lastName: 'Moraes Ferreira da Silva',
+    teamName: 'AVL',
+    position: 'FWD',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Christie',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 5,
+    totalPoints: 41
+  },
+  {
+    firstName: 'Lewis',
+    lastName: 'Cook',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 5,
+    totalPoints: 27
+  },
+  {
+    firstName: 'Sergi',
+    lastName: 'Canós Tenés',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Simon',
+    lastName: 'Adingra',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 5,
+    totalPoints: 53
+  },
+  {
+    firstName: 'Lewis',
+    lastName: 'Dunk',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 5,
+    totalPoints: 20
+  },
+  {
+    firstName: 'Pervis',
+    lastName: 'Estupiñán',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 5,
+    totalPoints: 25
+  },
+  {
+    firstName: 'Josh',
+    lastName: 'Cullen',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 5,
+    totalPoints: 18
+  },
+  {
+    firstName: 'Luca',
+    lastName: 'Koleosho',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 5,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Wilson',
+    lastName: 'Odobert',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 5,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Aaron',
+    lastName: 'Ramsey',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 5,
+    totalPoints: 10
+  },
+  {
+    firstName: 'Han-Noah',
+    lastName: 'Massengo',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Kepa',
+    lastName: 'Arrizabalaga',
+    teamName: 'CHE',
+    position: 'GKP',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'David Datro',
+    lastName: 'Fofana',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Thiago',
+    lastName: 'Emiliano da Silva',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 5,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Ângelo Gabriel',
+    lastName: 'Borges Damaceno',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Joachim',
+    lastName: 'Andersen',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 5,
+    totalPoints: 64
+  },
+  {
+    firstName: 'Ivan',
+    lastName: 'Neves Abreu Cavaleiro',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
   },
   {
     firstName: 'João',
-    lastName: 'Gomes',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '12/02/2001',
-    height: 176,
-    position: 'MF',
-    price: 6
+    lastName: 'Palhinha Gonçalves',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 5,
+    totalPoints: 42
   },
   {
-    firstName: 'Joe',
-    lastName: 'Hodge',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '14/09/2002',
-    height: 172,
-    position: 'MF',
-    price: 6
+    firstName: 'Fabio Henrique',
+    lastName: 'Tavares',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
   },
   {
-    firstName: 'Jonny',
-    lastName: "",
-    teamName: 'Wolverhampton Wanderers',
-    dob: '03/03/1994',
-    height: 175,
-    position: 'DF',
-    price: 6.5
+    firstName: 'Jordan',
+    lastName: 'Henderson',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Gravenberch',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 5,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Fred',
+    lastName: 'Onyedinma',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Andros',
+    lastName: 'Townsend',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 5,
+    totalPoints: 24
+  },
+  {
+    firstName: 'Nathan',
+    lastName: 'Aké',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 5,
+    totalPoints: 42
+  },
+  {
+    firstName: 'Frederico',
+    lastName: 'Rodrigues de Paula Santos',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Sofyan',
+    lastName: 'Amrabat',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 5,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Anthony',
+    lastName: 'Elanga',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 5,
+    totalPoints: 52
+  },
+  {
+    firstName: 'Orel',
+    lastName: 'Mangala',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 5,
+    totalPoints: 34
+  },
+  {
+    firstName: 'Nicolás',
+    lastName: 'Domínguez',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 5,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Divock',
+    lastName: 'Origi',
+    teamName: 'NFO',
+    position: 'FWD',
+    price: 5,
+    totalPoints: 7
+  },
+  {
+    firstName: 'Vini',
+    lastName: 'de Souza Costa',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 5,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Gustavo',
+    lastName: 'Hamer',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 5,
+    totalPoints: 44
+  },
+  {
+    firstName: 'Tom',
+    lastName: 'Davies',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Yves',
+    lastName: 'Bissouma',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 5,
+    totalPoints: 24
+  },
+  {
+    firstName: 'Flynn',
+    lastName: 'Downes',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Edson',
+    lastName: 'Álvarez Velázquez',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 5,
+    totalPoints: 22
   },
   {
     firstName: 'José',
-    lastName: 'Sá',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '17/01/1993',
-    height: 192,
-    position: 'GK',
-    price: 5.5
+    lastName: 'Malheiro de Sá',
+    teamName: 'WOL',
+    position: 'GKP',
+    price: 5,
+    totalPoints: 40
   },
   {
-    firstName: 'Justin',
-    lastName: 'Hubner',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '14/09/2003',
-    height: 187,
-    position: 'DF',
-    price: 5.5
+    firstName: 'Enso',
+    lastName: 'González',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Gabriel',
+    lastName: 'dos Santos Magalhães',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Nicolas',
+    lastName: 'Pépé',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'David',
+    lastName: 'Raya Martin',
+    teamName: 'ARS',
+    position: 'GKP',
+    price: 4.9,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Reiss',
+    lastName: 'Nelson',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 6
+  },
+  {
+    firstName: 'Keinan',
+    lastName: 'Davis',
+    teamName: 'AVL',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Leander',
+    lastName: 'Dendoncker',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Jaidon',
+    lastName: 'Anthony',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Jamal',
+    lastName: 'Lowe',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Alex',
+    lastName: 'Scott',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Tyler',
+    lastName: 'Adams',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Frank',
+    lastName: 'Onyeka',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 19
+  },
+  {
+    firstName: 'Neal',
+    lastName: 'Maupay',
+    teamName: 'BRE',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 35
+  },
+  {
+    firstName: 'Billy',
+    lastName: 'Gilmour',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 36
+  },
+  {
+    firstName: 'Adam',
+    lastName: 'Lallana',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 14
+  },
+  {
+    firstName: 'Samuel',
+    lastName: 'Bastien',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lyle',
+    lastName: 'Foster',
+    teamName: 'BUR',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 33
+  },
+  {
+    firstName: 'Michael',
+    lastName: 'Obafemi',
+    teamName: 'BUR',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Scott',
+    lastName: 'Twine',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jacob',
+    lastName: 'Bruun Larsen',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Armando',
+    lastName: 'Broja',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Axel',
+    lastName: 'Disasi',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 41
+  },
+  {
+    firstName: 'Roméo',
+    lastName: 'Lavia',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Cheick',
+    lastName: 'Doucouré',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Will',
+    lastName: 'Hughes',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 25
+  },
+  {
+    firstName: 'Jean-Philippe',
+    lastName: 'Mateta',
+    teamName: 'CRY',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 31
+  },
+  {
+    firstName: 'Jeffrey',
+    lastName: 'Schlupp',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 36
+  },
+  {
+    firstName: 'Matheus',
+    lastName: 'França de Oliveira',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 2
+  },
+  {
+    firstName: 'James',
+    lastName: 'Garner',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 41
+  },
+  {
+    firstName: 'Tom',
+    lastName: 'Cairney',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 36
+  },
+  {
+    firstName: 'Adama',
+    lastName: 'Traoré',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Curtis',
+    lastName: 'Jones',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 11
+  },
+  {
+    firstName: 'Ibrahima',
+    lastName: 'Konaté',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 27
+  },
+  {
+    firstName: 'Joel',
+    lastName: 'Matip',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Konstantinos',
+    lastName: 'Tsimikas',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 37
+  },
+  {
+    firstName: 'Albert',
+    lastName: 'Sambi Lokonga',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Allan',
+    lastName: 'Campbell',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'Freeman',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Chiedozie',
+    lastName: 'Ogbene',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 33
+  },
+  {
+    firstName: 'Ross',
+    lastName: 'Barkley',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Jacob',
+    lastName: 'Brown',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 34
+  },
+  {
+    firstName: 'Manuel',
+    lastName: 'Akanji',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 42
+  },
+  {
+    firstName: 'Aymeric',
+    lastName: 'Laporte',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Joško',
+    lastName: 'Gvardiol',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 31
+  },
+  {
+    firstName: 'Scott',
+    lastName: 'McTominay',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 57
+  },
+  {
+    firstName: 'Raphaël',
+    lastName: 'Varane',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Fraser',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Sean',
+    lastName: 'Longstaff',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 38
+  },
+  {
+    firstName: 'Remo',
+    lastName: 'Freuler',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lewis',
+    lastName: 'O'Brien',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Chris',
+    lastName: 'Wood',
+    teamName: 'NFO',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 35
+  },
+  {
+    firstName: 'Ibrahim',
+    lastName: 'Sangaré',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 18
+  },
+  {
+    firstName: 'Rhian',
+    lastName: 'Brewster',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 5
+  },
+  {
+    firstName: 'John',
+    lastName: 'Fleck',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Bryan',
+    lastName: 'Gil Salvatierra',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 7
+  },
+  {
+    firstName: 'Cristian',
+    lastName: 'Romero',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.9,
+    totalPoints: 54
+  },
+  {
+    firstName: 'Tomáš',
+    lastName: 'Souček',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 54
+  },
+  {
+    firstName: 'João Victor',
+    lastName: 'Gomes da Silva',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 25
+  },
+  {
+    firstName: 'Sasa',
+    lastName: 'Kalajdzic',
+    teamName: 'WOL',
+    position: 'FWD',
+    price: 4.9,
+    totalPoints: 24
   },
   {
     firstName: 'Mario',
     lastName: 'Lemina',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '01/09/1993',
-    height: 184,
-    position: 'MF',
-    price: 7
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 36
   },
   {
-    firstName: 'Matheus',
-    lastName: 'Cunha',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '27/05/1999',
-    height: 184,
-    position: 'FW',
-    price: 8.5
+    firstName: 'Jean-Ricner',
+    lastName: 'Bellegarde',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.9,
+    totalPoints: 18
   },
   {
-    firstName: 'Matt',
-    lastName: 'Doherty',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '16/01/1992',
-    height: 186,
-    position: 'DF',
-    price: 6.5
+    firstName: 'Thomas',
+    lastName: 'Partey',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 7
   },
   {
-    firstName: 'Matthew',
-    lastName: 'Whittingham',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '24/10/2004',
-    height: 183,
-    position: 'DF',
-    price: 5
+    firstName: 'Matty',
+    lastName: 'Cash',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 4.8,
+    totalPoints: 47
   },
   {
-    firstName: 'Maximilian',
-    lastName: 'Kilman',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '23/05/1997',
-    height: 194,
-    position: 'DF',
-    price: 7.5
+    firstName: 'David',
+    lastName: 'Brooks',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 16
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Rothwell',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Mikkel',
+    lastName: 'Damsgaard',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Mee',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4.8,
+    totalPoints: 24
+  },
+  {
+    firstName: 'Mahmoud',
+    lastName: 'Dahoud',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 14
+  },
+  {
+    firstName: 'James',
+    lastName: 'Milner',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 14
+  },
+  {
+    firstName: 'Jack',
+    lastName: 'Cork',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Jóhann Berg',
+    lastName: 'Gudmundsson',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 18
+  },
+  {
+    firstName: 'Sander',
+    lastName: 'Berge',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 31
   },
   {
     firstName: 'Nathan',
-    lastName: 'Fraser',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '22/02/2005',
-    height: 186,
-    position: 'FW',
-    price: 4.5
+    lastName: 'Redmond',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 8
   },
   {
-    firstName: 'Nélson',
-    lastName: 'Semedo',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '16/11/1993',
-    height: 177,
-    position: 'DF',
-    price: 7.5
+    firstName: 'Marc',
+    lastName: 'Cucurella Saseta',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.8,
+    totalPoints: 10
+  },
+  {
+    firstName: 'Enzo',
+    lastName: 'Fernández',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 43
+  },
+  {
+    firstName: 'Dele',
+    lastName: 'Alli',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Idrissa',
+    lastName: 'Gueye',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Youssef',
+    lastName: 'Ramalho Chermiti',
+    teamName: 'EVE',
+    position: 'FWD',
+    price: 4.8,
+    totalPoints: 6
+  },
+  {
+    firstName: 'Harvey',
+    lastName: 'Elliott',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 23
+  },
+  {
+    firstName: 'Thiago',
+    lastName: 'Alcántara do Nascimento',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Elijah',
+    lastName: 'Adebayo',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 4.8,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Jordan',
+    lastName: 'Clark',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Tahith',
+    lastName: 'Chong',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 22
+  },
+  {
+    firstName: 'Matheus Luiz',
+    lastName: 'Nunes',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 13
+  },
+  {
+    firstName: 'Alejandro',
+    lastName: 'Garnacho',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 32
+  },
+  {
+    firstName: 'André',
+    lastName: 'Onana',
+    teamName: 'MUN',
+    position: 'GKP',
+    price: 4.8,
+    totalPoints: 58
+  },
+  {
+    firstName: 'Jacob',
+    lastName: 'Murphy',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 24
+  },
+  {
+    firstName: 'Callum',
+    lastName: 'Hudson-Odoi',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Emmanuel',
+    lastName: 'Dennis',
+    teamName: 'NFO',
+    position: 'FWD',
+    price: 4.8,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Cheikhou',
+    lastName: 'Kouyaté',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 7
+  },
+  {
+    firstName: 'Jonjo',
+    lastName: 'Shelvey',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Yates',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Daniel',
+    lastName: 'Jebbison',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 4.8,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Oliver',
+    lastName: 'Norwood',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 29
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Osborn',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 8
+  },
+  {
+    firstName: 'Hugo',
+    lastName: 'Lloris',
+    teamName: 'TOT',
+    position: 'GKP',
+    price: 4.8,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Giovani',
+    lastName: 'Lo Celso',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 4.8,
+    totalPoints: 23
+  },
+  {
+    firstName: 'Destiny',
+    lastName: 'Udogie',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.8,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Lucas',
+    lastName: 'Digne',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 4.7,
+    totalPoints: 49
+  },
+  {
+    firstName: 'Pau',
+    lastName: 'Torres',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 4.7,
+    totalPoints: 58
+  },
+  {
+    firstName: 'Kieffer',
+    lastName: 'Moore',
+    teamName: 'BOU',
+    position: 'FWD',
+    price: 4.7,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Dango',
+    lastName: 'Ouattara',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 10
+  },
+  {
+    firstName: 'Hamed',
+    lastName: 'Traorè',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Josh',
+    lastName: 'Dasilva',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Keane',
+    lastName: 'Lewis-Potter',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 16
+  },
+  {
+    firstName: 'Facundo',
+    lastName: 'Buonanotte',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Josh',
+    lastName: 'Brownhill',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 41
+  },
+  {
+    firstName: 'Anass',
+    lastName: 'Zaroury',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Robert',
+    lastName: 'Sánchez',
+    teamName: 'CHE',
+    position: 'GKP',
+    price: 4.7,
+    totalPoints: 59
+  },
+  {
+    firstName: 'Jefferson',
+    lastName: 'Lerma Solís',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 30
+  },
+  {
+    firstName: 'Tyrick',
+    lastName: 'Mitchell',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 4.7,
+    totalPoints: 54
+  },
+  {
+    firstName: 'Amadou',
+    lastName: 'Onana',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 23
+  },
+  {
+    firstName: 'Bernd',
+    lastName: 'Leno',
+    teamName: 'FUL',
+    position: 'GKP',
+    price: 4.7,
+    totalPoints: 66
+  },
+  {
+    firstName: 'Carlos Vinícius',
+    lastName: 'Alves Morais',
+    teamName: 'FUL',
+    position: 'FWD',
+    price: 4.7,
+    totalPoints: 20
+  },
+  {
+    firstName: 'Stefan',
+    lastName: 'Bajcetic',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'Berry',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Pelly Ruddock',
+    lastName: 'Mpanzu',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 22
+  },
+  {
+    firstName: 'Mateo',
+    lastName: 'Kovačić',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Kalvin',
+    lastName: 'Phillips',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Lisandro',
+    lastName: 'Martínez',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4.7,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Donny',
+    lastName: 'van de Beek',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Anis',
+    lastName: 'Slimane',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Ivan',
+    lastName: 'Perišić',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.7,
+    totalPoints: 6
+  },
+  {
+    firstName: 'Pablo',
+    lastName: 'Fornals Malla',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 12
   },
   {
     firstName: 'Pablo',
     lastName: 'Sarabia',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '11/05/1992',
-    height: 174,
-    position: 'FW',
-    price: 8
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.7,
+    totalPoints: 30
   },
   {
-    firstName: 'Pedro',
-    lastName: 'Neto',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '09/03/2000',
-    height: 173,
-    position: 'FW',
-    price: 8.5
+    firstName: 'Aaron',
+    lastName: 'Ramsdale',
+    teamName: 'ARS',
+    position: 'GKP',
+    price: 4.6,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Jurriën',
+    lastName: 'Timber',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 4.6,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Justin',
+    lastName: 'Kluivert',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.6,
+    totalPoints: 30
+  },
+  {
+    firstName: 'Antoine',
+    lastName: 'Semenyo',
+    teamName: 'BOU',
+    position: 'FWD',
+    price: 4.6,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Ethan',
+    lastName: 'Pinnock',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4.6,
+    totalPoints: 48
+  },
+  {
+    firstName: 'Moisés',
+    lastName: 'Caicedo Corozo',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 4.6,
+    totalPoints: 25
+  },
+  {
+    firstName: 'Levi',
+    lastName: 'Colwill',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.6,
+    totalPoints: 44
+  },
+  {
+    firstName: 'Marc',
+    lastName: 'Guéhi',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 4.6,
+    totalPoints: 47
+  },
+  {
+    firstName: 'Sam',
+    lastName: 'Johnstone',
+    teamName: 'CRY',
+    position: 'GKP',
+    price: 4.6,
+    totalPoints: 56
+  },
+  {
+    firstName: 'Harrison',
+    lastName: 'Reed',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 4.6,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Cameron',
+    lastName: 'Archer',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 4.6,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Oliver',
+    lastName: 'Skipp',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 4.6,
+    totalPoints: 11
+  },
+  {
+    firstName: 'Vladimír',
+    lastName: 'Coufal',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.6,
+    totalPoints: 44
+  },
+  {
+    firstName: 'Marcus',
+    lastName: 'Oliveira Alencar',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Takehiro',
+    lastName: 'Tomiyasu',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 38
+  },
+  {
+    firstName: 'Charles',
+    lastName: 'Sagoe',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Bradley',
+    lastName: 'Ibrahim',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ezri',
+    lastName: 'Konsa Ngoyo',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 48
+  },
+  {
+    firstName: 'Jaden',
+    lastName: 'Philogene-Bidace',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Morgan',
+    lastName: 'Sanson',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Omari',
+    lastName: 'Kellyman',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Clément',
+    lastName: 'Lenglet',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Siriki',
+    lastName: 'Dembélé',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lloyd',
+    lastName: 'Kelly',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 20
+  },
+  {
+    firstName: 'Norberto',
+    lastName: 'Murara Neto',
+    teamName: 'BOU',
+    position: 'GKP',
+    price: 4.5,
+    totalPoints: 57
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Pearson',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Kristoffer',
+    lastName: 'Ajer',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 22
+  },
+  {
+    firstName: 'Mads',
+    lastName: 'Bidstrup',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Nathan',
+    lastName: 'Collins',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Halil',
+    lastName: 'Dervişoğlu',
+    teamName: 'BRE',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mark',
+    lastName: 'Flekken',
+    teamName: 'BRE',
+    position: 'GKP',
+    price: 4.5,
+    totalPoints: 44
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Trevitt',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Michael',
+    lastName: 'Olakigbe',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Ethan',
+    lastName: 'Brierley',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Saman',
+    lastName: 'Ghoddos',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Myles',
+    lastName: 'Peart-Harris',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Yasin',
+    lastName: 'Ayari',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Aaron',
+    lastName: 'Connolly',
+    teamName: 'BHA',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Kacper',
+    lastName: 'Kozłowski',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jeremy',
+    lastName: 'Sarmiento Morante',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jack',
+    lastName: 'Hinshelwood',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 14
+  },
+  {
+    firstName: 'Carlos',
+    lastName: 'Baleba',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Mark',
+    lastName: 'O’Mahony',
+    teamName: 'BHA',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Benicio',
+    lastName: 'Baker-Boaitey',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Joshua',
+    lastName: 'Duffus',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Luca',
+    lastName: 'Barrington',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Dara',
+    lastName: 'Costelloe',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'James',
+    lastName: 'Trafford',
+    teamName: 'BUR',
+    position: 'GKP',
+    price: 4.5,
+    totalPoints: 41
+  },
+  {
+    firstName: 'César',
+    lastName: 'Azpilicueta',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mason',
+    lastName: 'Burstow',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Deivid Washington',
+    lastName: 'de Souza Eugênio',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Diego Manuel Jadon',
+    lastName: 'da Silva Moreira',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Djordje',
+    lastName: 'Petrovic',
+    teamName: 'CHE',
+    position: 'GKP',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Ronnie',
+    lastName: 'Stutter',
+    teamName: 'CHE',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Alex',
+    lastName: 'Matos',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Leo',
+    lastName: 'Castledine',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Malcolm',
+    lastName: 'Ebiowei',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'Plange',
+    teamName: 'CRY',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Joel',
+    lastName: 'Ward',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 35
+  },
+  {
+    firstName: 'Jesurun',
+    lastName: 'Rak-Sakyi',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 8
+  },
+  {
+    firstName: 'John-Kymani',
+    lastName: 'Gordon',
+    teamName: 'CRY',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ademola',
+    lastName: 'Ola-Adebomi',
+    teamName: 'CRY',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'David',
+    lastName: 'Ozoh',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Jadan',
+    lastName: 'Raymond',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Vitalii',
+    lastName: 'Mykolenko',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 62
+  },
+  {
+    firstName: 'Ellis',
+    lastName: 'Simms',
+    teamName: 'EVE',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lewis',
+    lastName: 'Dobbin',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Thomas',
+    lastName: 'Cannon',
+    teamName: 'EVE',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Tyler',
+    lastName: 'Onyango',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Mackenzie',
+    lastName: 'Hunt',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Tim',
+    lastName: 'Ream',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 34
+  },
+  {
+    firstName: 'Jay',
+    lastName: 'Stansfield',
+    teamName: 'FUL',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Matthew',
+    lastName: 'Dibley-Dias',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'Harris',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Timothy',
+    lastName: 'Castagne',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 37
+  },
+  {
+    firstName: 'Fodé',
+    lastName: 'Ballo-Touré',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Gomez',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 30
+  },
+  {
+    firstName: 'Treymaurice',
+    lastName: 'Nyoni',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'John',
+    lastName: 'McAtee',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Carlos',
+    lastName: 'Mendes Gomes',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Admiral',
+    lastName: 'Muskwe',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Aribim',
+    lastName: 'Pepple',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Taylor',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Elliot',
+    lastName: 'Thorpe',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Thomas',
+    lastName: 'Kaminski',
+    teamName: 'LUT',
+    position: 'GKP',
+    price: 4.5,
+    totalPoints: 34
+  },
+  {
+    firstName: 'Jayden',
+    lastName: 'Luker',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Zack',
+    lastName: 'Nelson',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Shea',
+    lastName: 'Charles',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Alex',
+    lastName: 'Telles',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Victor',
+    lastName: 'Lindelöf',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 42
+  },
+  {
+    firstName: 'Daniel',
+    lastName: 'Gore',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Hugill',
+    teamName: 'MUN',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Sven',
+    lastName: 'Botman',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 30
+  },
+  {
+    firstName: 'Garang',
+    lastName: 'Kuol',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lewis',
+    lastName: 'Miley',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Amadou',
+    lastName: 'Diallo',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Parkinson',
+    teamName: 'NEW',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Michael',
+    lastName: 'Ndiweni',
+    teamName: 'NEW',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Brandon',
+    lastName: 'Aguilera Zamora',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Serge',
+    lastName: 'Aurier',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 27
+  },
+  {
+    firstName: 'Willy',
+    lastName: 'Boly',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 38
+  },
+  {
+    firstName: 'Josh',
+    lastName: 'Bowler',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Steve',
+    lastName: 'Cook',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Richie',
+    lastName: 'Laryea',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Moussa',
+    lastName: 'Niakhaté',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Braian',
+    lastName: 'Ojeda Rodríguez',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Gustavo Henrique',
+    lastName: 'Furtado Scarpa',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Sam',
+    lastName: 'Surridge',
+    teamName: 'NFO',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Olu',
+    lastName: 'Aina',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 29
+  },
+  {
+    firstName: 'Murillo',
+    lastName: 'Santiago Costa dos Santos',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 22
+  },
+  {
+    firstName: 'Odysseas',
+    lastName: 'Vlachodimos',
+    teamName: 'NFO',
+    position: 'GKP',
+    price: 4.5,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Andrew',
+    lastName: 'Omobamidele',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jayden',
+    lastName: 'Bogle',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 30
+  },
+  {
+    firstName: 'Wes',
+    lastName: 'Foderingham',
+    teamName: 'SHU',
+    position: 'GKP',
+    price: 4.5,
+    totalPoints: 41
+  },
+  {
+    firstName: 'Louie',
+    lastName: 'Marsh',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Antwoine',
+    lastName: 'Hackford',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Oné',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Sydie',
+    lastName: 'Peck',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Pape Matar',
+    lastName: 'Sarr',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Dane',
+    lastName: 'Scarlett',
+    teamName: 'TOT',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jamie',
+    lastName: 'Donley',
+    teamName: 'TOT',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Yago',
+    lastName: 'de Santiago Alonso',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Nayef',
+    lastName: 'Aguerd',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 27
+  },
+  {
+    firstName: 'Emerson',
+    lastName: 'Palmieri dos Santos',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Nikola',
+    lastName: 'Vlašić',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Kurt',
+    lastName: 'Zouma',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 33
+  },
+  {
+    firstName: 'Konstantinos',
+    lastName: 'Mavropanos',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 1
   },
   {
     firstName: 'Rayan',
-    lastName: 'Aït Nouri',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '06/06/2001',
-    height: 180,
-    position: 'DF',
-    price: 7
+    lastName: 'Aït-Nouri',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 13
+  },
+  {
+    firstName: 'Francisco Jorge',
+    lastName: 'Tomás Oliveira',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'Cundle',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Craig',
+    lastName: 'Dawson',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 28
+  },
+  {
+    firstName: 'Max',
+    lastName: 'Kilman',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 31
+  },
+  {
+    firstName: 'Nélson',
+    lastName: 'Cabral Semedo',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 29
   },
   {
     firstName: 'Santiago',
     lastName: 'Bueno',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '09/11/1998',
-    height: 192,
-    position: 'DF',
-    price: 6.5
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.5,
+    totalPoints: 1
   },
   {
-    firstName: 'Saša',
-    lastName: 'Kalajdžić',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '07/07/1997',
-    height: 200,
-    position: 'FW',
-    price: 9
+    firstName: 'Nathan',
+    lastName: 'Fraser',
+    teamName: 'WOL',
+    position: 'FWD',
+    price: 4.5,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Matthew',
+    lastName: 'Whittingham',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
   },
   {
     firstName: 'Tawanda',
     lastName: 'Chirewa',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '11/10/2003',
-    height: 181,
-    position: 'MF',
-    price: 6
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.5,
+    totalPoints: 0
   },
   {
-    firstName: 'Tom',
-    lastName: 'King',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '09/03/1995',
-    height: 186,
-    position: 'GK',
-    price: 6
+    firstName: 'Folarin',
+    lastName: 'Balogun',
+    teamName: 'ARS',
+    position: 'FWD',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mohamed',
+    lastName: 'Elneny',
+    teamName: 'ARS',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Kieran',
+    lastName: 'Tierney',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Diego Carlos',
+    lastName: 'Santos Silva',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 23
+  },
+  {
+    firstName: 'Tim',
+    lastName: 'Iroegbunam',
+    teamName: 'AVL',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Marcos',
+    lastName: 'Senesi',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 45
+  },
+  {
+    firstName: 'Adam',
+    lastName: 'Smith',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 22
+  },
+  {
+    firstName: 'Illia',
+    lastName: 'Zabarnyi',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 33
+  },
+  {
+    firstName: 'Milos',
+    lastName: 'Kerkez',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 31
+  },
+  {
+    firstName: 'Ionuț',
+    lastName: 'Radu',
+    teamName: 'BOU',
+    position: 'GKP',
+    price: 4.4,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Max',
+    lastName: 'Aarons',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 23
+  },
+  {
+    firstName: 'Aaron',
+    lastName: 'Hickey',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Mads',
+    lastName: 'Roerslev Rasmussen',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 18
+  },
+  {
+    firstName: 'Yegor',
+    lastName: 'Yarmoliuk',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Steven',
+    lastName: 'Alzate',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jakub',
+    lastName: 'Moder',
+    teamName: 'BHA',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Joël',
+    lastName: 'Veltman',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 19
+  },
+  {
+    firstName: 'Bart',
+    lastName: 'Verbruggen',
+    teamName: 'BHA',
+    position: 'GKP',
+    price: 4.4,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Andi',
+    lastName: 'Zeqiri',
+    teamName: 'BHA',
+    position: 'FWD',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Darko',
+    lastName: 'Churlinov',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Dara',
+    lastName: 'O'Shea',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 20
+  },
+  {
+    firstName: 'Victor',
+    lastName: 'da Silva',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Benoît',
+    lastName: 'Badiashile',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 6
+  },
+  {
+    firstName: 'Wesley',
+    lastName: 'Fofana',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lesley',
+    lastName: 'Ugochukwu',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 10
+  },
+  {
+    firstName: 'Nathaniel',
+    lastName: 'Clyne',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 11
+  },
+  {
+    firstName: 'Vicente',
+    lastName: 'Guaita',
+    teamName: 'CRY',
+    position: 'GKP',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jairo',
+    lastName: 'Riedewald',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Dean',
+    lastName: 'Henderson',
+    teamName: 'CRY',
+    position: 'GKP',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'André',
+    lastName: 'Tavares Gomes',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Seamus',
+    lastName: 'Coleman',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 6
+  },
+  {
+    firstName: 'Jean-Philippe',
+    lastName: 'Gbamin',
+    teamName: 'EVE',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Nathan',
+    lastName: 'Patterson',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Jordan',
+    lastName: 'Pickford',
+    teamName: 'EVE',
+    position: 'GKP',
+    price: 4.4,
+    totalPoints: 56
+  },
+  {
+    firstName: 'James',
+    lastName: 'Tarkowski',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 58
+  },
+  {
+    firstName: 'Ashley',
+    lastName: 'Young',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Issa',
+    lastName: 'Diop',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 23
+  },
+  {
+    firstName: 'Tyrese',
+    lastName: 'Francois',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Anthony',
+    lastName: 'Knockaert',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Saša',
+    lastName: 'Lukić',
+    teamName: 'FUL',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 13
+  },
+  {
+    firstName: 'Rodrigo',
+    lastName: 'Muniz Carvalho',
+    teamName: 'FUL',
+    position: 'FWD',
+    price: 4.4,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Antonee',
+    lastName: 'Robinson',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 40
+  },
+  {
+    firstName: 'Kenny',
+    lastName: 'Tete',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 19
+  },
+  {
+    firstName: 'Calvin',
+    lastName: 'Bassey',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 20
+  },
+  {
+    firstName: 'Bobby',
+    lastName: 'Clark',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Doak',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 1
+  },
+  {
+    firstName: 'James',
+    lastName: 'McConnell',
+    teamName: 'LIV',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Marvelous',
+    lastName: 'Nakamba',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Alfie',
+    lastName: 'Doughty',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 33
+  },
+  {
+    firstName: 'Gabriel',
+    lastName: 'Osho',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Dion',
+    lastName: 'Pereira',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Glen',
+    lastName: 'Rea',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Louie',
+    lastName: 'Watson',
+    teamName: 'LUT',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Cauley',
+    lastName: 'Woodrow',
+    teamName: 'LUT',
+    position: 'FWD',
+    price: 4.4,
+    totalPoints: 7
+  },
+  {
+    firstName: 'Tim',
+    lastName: 'Krul',
+    teamName: 'LUT',
+    position: 'GKP',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Oscar',
+    lastName: 'Bobb',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 11
+  },
+  {
+    firstName: 'Máximo',
+    lastName: 'Perrone',
+    teamName: 'MCI',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Amad',
+    lastName: 'Diallo',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Hannibal',
+    lastName: 'Mejbri',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 9
+  },
+  {
+    firstName: 'Kobbie',
+    lastName: 'Mainoo',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Facundo',
+    lastName: 'Pellistri Rebollo',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 11
+  },
+  {
+    firstName: 'Shola',
+    lastName: 'Shoretire',
+    teamName: 'MUN',
+    position: 'FWD',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Aaron',
+    lastName: 'Wan-Bissaka',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 26
+  },
+  {
+    firstName: 'Sergio',
+    lastName: 'Reguilón',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 16
+  },
+  {
+    firstName: 'Omari',
+    lastName: 'Forson',
+    teamName: 'MUN',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Dan',
+    lastName: 'Burn',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 37
+  },
+  {
+    firstName: 'Isaac',
+    lastName: 'Hayden',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jeff',
+    lastName: 'Hendrick',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Emil',
+    lastName: 'Krafth',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Matt',
+    lastName: 'Ritchie',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Tino',
+    lastName: 'Livramento',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Felipe Augusto',
+    lastName: 'de Almeida Monteiro',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Scott',
+    lastName: 'McKenna',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Alex',
+    lastName: 'Mighten',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Omar',
+    lastName: 'Richards',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Harry',
+    lastName: 'Toffolo',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 38
+  },
+  {
+    firstName: 'Hwang',
+    lastName: 'Ui-jo',
+    teamName: 'NFO',
+    position: 'FWD',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Worrall',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Gonzalo',
+    lastName: 'Montiel',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 2
+  },
+  {
+    firstName: 'James',
+    lastName: 'McAtee',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 34
+  },
+  {
+    firstName: 'Ismaila',
+    lastName: 'Coulibaly',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jack',
+    lastName: 'Robinson',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Andre',
+    lastName: 'Brooks',
+    teamName: 'SHU',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 7
+  },
+  {
+    firstName: 'Emerson',
+    lastName: 'Leite de Souza Junior',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Tanguy',
+    lastName: 'Ndombélé Alvaro',
+    teamName: 'TOT',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Davinson',
+    lastName: 'Sánchez',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Sessegnon',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Micky',
+    lastName: 'van de Ven',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 43
+  },
+  {
+    firstName: 'Conor',
+    lastName: 'Coventry',
+    teamName: 'WHU',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Johnson',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 0
   },
   {
     firstName: 'Tommy',
     lastName: 'Doyle',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '17/10/2001',
-    height: 174,
-    position: 'MF',
-    price: 6.5
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 10
   },
   {
-    firstName: 'Toti',
-    lastName: "",
-    teamName: 'Wolverhampton Wanderers',
-    dob: '16/01/1999',
-    height: 187,
-    position: 'DF',
-    price: 5.5
+    firstName: 'Hugo',
+    lastName: 'Bueno López',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 17
   },
   {
-    firstName: 'Yerson',
-    lastName: 'Mosquera',
-    teamName: 'Wolverhampton Wanderers',
-    dob: '02/05/2001',
-    height: 188,
-    position: 'DF',
-    price: 7.5
+    firstName: 'Joe',
+    lastName: 'Hodge',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 0
   },
+  {
+    firstName: 'Toti António',
+    lastName: 'Gomes',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.4,
+    totalPoints: 30
+  },
+  {
+    firstName: 'Boubacar',
+    lastName: 'Traoré',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.4,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Jakub',
+    lastName: 'Kiwior',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 11
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Fredericks',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Gavin',
+    lastName: 'Kilkenny',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Emiliano',
+    lastName: 'Marcondes',
+    teamName: 'BOU',
+    position: 'MID',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Chris',
+    lastName: 'Mepham',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Shandon',
+    lastName: 'Baptiste',
+    teamName: 'BRE',
+    position: 'MID',
+    price: 4.3,
+    totalPoints: 12
+  },
+  {
+    firstName: 'Rico',
+    lastName: 'Henry',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 13
+  },
+  {
+    firstName: 'Mathias',
+    lastName: 'Jorgensen',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Jason',
+    lastName: 'Steele',
+    teamName: 'BHA',
+    position: 'GKP',
+    price: 4.3,
+    totalPoints: 18
+  },
+  {
+    firstName: 'Adam',
+    lastName: 'Webster',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Igor Julio',
+    lastName: 'dos Santos de Paulo',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 10
+  },
+  {
+    firstName: 'Enock',
+    lastName: 'Agyei',
+    teamName: 'BUR',
+    position: 'MID',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Arijanet',
+    lastName: 'Muric',
+    teamName: 'BUR',
+    position: 'GKP',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Connor',
+    lastName: 'Roberts',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 9
+  },
+  {
+    firstName: 'Trevoh',
+    lastName: 'Chalobah',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Malang',
+    lastName: 'Sarr',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Rob',
+    lastName: 'Holding',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Naouirou',
+    lastName: 'Ahamada',
+    teamName: 'CRY',
+    position: 'MID',
+    price: 4.3,
+    totalPoints: 8
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Godfrey',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Michael',
+    lastName: 'Keane',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Tosin',
+    lastName: 'Adarabioyo',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 22
+  },
+  {
+    firstName: 'James',
+    lastName: 'Shea',
+    teamName: 'LUT',
+    position: 'GKP',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ryan',
+    lastName: 'Giles',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 9
+  },
+  {
+    firstName: 'Tom',
+    lastName: 'Lockyer',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 23
+  },
+  {
+    firstName: 'Rico',
+    lastName: 'Lewis',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 21
+  },
+  {
+    firstName: 'Harry',
+    lastName: 'Maguire',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 36
+  },
+  {
+    firstName: 'Tyrell',
+    lastName: 'Malacia',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lewis',
+    lastName: 'Hall',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Andrey',
+    lastName: 'Nascimento dos Santos',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.3,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Harry',
+    lastName: 'Arter',
+    teamName: 'NFO',
+    position: 'MID',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ethan',
+    lastName: 'Horvath',
+    teamName: 'NFO',
+    position: 'GKP',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Neco',
+    lastName: 'Williams',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 14
+  },
+  {
+    firstName: 'Anel',
+    lastName: 'Ahmedhodžić',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 12
+  },
+  {
+    firstName: 'John',
+    lastName: 'Egan',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Max',
+    lastName: 'Lowe',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 5
+  },
+  {
+    firstName: 'William',
+    lastName: 'Osula',
+    teamName: 'SHU',
+    position: 'FWD',
+    price: 4.3,
+    totalPoints: 8
+  },
+  {
+    firstName: 'Yasser',
+    lastName: 'Larouci',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Davies',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 14
+  },
+  {
+    firstName: 'Thilo',
+    lastName: 'Kehrer',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Divin',
+    lastName: 'Mubama',
+    teamName: 'WHU',
+    position: 'FWD',
+    price: 4.3,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Angelo',
+    lastName: 'Ogbonna',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Jonathan',
+    lastName: 'Castro Otto',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Bruno',
+    lastName: 'Cavaco Jordão',
+    teamName: 'WOL',
+    position: 'MID',
+    price: 4.3,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Matt',
+    lastName: 'Doherty',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4.3,
+    totalPoints: 9
+  },
+  {
+    firstName: 'Carney',
+    lastName: 'Chukwuemeka',
+    teamName: 'CHE',
+    position: 'MID',
+    price: 4.2,
+    totalPoints: 6
+  },
+  {
+    firstName: 'Elliot',
+    lastName: 'Anderson',
+    teamName: 'NEW',
+    position: 'MID',
+    price: 4.2,
+    totalPoints: 19
+  },
+  {
+    firstName: 'Jamaal',
+    lastName: 'Lascelles',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4.2,
+    totalPoints: 36
+  },
+  {
+    firstName: 'Matt',
+    lastName: 'Targett',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4.2,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Eric',
+    lastName: 'Dier',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4.2,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Alphonse',
+    lastName: 'Areola',
+    teamName: 'WHU',
+    position: 'GKP',
+    price: 4.2,
+    totalPoints: 45
+  },
+  {
+    firstName: 'Aaron',
+    lastName: 'Cresswell',
+    teamName: 'WHU',
+    position: 'DEF',
+    price: 4.2,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Lukasz',
+    lastName: 'Fabianski',
+    teamName: 'WHU',
+    position: 'GKP',
+    price: 4.2,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Tyrone',
+    lastName: 'Mings',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 4.1,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Malo',
+    lastName: 'Gusto',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4.1,
+    totalPoints: 24
+  },
+  {
+    firstName: 'Jarrad',
+    lastName: 'Branthwaite',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4.1,
+    totalPoints: 43
+  },
+  {
+    firstName: 'Martin',
+    lastName: 'Dubravka',
+    teamName: 'NEW',
+    position: 'GKP',
+    price: 4.1,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Rúnar Alex',
+    lastName: 'Rúnarsson',
+    teamName: 'ARS',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Karl',
+    lastName: 'Hein',
+    teamName: 'ARS',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Reuell',
+    lastName: 'Walters',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Kortney',
+    lastName: 'Hause',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Viljami',
+    lastName: 'Sinisalo',
+    teamName: 'AVL',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Filip',
+    lastName: 'Marschall',
+    teamName: 'AVL',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Oliwier',
+    lastName: 'Zych',
+    teamName: 'AVL',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'James',
+    lastName: 'Hill',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Darren',
+    lastName: 'Randolph',
+    teamName: 'BOU',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mark',
+    lastName: 'Travers',
+    teamName: 'BOU',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Greenwood',
+    teamName: 'BOU',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mads',
+    lastName: 'Bech Sørensen',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Matthew',
+    lastName: 'Cox',
+    teamName: 'BRE',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ji-Soo',
+    lastName: 'Kim',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Valintino',
+    lastName: 'Adedokun',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Vincent',
+    lastName: 'Angelini',
+    teamName: 'BRE',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Michał',
+    lastName: 'Karbownik',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Tariq',
+    lastName: 'Lamptey',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 9
+  },
+  {
+    firstName: 'Kjell',
+    lastName: 'Scherpen',
+    teamName: 'BHA',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jan Paul',
+    lastName: 'van Hecke',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 17
+  },
+  {
+    firstName: 'Ben',
+    lastName: 'Jackson',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Leigh',
+    lastName: 'Kavanagh',
+    teamName: 'BHA',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jordan',
+    lastName: 'Beyer',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 22
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'McNally',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Bailey',
+    lastName: 'Peacock-Farrell',
+    teamName: 'BUR',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Charlie',
+    lastName: 'Taylor',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 27
+  },
+  {
+    firstName: 'Bobby',
+    lastName: 'Thomas',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Owen',
+    lastName: 'Dodgson',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Hannes',
+    lastName: 'Delcroix',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Ethan',
+    lastName: 'Ampadu',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Abdul Rahman',
+    lastName: 'Baba',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Marcus',
+    lastName: 'Bettinelli',
+    teamName: 'CHE',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Gabriel',
+    lastName: 'Słonina',
+    teamName: 'CHE',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lucas',
+    lastName: 'Bergström',
+    teamName: 'CHE',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Bashir',
+    lastName: 'Humphreys',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Eddie',
+    lastName: 'Beach',
+    teamName: 'CHE',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Alfie',
+    lastName: 'Gilchrist',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Josh',
+    lastName: 'Brooking',
+    teamName: 'CHE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jake',
+    lastName: 'O'Brien',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'James',
+    lastName: 'Tomkins',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Whitworth',
+    teamName: 'CRY',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mason',
+    lastName: 'Holgate',
+    teamName: 'EVE',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Terence',
+    lastName: 'Kongolo',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Kevin',
+    lastName: 'Mbabu',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Luc',
+    lastName: 'De Fougerolles',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Steven',
+    lastName: 'Benda',
+    teamName: 'FUL',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Devan',
+    lastName: 'Tanton',
+    teamName: 'FUL',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Adrián',
+    lastName: 'San Miguel del Castillo',
+    teamName: 'LIV',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Caoimhin',
+    lastName: 'Kelleher',
+    teamName: 'LIV',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 7
+  },
+  {
+    firstName: 'Nathaniel',
+    lastName: 'Phillips',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Sepp',
+    lastName: 'van den Berg',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jarell',
+    lastName: 'Quansah',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 6
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'Chambers',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Callum',
+    lastName: 'Scanlon',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Marcelo',
+    lastName: 'de Araújo Pitaluga Filho',
+    teamName: 'LIV',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Conor',
+    lastName: 'Bradley',
+    teamName: 'LIV',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Reece',
+    lastName: 'Burke',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 13
+  },
+  {
+    firstName: 'Matt',
+    lastName: 'Macey',
+    teamName: 'LUT',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jack',
+    lastName: 'Walton',
+    teamName: 'LUT',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Issa',
+    lastName: 'Kaboré',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 24
+  },
+  {
+    firstName: 'Aidan',
+    lastName: 'Francis-Clarke',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Joseph',
+    lastName: 'Johnson',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Brandon',
+    lastName: 'Williams',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Eric',
+    lastName: 'Bailly',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Álvaro',
+    lastName: 'Fernández Carreras',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Tom',
+    lastName: 'Heaton',
+    teamName: 'MUN',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Radek',
+    lastName: 'Vítek',
+    teamName: 'MUN',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Altay',
+    lastName: 'Bayindir',
+    teamName: 'MUN',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jonny',
+    lastName: 'Evans',
+    teamName: 'MUN',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 24
+  },
+  {
+    firstName: 'Harrison',
+    lastName: 'Ashby',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Karl',
+    lastName: 'Darlow',
+    teamName: 'NEW',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jamal',
+    lastName: 'Lewis',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Javier',
+    lastName: 'Manquillo Gaitán',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Kell',
+    lastName: 'Watts',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Nuno',
+    lastName: 'Varela Tavares',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mohamed',
+    lastName: 'Dräger',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Wayne',
+    lastName: 'Hennessey',
+    teamName: 'NFO',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Loïc',
+    lastName: 'Mbe Soh',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Jonathan',
+    lastName: 'Panzo',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'George',
+    lastName: 'Shelvey',
+    teamName: 'NFO',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Josh',
+    lastName: 'Powell',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Adam',
+    lastName: 'Davies',
+    teamName: 'SHU',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Femi',
+    lastName: 'Seriki',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Luke',
+    lastName: 'Thomas',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 6
+  },
+  {
+    firstName: 'Jili',
+    lastName: 'Buyabu',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Rodon',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Djed',
+    lastName: 'Spence',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Japhet',
+    lastName: 'Tanganga',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ashley',
+    lastName: 'Phillips',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Alfie',
+    lastName: 'Dorrington',
+    teamName: 'TOT',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Joseph',
+    lastName: 'Anang',
+    teamName: 'WHU',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Bendegúz',
+    lastName: 'Bolla',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ki-Jana',
+    lastName: 'Hoever',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Matija',
+    lastName: 'Šarkić',
+    teamName: 'WOL',
+    position: 'GKP',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Justin',
+    lastName: 'Hubner',
+    teamName: 'WOL',
+    position: 'DEF',
+    price: 4,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Cédric',
+    lastName: 'Alves Soares',
+    teamName: 'ARS',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Calum',
+    lastName: 'Chambers',
+    teamName: 'AVL',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Robin',
+    lastName: 'Olsen',
+    teamName: 'AVL',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Ellery',
+    lastName: 'Balcombe',
+    teamName: 'BRE',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Charlie',
+    lastName: 'Goode',
+    teamName: 'BRE',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Thomas',
+    lastName: 'Strakosha',
+    teamName: 'BRE',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 4
+  },
+  {
+    firstName: 'Tom',
+    lastName: 'McGill',
+    teamName: 'BHA',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Ameen',
+    lastName: 'Al-Dakhil',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 9
+  },
+  {
+    firstName: 'CJ',
+    lastName: 'Egan-Riley',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Hjalmar',
+    lastName: 'Ekdal',
+    teamName: 'BUR',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 3
+  },
+  {
+    firstName: 'Denis',
+    lastName: 'Franchi',
+    teamName: 'BUR',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Lawrence',
+    lastName: 'Vigouroux',
+    teamName: 'BUR',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Remi',
+    lastName: 'Matthews',
+    teamName: 'CRY',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Chris',
+    lastName: 'Richards',
+    teamName: 'CRY',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 7
+  },
+  {
+    firstName: 'João',
+    lastName: 'Neves Virgínia',
+    teamName: 'EVE',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Andy',
+    lastName: 'Lonergan',
+    teamName: 'EVE',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Marek',
+    lastName: 'Rodák',
+    teamName: 'FUL',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: -1
+  },
+  {
+    firstName: 'Mads Juel',
+    lastName: 'Andersen',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 13
+  },
+  {
+    firstName: 'Amari'i',
+    lastName: 'Bell',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 13
+  },
+  {
+    firstName: 'Dan',
+    lastName: 'Potts',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Teden',
+    lastName: 'Mengi',
+    teamName: 'LUT',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 20
+  },
+  {
+    firstName: 'Scott',
+    lastName: 'Carson',
+    teamName: 'MCI',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Stefan',
+    lastName: 'Ortega Moreno',
+    teamName: 'MCI',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 2
+  },
+  {
+    firstName: 'Sergio',
+    lastName: 'Gómez',
+    teamName: 'MCI',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 5
+  },
+  {
+    firstName: 'Zack',
+    lastName: 'Steffen',
+    teamName: 'MCI',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Mark',
+    lastName: 'Gillespie',
+    teamName: 'NEW',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Loris',
+    lastName: 'Karius',
+    teamName: 'NEW',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Paul',
+    lastName: 'Dummett',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Alex',
+    lastName: 'Murphy',
+    teamName: 'NEW',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 1
+  },
+  {
+    firstName: 'Matt',
+    lastName: 'Turner',
+    teamName: 'NFO',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 30
+  },
+  {
+    firstName: 'Giulian',
+    lastName: 'Biancone',
+    teamName: 'NFO',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Auston',
+    lastName: 'Trusty',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 14
+  },
+  {
+    firstName: 'Jordan',
+    lastName: 'Amissah',
+    teamName: 'SHU',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'George',
+    lastName: 'Baldock',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 16
+  },
+  {
+    firstName: 'Chris',
+    lastName: 'Basham',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 8
+  },
+  {
+    firstName: 'Rhys',
+    lastName: 'Norrington-Davies',
+    teamName: 'SHU',
+    position: 'DEF',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Brandon',
+    lastName: 'Austin',
+    teamName: 'TOT',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Fraser',
+    lastName: 'Forster',
+    teamName: 'TOT',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Alfie',
+    lastName: 'Whiteman',
+    teamName: 'TOT',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  },
+  {
+    firstName: 'Daniel',
+    lastName: 'Bentley',
+    teamName: 'WOL',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 15
+  },
+  {
+    firstName: 'Tom',
+    lastName: 'King',
+    teamName: 'WOL',
+    position: 'GKP',
+    price: 3.9,
+    totalPoints: 0
+  }
 ]

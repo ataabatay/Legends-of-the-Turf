@@ -54,8 +54,7 @@ export default function Navigation() {
   return (
     <>
     <Navbar className="navbar" bg="primary" data-bs-theme="dark">
-      <Container>
-        <img src={premLogo} alt="Prem-Logo"/>
+      <Container fluid style={{ paddingLeft: 0}}>
         <Nav className="me-auto">
           <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
           <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>

@@ -5,3 +5,51 @@
   display: flex;
   gap: 100px;
 }
+
+@media only screen and (max-width: 599px) {
+  .container-wrapper {
+    flex-direction: column;
+  }
+  
+  .fixture-container,
+  .league-table {
+    width: 100%;
+  }
+  
+  .navbar {
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .navbar button {
+    margin: 0.5em 0;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 911px) {
+  .container-wrapper {
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+
+  .fixture-container {
+    width: 60%; 
+    margin-right: 1em;
+  }
+  
+  .league-table {
+    width: 35%;
+    margin-left: -1.5em;
+  }
+  
+  .navbar {
+    height: 80px;  
+    flex-direction: row;
+  }
+  
+  .navbar button { 
+    margin: 0 0.5em;
+  }  
+}
+
+  
