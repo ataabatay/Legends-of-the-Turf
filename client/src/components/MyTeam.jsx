@@ -72,74 +72,76 @@ export default function MyTeam() {
 
   return (
     <>
-      <section className='team-details'>
-        <img src="" alt="" />
-        <div className='team-name'>Lets Go {teamName}!</div>
-        <Form method='DELETE'>
-          <button style={{ marginTop: '5px' }}>Delete Team</button>
-        </Form>
-      </section>
+      <section className='my-team'>
+        <section className='team-details'>
+          <img src="" alt="" />
+          <div className='team-name'>Lets Go {teamName}!</div>
+          <Form method='DELETE'>
+            <button style={{ marginTop: '5px' }}>Delete Team</button>
+          </Form>
+        </section>
 
-      <section className='players'>
-        <Container fluid className='teams' style={{ display: 'flex', justifyContent: 'center', backgroundImage: `url(${field})`}}>
-          <section className='field'>
-            <Row className='goalkeepers'>
-              {sortedPlayers
-                .filter((player) => player.position === 'GK')
-                .map((player) => (
-                  <Col key={`${player.id}`} md={12} >
-                    <div className='player-card'>
-                      <div className='player-jersey'>{teamJersey(player)}</div>
-                      <p className='player-name'>{player.lastName}</p>
-                      <p className='player-position'>{player.position}</p>
-                    </div>
-                  </Col>
-                ))}
-            </Row>
+        <section className='players'>
+          <Container fluid className='teams' style={{ display: 'flex', justifyContent: 'center', backgroundImage: `url(${field})` }}>
+            <section className='field'>
+              <Row className='goalkeepers'>
+                {sortedPlayers
+                  .filter((player) => player.position === 'GK')
+                  .map((player) => (
+                    <Col key={`${player.id}`} md={12} >
+                      <div className='player-card'>
+                        <div className='player-jersey'>{teamJersey(player)}</div>
+                        <p className='player-name'>{player.lastName}</p>
+                        <p className='player-position'>{player.position}</p>
+                      </div>
+                    </Col>
+                  ))}
+              </Row>
 
-            <Row className='defenders'>
-              {sortedPlayers
-                .filter((player) => player.position === 'DF')
-                .map((player) => (
-                  <Col key={`${player.id}`} md={3}>
-                    <div className='player-card'>
-                      <div className='player-jersey'>{teamJersey(player)}</div>
-                      <p className='player-name'>{player.lastName}</p>
-                      <p className='player-position'>{player.position}</p>
-                    </div>
-                  </Col>
-                ))}
-            </Row>
+              <Row className='defenders'>
+                {sortedPlayers
+                  .filter((player) => player.position === 'DF')
+                  .map((player) => (
+                    <Col key={`${player.id}`} md={3}>
+                      <div className='player-card'>
+                        <div className='player-jersey'>{teamJersey(player)}</div>
+                        <p className='player-name'>{player.lastName}</p>
+                        <p className='player-position'>{player.position}</p>
+                      </div>
+                    </Col>
+                  ))}
+              </Row>
 
-            <Row className='midfielders'>
-              {sortedPlayers
-                .filter((player) => player.position === 'MF')
-                .map((player, index) => (
-                  <Col key={` ${player.id} ${index}`} md={3}>
-                    <div className='player-card'>
-                      <div className='player-jersey'>{teamJersey(player)}</div>
-                      <p className='player-name'>{player.lastName}</p>
-                      <p className='player-position'>{player.position}</p>
-                    </div>
-                  </Col>
-                ))}
-            </Row>
+              <Row className='midfielders'>
+                {sortedPlayers
+                  .filter((player) => player.position === 'MF')
+                  .map((player, index) => (
+                    <Col key={` ${player.id} ${index}`} md={3}>
+                      <div className='player-card'>
+                        <div className='player-jersey'>{teamJersey(player)}</div>
+                        <p className='player-name'>{player.lastName}</p>
+                        <p className='player-position'>{player.position}</p>
+                      </div>
+                    </Col>
+                  ))}
+              </Row>
 
-            <Row className='forwards'>
-              {sortedPlayers
-                .filter((player) => player.position === 'FW')
-                .map((player, index) => (
-                  <Col key={`${player.id} ${index}`} md={6}>
-                    <div className='player-card'>
-                      <div className='player-jersey'>{teamJersey(player)}</div>
-                      <p className='player-name'>{player.lastName}</p>
-                      <p className='player-position'>{player.position}</p>
-                    </div>
-                  </Col>
-                ))}
-            </Row>
-          </section>
-        </Container>
+              <Row className='forwards'>
+                {sortedPlayers
+                  .filter((player) => player.position === 'FW')
+                  .map((player, index) => (
+                    <Col key={`${player.id} ${index}`} md={6}>
+                      <div className='player-card'>
+                        <div className='player-jersey'>{teamJersey(player)}</div>
+                        <p className='player-name'>{player.lastName}</p>
+                        <p className='player-position'>{player.position}</p>
+                      </div>
+                    </Col>
+                  ))}
+              </Row>
+            </section>
+          </Container>
+        </section>
       </section>
     </>
   )
