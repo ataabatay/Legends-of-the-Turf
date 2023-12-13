@@ -26,7 +26,8 @@ import SheffieldUnited from '../assets/images/sheffield.png'
 import TottenhamHotspur from '../assets/images/tottenham.png'
 import WestHamUnited from '../assets/images/westham.png'
 import WolverhamptonWanderers from '../assets/images/wolves.png'
-import field from '../assets/images/field.jpg'
+import field from '../assets/images/Pitch.png'
+import { useTransition } from 'react'
 
 export default function MyTeam() {
   const navigate = useNavigate()
@@ -66,104 +67,82 @@ export default function MyTeam() {
 
     const jerseySrc = teamJerseys[player.teamName]
     if (jerseySrc) {
-      return <img src={jerseySrc} alt={player.teamName} style={{ width: '100px', height: '100px' }} key={player.id} />
+      return <img src={jerseySrc} alt={player.teamName} key={player.id} />
     }
   }
 
   return (
     <>
-      <section className='players'>
-        <h2>Lets Go {teamName}! </h2>
+      <section className='my-team'>
+        <section className='team-details'>
+          <img src="" alt="" />
+          <div className='team-name'>Lets Go {teamName}!</div>
+          <Form method='DELETE'>
+            <button style={{ marginTop: '5px' }}>Delete Team</button>
+          </Form>
+        </section>
 
-        <Container fluid className='teams' style={{ display: 'flex', justifyContent: 'center', backgroundImage: `url(${field})`, backgroundSize: 'cover' }}>
-          {/* <div style={{ marginRight: '20px', flexShrink: 0 }}>
-            
-            <p>{teamName} <br /></p>
-          </div> */}
-          <div className='field' style={{ flexDirection: 'column', width: 700, backgroundImage: field }}>
-            <Col key={_id} md={12}>
-              <Row>
+        <section className='players'>
+          <Container fluid className='teams' style={{ display: 'flex', justifyContent: 'center', backgroundImage: `url(${field})` }}>
+            <section className='field'>
+              <Row className='goalkeepers'>
                 {sortedPlayers
                   .filter((player) => player.position === 'GK')
                   .map((player) => (
                     <Col key={`${player.id}`} md={12} >
-                      <p style={{ color: 'black', fontWeight: 'bold', lineHeight: '1.3' }}>
-                        {teamJersey(player)}
-                        <br />
-                        <span style={{ backgroundColor: 'royalblue', display: 'inline-block', width: '100px' }}>
-                          {player.firstName}<br />{player.lastName}</span>
-                        <br />
-                        <span style={{ backgroundColor: 'blue', color: 'white', display: 'inline-block', width: '100px' }}>{player.position}</span></p>
+                      <div className='player-card'>
+                        <div className='player-jersey'>{teamJersey(player)}</div>
+                        <p className='player-name'>{player.lastName}</p>
+                        <p className='player-position'>{player.position}</p>
+                      </div>
                     </Col>
                   ))}
               </Row>
-            </Col>
 
-
-            <div className='DF'>
-              <Row>
+              <Row className='defenders'>
                 {sortedPlayers
                   .filter((player) => player.position === 'DF')
-                  .map((player, index) => (
-                    <Col key={`${player.id} ${index}`} md={3}>
-                      <p style={{ color: 'black', fontWeight: 'bold', lineHeight: '1.3' }}>
-                        {teamJersey(player)}
-                        <br />
-                        <span style={{ backgroundColor: 'royalblue', display: 'inline-block', width: '100px' }}>
-                          {player.firstName}<br />{player.lastName}</span>
-                        <br />
-                        <span style={{ backgroundColor: 'blue', color: 'white', display: 'inline-block', width: '100px' }}>{player.position}</span></p>
-
+                  .map((player) => (
+                    <Col key={`${player.id}`} md={3}>
+                      <div className='player-card'>
+                        <div className='player-jersey'>{teamJersey(player)}</div>
+                        <p className='player-name'>{player.lastName}</p>
+                        <p className='player-position'>{player.position}</p>
+                      </div>
                     </Col>
-
                   ))}
               </Row>
-            </div>
 
-            <div>
-              <Row>
+              <Row className='midfielders'>
                 {sortedPlayers
                   .filter((player) => player.position === 'MF')
                   .map((player, index) => (
                     <Col key={` ${player.id} ${index}`} md={3}>
-                      <p style={{ color: 'black', fontWeight: 'bold', lineHeight: '1.3' }}>
-                        {teamJersey(player)}
-                        <br />
-                        <span style={{ backgroundColor: 'royalblue', display: 'inline-block', width: '100px' }}>
-                          {player.firstName}<br />{player.lastName}</span>
-                        <br />
-                        <span style={{ backgroundColor: 'blue', color: 'white', display: 'inline-block', width: '100px' }}>{player.position}</span></p>
+                      <div className='player-card'>
+                        <div className='player-jersey'>{teamJersey(player)}</div>
+                        <p className='player-name'>{player.lastName}</p>
+                        <p className='player-position'>{player.position}</p>
+                      </div>
                     </Col>
                   ))}
               </Row>
-            </div>
 
-            <div>
-              <Row>
+              <Row className='forwards'>
                 {sortedPlayers
                   .filter((player) => player.position === 'FW')
                   .map((player, index) => (
                     <Col key={`${player.id} ${index}`} md={6}>
-                      <p style={{ color: 'black', fontWeight: 'bold', lineHeight: '1.3' }}>
-                        {teamJersey(player)}
-                        <br />
-                        <span style={{ backgroundColor: 'royalblue', display: 'inline-block', width: '100px' }}>
-                          {player.firstName}<br />{player.lastName}</span>
-                        <br />
-                        <span style={{ backgroundColor: 'blue', color: 'white', display: 'inline-block', width: '100px' }}>{player.position}</span></p>
+                      <div className='player-card'>
+                        <div className='player-jersey'>{teamJersey(player)}</div>
+                        <p className='player-name'>{player.lastName}</p>
+                        <p className='player-position'>{player.position}</p>
+                      </div>
                     </Col>
                   ))}
               </Row>
-            </div>
-          </div>
-        </Container>
-        <button
-            style={{ marginTop: '5px' }}
-            onClick={() => navigate(`/myteam/${_id}/edit/players`)}
-          >Edit Team</button>
-        <Form method='POST'>
-          <button style={{ marginTop: '5px' }}>Delete Team</button>
-        </Form>
+            </section>
+          </Container>
+        </section>
       </section>
     </>
   )

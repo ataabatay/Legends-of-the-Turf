@@ -1,13 +1,15 @@
 import './App.css'
 import Navigation from './components/Nav'
 import Footer from './components/Footer'
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet, useLocation, useNavigation } from 'react-router-dom'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Typewriter from './components/Typewriter'
+import { Spinner } from 'react-bootstrap'
 
 export default function App() {
   const currentPage = useLocation().pathname
+  const navigation = useNavigation()
 
   return (
     <>
@@ -15,7 +17,14 @@ export default function App() {
       <>
         <Navigation/>
         <main>
+          {
+          navigation.state === 'idle' ? 
           <Outlet />
+          :
+          <div className="centered" class="d-flex justify-content-center align-items-center h-100">
+            <Spinner animation='grow' />
+          </div>
+        }
         </main>
       </>
       :
