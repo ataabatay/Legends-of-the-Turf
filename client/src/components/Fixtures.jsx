@@ -6,10 +6,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
 export default function Fixtures() {
 
   const { fixtures, teams } = useLoaderData()
+  console.log(useLoaderData())
   const [currentGameWeek, setCurrentGameWeek] = useState()
   const [weeklyFixtures, setWeeklyFixtures] = useState([])
 
@@ -37,9 +37,8 @@ export default function Fixtures() {
   return (
     <div>
       <Container className='fixture-container'>
-        <Row className='fixture-header' style={{ margin: '50px', padding: '0', border: 'none', fontWeight: 'bold', fontSize: '2em' }}>
-          <Col>Fixtures Of The Week</ Col>
-        </Row>
+        <h2>Fixtures</h2>
+
 
         {weeklyFixtures.map(fixture => {
 
@@ -48,15 +47,15 @@ export default function Fixtures() {
 
           return (
             <Row key={fixture.id} className='fixture-row'>
-              <div className='teams-against' style={{flexShrink: '1'}}>
+              <div className='teams-against'>
                 <Col sm={8} className='d-flex'><img src={`https://resources.premierleague.com/premierleague/badges/50/t${homeTeam.code}.png`}
-                  alt={homeTeam.name} className='team-logo' /> <span>{homeTeam.name}</span></Col>
+                  alt={homeTeam.name} className='team-logo' /> <span>{homeTeam.short_name}</span></Col>
 
                 <Col sm={8} className='d-flex'><img src={`https://resources.premierleague.com/premierleague/badges/50/t${awayTeam.code}.png`}
-                  alt={awayTeam.name} className='team-logo' /><span> {awayTeam.name}</span></Col>
+                  alt={awayTeam.name} className='team-logo' /><span> {awayTeam.short_name}</span></Col>
               </div>
-              <div className='fixture-details' style={{flexShrink: '0'}}>
-                <Col className='kickoff' sm={4}> {format(new Date(fixture.kickoff_time), 'eee, d MMM, HH:mm')}</Col>
+              <div className='fixture-details'>
+                <Col className='kickoff' sm={4}><span>{format(new Date(fixture.kickoff_time), 'eee, d MMM, HH:mm')}</span></Col>
               </div>
             </Row>
           )
