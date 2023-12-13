@@ -32,7 +32,8 @@ function handleChange(e){
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column', padding: '20px' }}>
     <Form method="POST"  style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', padding: '20px', maxWidth: '400px' }}>
       <input type="text" name="teamName" placeholder='Team Name' onChange={handleChange} value={formData.teamName} style={{ margin: '5px', padding: '10px', width: '100%', boxSizing: 'border-box' }} />
-      <ImageUploadField setFormData={setFormData} formData={formData} />
+      {/* <ImageUploadField setFormData={setFormData} formData={formData} /> */}
+      <ImageUploadField onChange={handleChange} formData={formData} />
       <input type="submit" value="Create Team" style={{ margin: '10px', padding: '10px', cursor: 'pointer', backgroundColor: 'royalblue', color: 'white', border: 'none', borderRadius: '5px' }} />
     </Form>
   </div>
