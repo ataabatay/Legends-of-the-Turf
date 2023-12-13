@@ -22,6 +22,7 @@ export const createTeam = async (req, res) => {
 export const getAllPlayers = async (req, res) => {
   try {
     const allPlayers = await Footballer.find()
+    console.log(allPlayers)
     return res.status(200).json(allPlayers)
   } catch (error) {
     console.log(error)

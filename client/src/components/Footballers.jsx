@@ -125,6 +125,8 @@ export default function Footballers() {
       }
     }).sort((a, b) => b.price - a.price)
 
+    console.log(cleanedFootballersData)
+
     // filter the cleanedFootballersData
     let playersToDisplay = []
     // if seeing all the players
