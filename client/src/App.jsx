@@ -5,6 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Typewriter from './components/Typewriter'
+import { Spinner } from 'react-bootstrap'
 
 export default function App() {
   const currentPage = useLocation().pathname
@@ -16,6 +17,9 @@ export default function App() {
         <Navigation/>
         <main>
           <Outlet />
+          <div className="centered" class="d-flex justify-content-center align-items-center h-100">
+            <Spinner animation='grow' />
+          </div>
         </main>
       </>
       :
