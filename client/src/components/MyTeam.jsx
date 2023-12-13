@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import { Form, useLoaderData, useActionData, useNavigation } from 'react-router-dom'
+import { Form, useLoaderData, useActionData, useNavigate } from 'react-router-dom'
 
 //images
 import Arsenal from '../assets/images/arsenal.png'
@@ -30,6 +30,7 @@ import field from '../assets/images/Pitch.png'
 import { useTransition } from 'react'
 
 export default function MyTeam() {
+  const navigate = useNavigate()
   const deleteTeam = useActionData()
   const usersTeam = useLoaderData()
   console.log(usersTeam)
