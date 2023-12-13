@@ -1,0 +1,51 @@
+.table-container.container {
+
+  min-height: 100vh;
+  border: none;
+  margin-top: 4em;
+
+  h2 {
+    padding: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  tbody {
+    vertical-align: middle;
+    tr {
+      td {
+        img {
+            width: 15px;
+            margin: 0.2em;
+        }
+      }
+
+      #clubname {
+        text-align: left;
+        align-self: center;
+      }
+    }
+  }
+
+  img.ltable-logo {
+    width: 30px;
+    margin: 0;
+  }
+
+  .table {
+    font-size: 0.85em;
+    .fixture-row.row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      width: 25vh;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+      }
+    }
+  }
+}

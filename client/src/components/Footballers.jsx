@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
-import { useEffect, useState, useSyncExternalStore } from 'react'
+import { useEffect, useState, } from 'react'
 import Filters from './Filters.jsx'
 
 import ARS from '../assets/images/arsenal.png'
