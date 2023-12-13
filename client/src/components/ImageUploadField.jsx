@@ -22,7 +22,6 @@ export default function ImageUploadField({ formData, setFormData }){
     
     // send form data to image url
     setFormData(newObj)
-    console.log(formData)
 
   }
   return (
