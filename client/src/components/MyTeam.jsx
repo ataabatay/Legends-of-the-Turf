@@ -32,7 +32,8 @@ import { useTransition } from 'react'
 export default function MyTeam() {
   const deleteTeam = useActionData()
   const usersTeam = useLoaderData()
-  const { _id, teamName, players } = usersTeam
+  console.log(usersTeam)
+  const { _id, teamName, players, image } = usersTeam
 
   const sortedPlayers = players.sort((a, b) => {
     const positionOrder = { 'GK': 1, 'DF': 2, 'MF': 3, 'FW': 4 }
@@ -74,7 +75,7 @@ export default function MyTeam() {
     <>
       <section className='my-team'>
         <section className='team-details'>
-          <img src="" alt="" />
+          {image}
           <div className='team-name'>Lets Go {teamName}!</div>
           <Form method='DELETE'>
             <button style={{ marginTop: '5px' }}>Delete Team</button>

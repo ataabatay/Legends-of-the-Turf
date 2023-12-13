@@ -21,7 +21,7 @@ export default function App() {
           navigation.state === 'idle' ? 
           <Outlet />
           :
-          <div className="centered" class="d-flex justify-content-center align-items-center h-100">
+          <div className="centered d-flex justify-content-center align-items-center h-100">
             <Spinner animation='grow' />
           </div>
         }
@@ -35,11 +35,11 @@ export default function App() {
 
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Link to={'/login'}>
-          <button className='login' type="button" class='btn btn-outline-primary btn-md m-2'>Login</button>
+          <button className='login btn btn-outline-primary btn-md m-2' type="button">Login</button>
         </Link>
 
         <Link to={'/register'}>
-          <button class='btn btn-outline-primary btn-md m-2'>Register</button>
+          <button className='btn btn-outline-primary btn-md m-2'>Register</button>
         </Link>
         </div>
         </div>

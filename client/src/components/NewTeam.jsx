@@ -21,6 +21,10 @@ export default function NewTeam() {
     image: '',
   })
 
+  useEffect(() => {
+    console.log(formData)
+  }, [formData])
+
 
 function handleChange(e){
   setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -33,7 +37,7 @@ function handleChange(e){
     <Form method="POST"  style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', padding: '20px', maxWidth: '400px' }}>
       <input type="text" name="teamName" placeholder='Team Name' onChange={handleChange} value={formData.teamName} style={{ margin: '5px', padding: '10px', width: '100%', boxSizing: 'border-box' }} />
       {/* <ImageUploadField setFormData={setFormData} formData={formData} /> */}
-      <ImageUploadField onChange={handleChange} formData={formData} />
+      <ImageUploadField value={formData.image} onChange={handleChange} formData={formData} setFormData={setFormData} />
       <input type="submit" value="Create Team" style={{ margin: '10px', padding: '10px', cursor: 'pointer', backgroundColor: 'royalblue', color: 'white', border: 'none', borderRadius: '5px' }} />
     </Form>
   </div>
