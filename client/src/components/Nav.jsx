@@ -5,6 +5,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { activeUser, getToken, removeToken } from '../../utils/helpers/common'
 import axios from 'axios'
 import premLogo from '../assets/images/prem.png'
+import Badgelinks from './Badgelinks'
 
 export default function Navigation() {
 
@@ -63,6 +64,7 @@ export default function Navigation() {
 
   return (
     <>
+    <Badgelinks />
     {!(isLoginPage || isRegisterPage) && (
     <Navbar className="navbar" bg="primary" data-bs-theme="dark">
       <Container fluid style={{ paddingLeft: 0}}>
