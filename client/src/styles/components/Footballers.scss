@@ -1,7 +1,23 @@
+.selection-screen {
+  display: flex;
+
+  .player-selection-and-button {
+    flex-grow: 12;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  .available-players {
+    flex-grow: 1;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
+
 .footballers {
 
   .table.table-hover {
     thead {
+      text-align: left;
 
       .inForm,
       .owned-by {
@@ -13,12 +29,33 @@
 
     tbody {
       tr {
-
-        .inForm,
-        .owned-by {
-          @media screen and (max-width: 768px) {
-            display: none;
+        text-align: left;
+        .jersey-logo {
+          img {
+            width: 40px;
           }
+        }
+        .name {
+          .team-name, .position {
+            font-style: italic;
+            font-weight: lighter;
+          }
+        }
+      }
+
+      .selected {
+        .jersey-logo, .name, .price, .points, .inForm, .owned-by {
+          background-color:#cce5ff;
+          color: #004085;
+        }
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      .inForm,
+      .owned-by {
+        @media screen and (max-width: 768px) {
+          display: none;
         }
       }
     }
