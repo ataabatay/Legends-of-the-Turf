@@ -18,6 +18,16 @@ div.landing {
   margin-right: 2em;
 }
 
+.loading{
+  background-image: url(../assets/images/bouncy.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 599px) {
   .landing {
     

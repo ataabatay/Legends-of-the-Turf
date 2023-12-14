@@ -50,7 +50,7 @@ export default function Rules() {
               <h5>Wildcards</h5>
               <p>For information on wildcards please refer to the chips section of the rules.</p>
               <h5>Player Prices</h5>
-              <p>Player prices change during the season dependent on the popularity of the player in the transfer market. Player prices do not change until the season starts.<br /><br />The price shown on your transfers page is a player's selling price. This selling price may be less than the player's current purchase price as a sell-on fee of 50% (rounded up to the nearest £0.1m) will be applied on any profits made on that player.<br /><br /></p>
+              <p>Player prices change during the season dependent on the popularity of the player in the transfer market. Player prices do not change until the season starts.<br /><br />The price shown on your transfers page is a players selling price. This selling price may be less than the players current purchase price as a sell-on fee of 50% (rounded up to the nearest £0.1m) will be applied on any profits made on that player.<br /><br /></p>
             </Accordion.Body>
           </Accordion.Item>
           {/* Deadlines */}
@@ -353,7 +353,7 @@ export default function Rules() {
               <p>
                 Invitational leagues & cups are the heart and soul of the game, where you compete against your friends. Just create a league and then send out the unique code to allow your friends to join, easy! A cup will be automatically created as part of the league.
                 <br />
-                You can compete in up to 30 private leagues. There's no limit on the number of teams in a single league.
+                You can compete in up to 30 private leagues. Theres no limit on the number of teams in a single league.
               </p>
 
               <h6>Public Leagues</h6>
@@ -457,7 +457,7 @@ export default function Rules() {
 
               <h5>Any transfer point deductions</h5>
               <p>
-                Any transfer point deductions in the Gameweek before a phase starts won't be deducted from the phase score. For example, any transfers made in Gameweek 7 (preparing for Gameweek 8) won't be deducted from your September score.
+                Any transfer point deductions in the Gameweek before a phase starts wont be deducted from the phase score. For example, any transfers made in Gameweek 7 (preparing for Gameweek 8) wont be deducted from your September score.
               </p>
 
               <h5>Head-to-Head Scoring</h5>
@@ -468,7 +468,7 @@ export default function Rules() {
               </p>
 
               <p>
-                Head-to-Head fixtures are generated at the start of the league's first Gameweek. Once these fixtures have been generated, the league is locked, and teams will not be able to join or leave.
+                Head-to-Head fixtures are generated at the start of the leagues first Gameweek. Once these fixtures have been generated, the league is locked, and teams will not be able to join or leave.
               </p>
 
               <p>

@@ -15,4 +15,34 @@ div.landing {
 
 .login {
   margin-right: 2em;
+}
+
+.loading {
+  background-image: url(../assets/images/bouncy.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 599px) {
+  .landing {
+    background-image: url(../assets/images/landing-mobile.png);
+    background-size: contain;
+  }
+  .landing-content {
+    max-width: 599px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.login {
+  margin-right: 2em;
 }/*# sourceMappingURL=LandingPage.css.map */

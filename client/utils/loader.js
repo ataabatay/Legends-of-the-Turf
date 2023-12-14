@@ -3,8 +3,8 @@ import axios from "axios"
 import {activeUser, getToken} from "./helpers/common.js"
 
 export async function getMyTeam(teamId){
-  const res = await fetch(`/api/myteam/${teamId}`)
-  return res.json()
+  const res = await axios.get(`/api/myteam/${teamId}`)
+  return res.data
 }
 
 export async function  getSinglePlayer(id){
@@ -16,17 +16,6 @@ export async function getAllSeedDataPlayers(){
   const res = await fetch('/api/players')
   return res.json()
 }
-
-// export async function getAllPlayersAndUserTeam(teamId){
-//   const [ playersRes, userTeamRes ] = await Promise.all([
-//     axios.get('/api/players'),
-//     axios.get(`/api/myteam/${teamId}`)
-//   ])
-//   return {
-//     allPlayers: playersRes.data,
-//     userTeam: userTeamRes.data
-//   }
-// }
 
 export async function getAllThirdPartyFootballers() {
   const playersFromThirdParty = await axios.get('/rest/bootstrap-static/')
