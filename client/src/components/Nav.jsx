@@ -29,7 +29,11 @@ export default function Navigation() {
     }
   }
   const assignId = async () => {
-    activeUserTeamId = await getActiveUserTeamId()
+    if (token) {
+      activeUserTeamId = await getActiveUserTeamId()
+    }
+
+    
   }
   assignId()
 
