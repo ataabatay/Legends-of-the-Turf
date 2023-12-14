@@ -34,8 +34,12 @@ export const getAllPlayers = async (req, res) => {
 // Path: 'myteam/:teamId/edit/players'
 export const addPlayersToTeam = async (req, res) => {
   try {
+    console.log(`REQBODY -> ${req.body}`)
     const teamToEdit = await Team.findById(req.params.teamId)
+    console.log(`Team to edit -> ${teamToEdit}`)
     const playersToAdd = req.body
+    console.log(`Players to add -> ${playersToAdd}`)
+    
     Object.assign(teamToEdit, playersToAdd)
     await teamToEdit.save()
     return res.status(200).json(teamToEdit)
@@ -99,6 +103,7 @@ export const deleteTeam = async (req, res) => {
 export const changeTeamDetails = async (req, res) => {
   try {
     const teamToEdit = await Team.findById(req.params.teamId)
+    console.log(teamToEdit)
     if (!teamToEdit) return res.status(404).json({ message: 'Team not found' })
 
     //* TO ADD: validation to match owner is same as current user to allow changes

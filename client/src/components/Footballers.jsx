@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData, useLocation } from 'react-router-dom'
 import { useEffect, useState, } from 'react'
 import Filters from './Filters.jsx'
 
@@ -52,10 +52,20 @@ const teamLogos = [
   { team: 'WOL', logo: WOL },
 ];
 
+// Max number of players you can pick per position and in total
+const maxCounts = {
+  GKP: 1,
+  DEF: 4,
+  MID: 4,
+  FWD: 2,
+  TOT: 11,
+}
+
 export default function Footballers({ selectedPlayers, setSelectedPlayers }) {
   // ! Using and making the loader data usable
   // All data upon initial load
   const loaderData = useLoaderData()
+  const currentPath = useLocation().pathname
 
   // ! States 
   const [positions, setPositions] = useState([])
@@ -98,6 +108,13 @@ export default function Footballers({ selectedPlayers, setSelectedPlayers }) {
     }
     return sortedData
   }
+
+  const countPlayersByPosition = (players) =>
+    players.reduce((count, player) => {
+      count[player.position] = (count[player.position] || 0) + 1;
+      count.TOT = (count.TOT || 0) + 1;
+      return count;
+    }, { GKP: 0, MID: 0, FWD: 0, DEF: 0, TOT: 0 })
 
   useEffect(() => {
     // Getting a set of unique team names
@@ -157,73 +174,95 @@ export default function Footballers({ selectedPlayers, setSelectedPlayers }) {
   }, [loaderData, recordsPerPage, currentPage, filters])
 
   function handleClick(e) {
-    const idOfPlayerToAdd = parseInt(e.currentTarget.id)
-    const playerToAdd = filteredFootballers.find(player => player.id === idOfPlayerToAdd)
-    let newPlayerList = []
-    if (!selectedPlayers.find(player => player.id === idOfPlayerToAdd)) {
-      if (selectedPlayers.length < 11) {
-        newPlayerList = [...selectedPlayers, playerToAdd]
-      } else {
-      return
-      }
-    } else {
-      {
+    // ! Making sure we're not on the actual footballers page where adding and removing players should not exist
+    if (currentPath !== '/footballers') {
+      // ! Variables
+      const idOfPlayerToAdd = parseInt(e.currentTarget.id) // id of player we're gonna add
+      const playerToAdd = filteredFootballers.find(player => player.id === idOfPlayerToAdd) // player himself to add to our selected players
+      const selectedPlayerCounts = countPlayersByPosition(selectedPlayers) // get the number of players inside of our current selected players list by position
+      // create a new empty array to spread the old list and make changes
+      let newPlayerList = []
+
+      // ! Logic
+      // check to see if we can find the player to add
+      if (!selectedPlayers.find(player => player.id === idOfPlayerToAdd)) {
+        // if yes, check if there are already 11 players and the max number of players by that position is reached or not
+        if (selectedPlayerCounts.TOT < maxCounts.TOT && selectedPlayerCounts[playerToAdd.position] < maxCounts[playerToAdd.position]) {
+          // if not add the player to the selected players array
+          newPlayerList = [...selectedPlayers, playerToAdd]
+        } else return // if yes simply return and do not add the player
+      } else { // if the player is already on the list remove the player and remove selected class
         newPlayerList = selectedPlayers.filter(player => player.id !== idOfPlayerToAdd)
+        e.currentTarget.classList.remove('selected')
       }
+      // set the selectedPlayers to the new list created
+      setSelectedPlayers(newPlayerList)
     }
-    setSelectedPlayers(newPlayerList)
   }
+
   useEffect(() => {
     console.log(selectedPlayers)
-  }, )
+    selectedPlayers ? console.log(countPlayersByPosition(selectedPlayers)) : ''
+  },)
 
-return (
-  <>
-    <section className="footballers">
-      <h1 style={{ marginTop: '40px' }}>Player Statistics</h1>
-      <Filters
-        positions={positions}
-        teams={teams}
-        filters={filters}
-        setFilters={setFilters}
-        filteredFootballers={filteredFootballers}
-        setfilteredFootballers={setfilteredFootballers}
-      />
-      <Table hover>
-        <thead>
-          <tr className='jersey-logo' style={{ textAlign: 'left' }}>
-            <th></th>
-            <th className='name'>Name</th>
-            <th className='price'>Price</th>
-            <th className='points'>Points</th>
-            <th className='inForm'>Form</th>
-            <th className='owned-by'>Owned by</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredFootballers.map(player => {
-            return (
-              <tr id={player.id} key={player.id} style={{ textAlign: 'left' }} onClick={handleClick}>
-                <td className='jersey-logo' style={{ width: '40px' }}>{<img style={{ width: 'inherit', marginRight: '10px' }} src={player.teamLogo} alt="team jersey" />}</td>
-                <td className='name'><span className='first-name'>{player.firstName}</span> <span className='last-name'>{player.lastName}</span> <br />
-                  <span style={{ fontWeight: 'lighter', fontStyle: 'italic' }}>{player.teamName} {player.position}</span></td>
-                <td className='price'>{player.price}</td>
-                <td className='points'>{player.totalPoints}</td>
-                <td className='inForm'>{player.form}</td>
-                <td className='owned-by'>{player.ownership}%</td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </Table>
-      <div className='paginationdiv'>
-        <Pagetoggle
-          nPages={nPages}
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
+  return (
+    <>
+      <section className="footballers">
+        <h1 style={{ marginTop: '40px' }}>Player Statistics</h1>
+        <Filters
+          positions={positions}
+          teams={teams}
+          filters={filters}
+          setFilters={setFilters}
+          filteredFootballers={filteredFootballers}
+          setfilteredFootballers={setfilteredFootballers}
         />
-      </div>
-    </section>
-  </>
-)
+        <Table hover>
+          <thead>
+            <tr className='jersey-logo'>
+              <th></th>
+              <th className='name'>Name</th>
+              <th className='price'>Price</th>
+              <th className='points'>Points</th>
+              <th className='inForm'>Form</th>
+              <th className='owned-by'>Owned by</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredFootballers.map(player => {
+              const isPlayerSelected = selectedPlayers?.some(selectedPlayer => selectedPlayer.id === player.id)
+              return (
+                <tr
+                  id={player.id}
+                  key={player.id}
+                  onClick={handleClick}
+                  className={isPlayerSelected ? 'selected' : ''}
+                >
+                  <td className='jersey-logo'>
+                    {<img src={player.teamLogo} alt="team jersey" />}
+                  </td>
+                  <td className='name'>
+                    <span className='first-name'>{player.firstName}</span> <span className='last-name'>{player.lastName}</span> <br />
+                    <span className='team-name'>{player.teamName}</span>
+                    <span className='position'> {player.position}</span>
+                  </td>
+                  <td className='price'>{player.price}</td>
+                  <td className='points'>{player.totalPoints}</td>
+                  <td className='inForm'>{player.form}</td>
+                  <td className='owned-by'>{player.ownership}%</td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </Table>
+        <div className='paginationdiv'>
+          <Pagetoggle
+            nPages={nPages}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+        </div>
+      </section>
+    </>
+  )
 }
