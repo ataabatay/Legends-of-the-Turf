@@ -3,34 +3,55 @@ nav {
   padding: 2em;
 }
 
-.navbar {
-  
-  
-  flex-direction: column;
+a.nav-link {
+  padding: 0;
+}
+
+.navbar.navbar.navbar-expand.navbar-light.bg-primary {
+  padding: 0 50px;
   width: 100%;
   flex-direction: column;
-  align-self: flex-end;
-  img{
-    height: 50px;
-    width: 40px;
-  }
   height: 150px;
+
+  // background image of navbar
   background-image: url(../assets/images/Nav.png);
-  background-size: contain;
   background-position: center;
   background-size: cover;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+
+  img {
+    height: 50px;
+    width: 40px;
+  }
+
+  .container-fluid {
+    margin-top: auto;
+
+    .me-auto.navbar-nav,
+    .justify-content-end.navbar-nav {
+
+      .nav-link {
+        padding: 0;
+        margin-right: 10px;
+        .btn.btn-primary {
+          margin: 0;
+        }
+      }
+    }
+  }
 }
+
 
 
 .me-auto {
-  margin-top: auto; 
+  margin-top: auto;
 }
-.team-links{
+
+.team-links {
   color: rgb(167, 165, 165);
   display: flex;
   height: 50px;
@@ -38,21 +59,22 @@ nav {
   margin-top: 10px;
   justify-content: center;
   font-weight: bold;
-    img{
+
+  img {
     width: 40px;
     height: 40px;
-    
-    
+
+
   }
-  img:hover{
+
+  img:hover {
     transform: scale(1.4);
   }
-  }
-  .navbar-expand .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 100vw;
-  }
-  
-  
+}
+
+.navbar-expand .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100vw;
+}
