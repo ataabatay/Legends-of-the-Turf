@@ -74,6 +74,8 @@ export default function Navigation() {
               <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>
               <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/footballers'>Player Stats</button></Nav.Link>
               <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/rules'>Rules</button></Nav.Link>
+              </Nav>
+          <Nav className='justify-content-end'>
               <Nav.Link onClick={handleSignOut}><button type='button' className='btn btn-primary' id='/signout'>Sign out</button></Nav.Link>
             </Nav>
           </Container>
