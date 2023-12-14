@@ -50,7 +50,7 @@ const TeamSlider = () => {
 
 
   return (
-    <div className="team-links">
+    <div className="team-links">Club Sites
       {teamLinks.map((team, index) => (
         <div key={index} className="team-item">
           <a href={team.url} target="_blank" rel="noopener noreferrer">
