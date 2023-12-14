@@ -31,3 +31,15 @@ input#email.form-control, input#password.form-control {
   border-radius: 3px 3px 0px 0px;
 }
 
+@media only screen and (max-width: 599px) {
+  .login-container {
+  width: 100%;
+  }
+  .login-form {
+    padding: 1.5rem;
+  }
+  .form-group {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+}
