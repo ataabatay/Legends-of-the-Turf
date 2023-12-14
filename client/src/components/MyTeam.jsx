@@ -75,7 +75,7 @@ export default function MyTeam() {
     <>
       <section className='my-team'>
         <section className='team-details'>
-          {image}
+          <img src={image} style={{width: '100px', borderRadius: '100px'}}></img>
           <div className='team-name'>Lets Go {teamName}!</div>
           <button
             style={{ marginTop: '5px' }}
