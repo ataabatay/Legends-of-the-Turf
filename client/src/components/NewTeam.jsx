@@ -24,15 +24,16 @@ export default function NewTeam() {
   }
 
   return (
-    <>
-      <h1>Create Your Team</h1>
+    
+    <div className='create-team'>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column', padding: '20px' }}>
-        <Form method="POST" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', padding: '20px', maxWidth: '400px' }}>
-        <ImageUploadField value={formData.image} formData={formData} setFormData={setFormData} />
-          <input type="text" name="teamName" placeholder='Team Name' onChange={handleChange} value={formData.teamName} style={{ margin: '5px', padding: '10px', width: '100%', boxSizing: 'border-box' }} />
-          <input type="submit" value="Create Team" style={{ margin: '10px', padding: '10px', cursor: 'pointer', backgroundColor: 'royalblue', color: 'white', border: 'none', borderRadius: '5px' }} />
+        <Form className="create-form" method="POST" >
+        <p className="login-title display-6 mb-8">Create Your Team</p>
+        <ImageUploadField  value={formData.image} formData={formData} setFormData={setFormData} />
+          <input className="upload" type="text" name="teamName" placeholder='Team Name' onChange={handleChange} value={formData.teamName}  />
+          <button className='btn btn-outline-primary btn-md m-4' type="submit" value="Create Team" >Create Team</button>
         </Form>
       </div>
-    </>
+      </div>
   )
 }
