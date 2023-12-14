@@ -1,3 +1,18 @@
+.selection-screen {
+  display: flex;
+
+  .player-selection-and-button {
+    flex-grow: 12;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  .available-players {
+    flex-grow: 1;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
+
 .footballers {
 
   .table.table-hover {

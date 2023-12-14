@@ -174,13 +174,13 @@ export default function Footballers({ selectedPlayers, setSelectedPlayers }) {
   }, [loaderData, recordsPerPage, currentPage, filters])
 
   function handleClick(e) {
-    // ! Making sure we're not on actual footballers page where adding and removing players should not exist
+    // ! Making sure we're not on the actual footballers page where adding and removing players should not exist
     if (currentPath !== '/footballers') {
       // ! Variables
-      console.log(e.currentTarget)
-      const idOfPlayerToAdd = parseInt(e.currentTarget.id)
-      const playerToAdd = filteredFootballers.find(player => player.id === idOfPlayerToAdd)
-      const selectedPlayerCounts = countPlayersByPosition(selectedPlayers)
+      const idOfPlayerToAdd = parseInt(e.currentTarget.id) // id of player we're gonna add
+      const playerToAdd = filteredFootballers.find(player => player.id === idOfPlayerToAdd) // player himself to add to our selected players
+      const selectedPlayerCounts = countPlayersByPosition(selectedPlayers) // get the number of players inside of our current selected players list by position
+      // create a new empty array to spread the old list and make changes
       let newPlayerList = []
 
       // ! Logic
@@ -230,8 +230,7 @@ export default function Footballers({ selectedPlayers, setSelectedPlayers }) {
           </thead>
           <tbody>
             {filteredFootballers.map(player => {
-              const isPlayerSelected = selectedPlayers.some(selectedPlayer => selectedPlayer.id === player.id)
-
+              const isPlayerSelected = selectedPlayers?.some(selectedPlayer => selectedPlayer.id === player.id)
               return (
                 <tr
                   id={player.id}
