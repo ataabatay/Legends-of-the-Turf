@@ -2,8 +2,7 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-
-import { Form, useLoaderData } from 'react-router-dom'
+import { Form, useLoaderData, useNavigate } from 'react-router-dom'
 
 //images
 import Arsenal from '../assets/images/arsenal.png'
@@ -29,16 +28,15 @@ import WolverhamptonWanderers from '../assets/images/wolves.png'
 import field from '../assets/images/Pitch.png'
 
 export default function MyTeam() {
+  const navigate = useNavigate()
   const usersTeam = useLoaderData()
   console.log(usersTeam)
-  const { teamName, players, image } = usersTeam
-  console.log(image)
+  const { teamName, players, image, _id } = usersTeam
 
   const sortedPlayers = players.sort((a, b) => {
     const positionOrder = { 'GK': 1, 'DF': 2, 'MF': 3, 'FW': 4 }
     return positionOrder[a] - positionOrder[b]
   })
-  console.log(sortedPlayers)
 
   // function to add images to each player using player.teamName
   function teamJersey(player) {
