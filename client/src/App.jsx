@@ -5,7 +5,7 @@ import { Outlet, useLocation, useNavigation } from 'react-router-dom'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Typewriter from './components/Typewriter'
-import { Spinner } from 'react-bootstrap'
+
 
 export default function App() {
   const currentPage = useLocation().pathname
@@ -21,9 +21,9 @@ export default function App() {
           navigation.state === 'idle' ? 
           <Outlet />
           :
-          <div className="centered d-flex justify-content-center align-items-center h-100">
-            <Spinner animation='grow' />
-          </div>
+          <div className="loading"></div>
+            
+          
         }
         </main>
       </>
