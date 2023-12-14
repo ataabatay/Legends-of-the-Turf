@@ -10,7 +10,6 @@ export default function NewTeam() {
   useEffect(() => {
     console.log(res)
     if (res?.status === 201) {
-      console.log('CREATED SUCCESSFULLY')
       navigate(`/myteam/${res.data._id}/edit/players`)
     }
   }, [res, navigate])
@@ -19,10 +18,6 @@ export default function NewTeam() {
     teamName: '',
     image: '',
   })
-
-  useEffect(() => {
-    console.log(formData)
-  }, [formData])
 
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value })

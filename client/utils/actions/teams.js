@@ -14,10 +14,10 @@ export async function deleteTeam(teamId){
 }
 
 export async function editTeam(request, teamId){
-  console.log(request)
   const data = await formToObj(request)
-  console.log(data)
-  return await axios.put(`/api/myteam/${teamId}/edit/players`, data, {
+  const convertedData = data.players.split(',')
+  console.log(convertedData)
+  return await axios.put(`/api/myteam/${teamId}/edit/players`, convertedData, {
     validateStatus: () => true,
     headers: {
       Authorization: `Bearer ${getToken()}`

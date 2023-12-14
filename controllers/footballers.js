@@ -34,13 +34,20 @@ export const getAllPlayers = async (req, res) => {
 // Path: 'myteam/:teamId/edit/players'
 export const addPlayersToTeam = async (req, res) => {
   try {
-    console.log(`REQBODY -> ${req.body}`)
     const teamToEdit = await Team.findById(req.params.teamId)
     console.log(`Team to edit -> ${teamToEdit}`)
-    const playersToAdd = req.body
-    console.log(`Players to add -> ${playersToAdd}`)
-    
-    Object.assign(teamToEdit, playersToAdd)
+
+    const dataFromRequest = req.body
+
+    const playersToAdd = await Promise.all(
+      dataFromRequest.map(async (id) => {
+        const player = await Footballer.findOne({publicId: id})
+        return player._id
+      })
+    )
+    console.log(`PLAYER TO ADD --> ${playersToAdd}`)
+
+    Object.assign(teamToEdit.players, playersToAdd)
     await teamToEdit.save()
     return res.status(200).json(teamToEdit)
   } catch (error) {
