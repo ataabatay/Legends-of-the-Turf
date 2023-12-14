@@ -32,35 +32,37 @@ export default function MyTeam() {
   const usersTeam = useLoaderData()
   console.log(usersTeam)
   const { teamName, players, image } = usersTeam
+  console.log(image)
 
   const sortedPlayers = players.sort((a, b) => {
     const positionOrder = { 'GK': 1, 'DF': 2, 'MF': 3, 'FW': 4 }
     return positionOrder[a] - positionOrder[b]
   })
+  console.log(sortedPlayers)
 
   // function to add images to each player using player.teamName
   function teamJersey(player) {
     const teamJerseys = {
-      'Arsenal': Arsenal,
-      'Aston Villa': AstonVilla,
-      'Bournemouth': Bournemouth,
-      'Brentford': Brentford,
-      'Brighton': Brighton,
-      'Burnley': Burnley,
-      'Chelsea': Chelsea,
-      'Everton': Everton,
-      'Fulham': Fulham,
-      'Liverpool': Liverpool,
-      'Luton Town': LutonTown,
-      'Manchester City': ManchesterCity,
-      'Manchester United': ManchesterUnited,
-      'Newcastle United': NewcastleUnited,
-      'Nottingham Forest': NottinghamForest,
-      'Crystal Palace': CrystalPalace,
-      'Sheffield United': SheffieldUnited,
-      'Tottenham Hotspur': TottenhamHotspur,
-      'West Ham United': WestHamUnited,
-      'Wolverhampton Wanderers': WolverhamptonWanderers,
+      'ARS': Arsenal,
+      'AVL': AstonVilla,
+      'BOU': Bournemouth,
+      'BRE': Brentford,
+      'BHA': Brighton,
+      'BUR': Burnley,
+      'CHE': Chelsea,
+      'EVE': Everton,
+      'FUL': Fulham,
+      'LIV': Liverpool,
+      'LUT': LutonTown,
+      'MCI': ManchesterCity,
+      'MUN': ManchesterUnited,
+      'NEW': NewcastleUnited,
+      'NFO': NottinghamForest,
+      'CRY': CrystalPalace,
+      'SHU': SheffieldUnited,
+      'TOT': TottenhamHotspur,
+      'WHU': WestHamUnited,
+      'WOL': WolverhamptonWanderers,
     }
 
     const jerseySrc = teamJerseys[player.teamName]
@@ -90,7 +92,7 @@ export default function MyTeam() {
             <section className='field'>
               <Row className='goalkeepers'>
                 {sortedPlayers
-                  .filter((player) => player.position === 'GK')
+                  .filter((player) => player.position === 'GKP')
                   .map((player) => (
                     <Col key={`${player.id}`} md={12} >
                       <div className='player-card'>
@@ -104,7 +106,7 @@ export default function MyTeam() {
 
               <Row className='defenders'>
                 {sortedPlayers
-                  .filter((player) => player.position === 'DF')
+                  .filter((player) => player.position === 'DEF')
                   .map((player) => (
                     <Col key={`${player.id}`} md={3}>
                       <div className='player-card'>
@@ -118,7 +120,7 @@ export default function MyTeam() {
 
               <Row className='midfielders'>
                 {sortedPlayers
-                  .filter((player) => player.position === 'MF')
+                  .filter((player) => player.position === 'MID')
                   .map((player, index) => (
                     <Col key={` ${player.id} ${index}`} md={3}>
                       <div className='player-card'>
@@ -132,7 +134,7 @@ export default function MyTeam() {
 
               <Row className='forwards'>
                 {sortedPlayers
-                  .filter((player) => player.position === 'FW')
+                  .filter((player) => player.position === 'FWD')
                   .map((player, index) => (
                     <Col key={`${player.id} ${index}`} md={6}>
                       <div className='player-card'>

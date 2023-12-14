@@ -49,7 +49,7 @@ export const addPlayersToTeam = async (req, res) => {
 // Path: '/myteam/:teamId'
 export const getMyTeam = async (req, res) => {
   try {
-    const teamToFetch = await Team.findById(req.params.teamId)
+    const teamToFetch = await Team.findById(req.params.teamId).populate('players')
     if (!teamToFetch) return res.status(404).json({ message: 'Team not found' })
     return res.status(200).json(teamToFetch)
   } catch (error) {
