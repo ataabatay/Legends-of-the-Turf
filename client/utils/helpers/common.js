@@ -36,6 +36,4 @@ export function activeUser(){
     console.log(payload)
     return payload.sub
   }
-
-  // Validate expiry date (payload.exp) by checking the number is greater than the date right now
 }

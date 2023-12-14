@@ -1,6 +1,5 @@
 import axios from "axios"
 //fetch userteam from database
-import {activeUser, getToken} from "./helpers/common.js"
 
 export async function getMyTeam(teamId){
   const res = await axios.get(`/api/myteam/${teamId}`)

@@ -35,8 +35,6 @@ export const getAllPlayers = async (req, res) => {
 export const addPlayersToTeam = async (req, res) => {
   try {
     const teamToEdit = await Team.findById(req.params.teamId)
-    console.log(`Team to edit -> ${teamToEdit}`)
-
     const dataFromRequest = req.body
 
     const playersToAdd = await Promise.all(
@@ -45,7 +43,6 @@ export const addPlayersToTeam = async (req, res) => {
         return player._id
       })
     )
-    console.log(`PLAYER TO ADD --> ${playersToAdd}`)
 
     Object.assign(teamToEdit.players, playersToAdd)
     await teamToEdit.save()

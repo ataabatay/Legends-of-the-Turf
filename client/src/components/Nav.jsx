@@ -2,9 +2,8 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { activeUser, getToken, removeToken } from '../../utils/helpers/common'
+import { getToken, removeToken } from '../../utils/helpers/common'
 import axios from 'axios'
-import premLogo from '../assets/images/prem.png'
 import Badgelinks from './Badgelinks'
 
 export default function Navigation() {

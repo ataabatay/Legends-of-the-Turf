@@ -22,7 +22,7 @@ import { FixturesAndLeagueTable } from '../utils/loader.js';
 
 // Style imports
 import './index.css'
-import { getMyTeam, getAllThirdPartyFootballers, getAllSeedDataPlayers } from '../utils/loader.js';
+import { getMyTeam, getAllThirdPartyFootballers } from '../utils/loader.js';
 import { deleteTeam, createTeam, editTeam } from '../utils/actions/teams.js'
 import { loginUser, registerUser, signoutUser } from '../utils/actions/auth.js';
 import Signout from './components/Signout.jsx';
