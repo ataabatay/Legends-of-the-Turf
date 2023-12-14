@@ -75,6 +75,11 @@ export default function MyTeam() {
         <section className='team-details'>
           {image}
           <div className='team-name'>Lets Go {teamName}!</div>
+          <button
+            style={{ marginTop: '5px' }}
+            onClick={() => navigate(`/myteam/${_id}/edit/players`)}>
+              Edit Team
+              </button>
           <Form method='DELETE'>
             <button style={{ marginTop: '5px' }}>Delete Team</button>
           </Form>

@@ -5,6 +5,10 @@ nav {
 
 .navbar {
   width: 100%;
+  img{
+    height: 50px;
+    width: 40px;
+  }
   height: 200px;
   background: linear-gradient(90deg, #02ffff 0%, #2318be 100%);
   display: flex;

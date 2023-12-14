@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate } from 'react-router-dom'
 import { activeUser, getToken, removeToken } from '../../utils/helpers/common'
 import axios from 'axios'
-
+import premLogo from '../assets/images/prem.png'
 export default function Navigation() {
 
   const navigate = useNavigate()
