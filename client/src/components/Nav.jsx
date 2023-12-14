@@ -66,12 +66,14 @@ export default function Navigation() {
     {!(isLoginPage || isRegisterPage) && (
     <Navbar className="navbar" bg="primary" data-bs-theme="dark">
       <Container fluid style={{ paddingLeft: 0}}>
-        <Nav className="me-auto">
-          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
-          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>
-          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/footballers'>Player Stats</button></Nav.Link>
-          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/rules'>Rules</button></Nav.Link>
-          <Nav.Link onClick={handleSignOut}><button type='button' className='btn btn-primary' id='/signout'>Sign out</button></Nav.Link>
+        <Nav className="me-auto flex-row">
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary btn-sm' id='/home'>Home</button></Nav.Link>
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary btn-sm' id='/myteam'>My Team</button></Nav.Link>
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary btn-sm' id='/footballers'>Player Stats</button></Nav.Link>
+          <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary btn-sm' id='/rules'>Rules</button></Nav.Link>
+          </Nav>
+          <Nav className='justify-content-end'>
+          <Nav.Link onClick={handleSignOut}><button type='button' className='btn btn-primary btn-sm' id='/signout'>Sign out</button></Nav.Link>
         </Nav>
       </Container>
     </Navbar>
