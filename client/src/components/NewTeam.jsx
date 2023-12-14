@@ -8,7 +8,6 @@ export default function NewTeam() {
   const navigate = useNavigate()
 
   useEffect(() => {
-
     console.log(res)
     if (res?.status === 201) {
       console.log('CREATED SUCCESSFULLY')
