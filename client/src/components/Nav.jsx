@@ -25,9 +25,11 @@ export default function Navigation() {
   // fetch the teamId given the userId
   const getActiveUserTeamId = async () => {
     try {
-      let response = await axios.get('/api/profile', {headers: {
-        Authorization: `Bearer ${token}`
-      }})
+      let response = await axios.get('/api/profile', {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
       if (!response) {
         response = null
         return response
@@ -42,15 +44,15 @@ export default function Navigation() {
       activeUserTeamId = await getActiveUserTeamId()
     }
 
-    
+
   }
   assignId()
 
-  const handleClick= (e) => {
+  const handleClick = (e) => {
     if (e.target.id !== '/myteam') {
       navigate(`${e.target.id}`)
     } else {
-      if (!activeUserTeamId ) {
+      if (!activeUserTeamId) {
         navigate('/myteam/newteam')
       } else {
         navigate(`/myteam/${activeUserTeamId}`)
@@ -58,37 +60,40 @@ export default function Navigation() {
     }
   }
 
-  
+
   const handleSignOut = () => {
     removeToken()
     navigate('/signout')
   }
 
   return (
-  
+
     <>
-    {!(isLoginPage || isRegisterPage) && (
-      
-      <><Badgelinks /><Navbar className="navbar" bg="primary" data-bs-theme="dark">
-          <Container fluid style={{ paddingLeft: 0 }}>
-            <Nav className="me-auto">
-              
-              <img style={{height:70, width:70,}}src={logoDB}/>
-              
-              <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
-              <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>
-              <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/footballers'>Player Stats</button></Nav.Link>
-              <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/rules'>Rules</button></Nav.Link>
+      {!(isLoginPage || isRegisterPage) && (
+
+        <>
+          <Badgelinks /><Navbar className="navbar" bg="primary" data-bs-theme="dark">
+            <div className="logo">
+              <img src={logoLB} />
+            </div>
+            <Container fluid style={{ paddingLeft: 0 }}>
+              <Nav className="me-auto">
+
+
+                <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
+                <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>
+                <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/footballers'>Player Stats</button></Nav.Link>
+                <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/rules'>Rules</button></Nav.Link>
               </Nav>
-          <Nav className='justify-content-end'>
-              <Nav.Link onClick={handleSignOut}><button type='button' className='btn btn-primary' id='/signout'>Sign out</button></Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar></>
-    
-    )}
+              <Nav className='justify-content-end'>
+                <Nav.Link onClick={handleSignOut}><button type='button' className='btn btn-primary' id='/signout'>Sign out</button></Nav.Link>
+              </Nav>
+            </Container>
+          </Navbar></>
+
+      )}
     </>
-    
+
   )
 }
 

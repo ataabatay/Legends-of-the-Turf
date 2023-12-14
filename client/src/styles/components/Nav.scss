@@ -8,10 +8,17 @@ a.nav-link {
 }
 
 .navbar.navbar.navbar-expand.navbar-light.bg-primary {
+  .logo {
+    display: flex;
+    margin-right: auto;
+    img{
+      margin: 10px 0;
+      width: 250px;
+    }
+  }
   padding: 0 50px;
   width: 100%;
   flex-direction: column;
-  height: 150px;
 
   // background image of navbar
   background-image: url(../assets/images/Nav.png);
@@ -22,11 +29,6 @@ a.nav-link {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-
-  img {
-    height: 50px;
-    width: 40px;
-  }
 
   .container-fluid {
     margin-top: auto;
