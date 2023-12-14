@@ -1,55 +1,55 @@
 
-import { Form, useLoaderData, useActionData, useNavigate } from "react-router-dom"
-import { useEffect, useState } from 'react'
+import { Form, useActionData, useNavigate } from "react-router-dom"
+import { useState } from 'react'
+import { getToken } from "../../utils/helpers/common"
+
 // Bootstrap Components
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import { Table } from "react-bootstrap"
 
 // Components
 import Footballers from "./Footballers"
-
+import axios from "axios"
 
 export default function PlayerSelection() {
 
-  // ! Helpers 
+  // ! Helpers
   const res = useActionData()
   const navigate = useNavigate()
+  const token = getToken()
+  async function CurrentUserId() {
+    try {
+      const profile = await axios.get('/api/profile', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      return profile.data
+    } catch (error) {
+      console.log(error)
+      return error
+    }
+  }
+
+  const getCurrentUserTeamId = async () => {
+    const user = await CurrentUserId()
+    console.log(user._id)
+    return user.teamsCreated[0]._id
+  }
 
   // ! States
   const [selectedPlayers, setSelectedPlayers] = useState([])
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   try {
-      
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  //   console.log(e.target)
-  //   console.log(selectedPlayers)
-  //   const formData = new FormData(e.target)
-  //   // Convert the players object to a JSON string and append it to the form data
-  //   // players.forEach((playerId, index) => {
-  //   //   formData.append(`players[${index}]`, playerId)
-  //   // })
-  //   // console.log('Form Data:', formData)
-  // }
-
   // ! Effects
-
-  useEffect(() => {
-    if (res?.status === 202) {
-      console.log('EDITED SUCCESSFULLY')
-      navigate(`/myteam/${res.data._id}`)
-    }
-  }, [res, navigate])
+  async function handeClick() {
+    const teamId = await getCurrentUserTeamId()
+    setTimeout(()=> {
+      navigate(`/myteam/${teamId}`)
+    }, 1)
+  }
 
   return (
     <>
       <div className="selection-screen">
-
         <div className="player-selection-and-button">
           <section className="selected-players">
             <Table>
@@ -75,13 +75,12 @@ export default function PlayerSelection() {
               </tbody>
             </Table>
           </section>
-
           <Form
             className="form"
             method="PUT"
-            // onSubmit={handleSubmit}
           >
-            <button type='submit' value='Make Transfers'>Make Transfers</button>
+            <input type="hidden" name='players' value={selectedPlayers.map(player => player.id)}></input>
+            <button type='submit' value='Make Transfers' onClick={handeClick}>Make Transfers</button>
           </Form>
         </div>
         <section className="available-players">
@@ -90,9 +89,7 @@ export default function PlayerSelection() {
             setSelectedPlayers={setSelectedPlayers}
           />
         </section>
-
       </div >
-
     </>
   )
 }
