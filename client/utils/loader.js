@@ -4,6 +4,7 @@ import {activeUser, getToken} from "./helpers/common.js"
 
 export async function getMyTeam(teamId){
   const res = await fetch(`/api/myteam/${teamId}`)
+  console.log(res)
   return res.json()
 }
 
