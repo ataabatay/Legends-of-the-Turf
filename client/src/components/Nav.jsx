@@ -5,6 +5,9 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { getToken, removeToken } from '../../utils/helpers/common'
 import axios from 'axios'
 import Badgelinks from './Badgelinks'
+import logoG from '../assets/images/logogold.png'
+import logoDB from '../assets/images/logodblue.png'
+import logoLB from '../assets/images/logolblue.png'
 
 export default function Navigation() {
 
@@ -69,6 +72,9 @@ export default function Navigation() {
       <><Badgelinks /><Navbar className="navbar" bg="primary" data-bs-theme="dark">
           <Container fluid style={{ paddingLeft: 0 }}>
             <Nav className="me-auto">
+              
+              <img style={{height:70, width:70,}}src={logoDB}/>
+              
               <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
               <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/myteam'>My Team</button></Nav.Link>
               <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/footballers'>Player Stats</button></Nav.Link>

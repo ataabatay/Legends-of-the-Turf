@@ -92,7 +92,7 @@ export default function MyTeam() {
                 {sortedPlayers
                   .filter((player) => player.position === 'GKP')
                   .map((player) => (
-                    <Col key={`${player.id}`} md={12} >
+                    <Col key={`${player.id}`}xs={12} sm={12} md={12} lg={12} >
                       <div className='player-card'>
                         <div className='player-jersey'>{teamJersey(player)}</div>
                         <p className='player-name'>{player.lastName}</p>
@@ -106,7 +106,7 @@ export default function MyTeam() {
                 {sortedPlayers
                   .filter((player) => player.position === 'DEF')
                   .map((player) => (
-                    <Col key={`${player.id}`} md={3}>
+                    <Col key={`${player.id}`} xs={3} sm={3} md={3} lg={3}>
                       <div className='player-card'>
                         <div className='player-jersey'>{teamJersey(player)}</div>
                         <p className='player-name'>{player.lastName}</p>
@@ -120,7 +120,7 @@ export default function MyTeam() {
                 {sortedPlayers
                   .filter((player) => player.position === 'MID')
                   .map((player, index) => (
-                    <Col key={` ${player.id} ${index}`} md={3}>
+                    <Col key={` ${player.id} ${index}`} xs={3} sm={3} md={3} lg={3}>
                       <div className='player-card'>
                         <div className='player-jersey'>{teamJersey(player)}</div>
                         <p className='player-name'>{player.lastName}</p>
@@ -134,7 +134,7 @@ export default function MyTeam() {
                 {sortedPlayers
                   .filter((player) => player.position === 'FWD')
                   .map((player, index) => (
-                    <Col key={`${player.id} ${index}`} md={6}>
+                    <Col key={`${player.id} ${index}`} xs={6} sm={6} md={6} lg={6}>
                       <div className='player-card'>
                         <div className='player-jersey'>{teamJersey(player)}</div>
                         <p className='player-name'>{player.lastName}</p>
