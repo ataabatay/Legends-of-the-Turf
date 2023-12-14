@@ -35,16 +35,17 @@ export default function PlayerSelection() {
     }
   }
 
-  const handleFormSubmit = (evt) => {
-    const formData = new FormData(evt.target)
-    // Convert the players object to a JSON string and append it to the form data
-    players.forEach((playerId, index) => {
-      formData.append(`players[${index}]`, playerId)
-    })
-    console.log('Form Data:', formData)
-  }
+  // const handleFormSubmit = (evt) => {
+  //   const formData = new FormData(evt.target)
+  //   // Convert the players object to a JSON string and append it to the form data
+  //   players.forEach((playerId, index) => {
+  //     formData.append(`players[${index}]`, playerId)
+  //   })
+  //   console.log('Form Data:', formData)
+  // }
 
   // ! Effects
+  
   useEffect(() => {
     if (res?.status === 202) {
       console.log('EDITED SUCCESSFULLY')
@@ -55,45 +56,8 @@ export default function PlayerSelection() {
   return (
     <>
       {/* <div>
-        <Form className="form" method="POST" onSubmit={handleFormSubmit}>
-
-          <label hidden htmlFor="name">
-            teamName
-          </label>
-          <input type="text" name="name" placeholder="Team Name" />
-
-          <label hidden htmlFor="image">
-            Image
-          </label>
-          <input type="text" name="image" placeholder="Image" />
-
-          <input type="hidden" name="players" value={JSON.stringify(players)} />
-          <button className="btn btn-pink" type="submit">
-            Edit
-          </button>
-        </Form>
+        <Form className="form" method="POST" onSubmit={handleFormSubmit}></Form>
       </div> */}
-
-      {/* <Container fluid>
-        <Row className="team-list">
-          {allPlayersData.map((player) => {
-            const { _id, firstName, lastName, price, position } = player
-            return (
-              <Col
-                key={_id}
-                xs={6}
-                md={4}
-                lg={3}
-                style={{ cursor: 'pointer' }}
-                onClick={() => handlePlayerClick(_id)}
-              >
-                {firstName} {lastName} {price} {position}
-                {players.includes(_id) ? ' (Selected)' : ''}
-              </Col>
-            )
-          })}
-        </Row>
-      </Container> */}
 
       <div className="selection-screen">
         <section className="selected-players">
