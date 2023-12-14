@@ -22,7 +22,7 @@ import { FixturesAndLeagueTable } from '../utils/loader.js';
 
 // Style imports
 import './index.css'
-import { getMyTeam, getAllFootballers, getAllPlayers } from '../utils/loader.js';
+import { getMyTeam, getAllThirdPartyFootballers, getAllSeedDataPlayers } from '../utils/loader.js';
 import { deleteTeam, createTeam, editTeam } from '../utils/actions/teams.js'
 import { loginUser, registerUser, signoutUser } from '../utils/actions/auth.js';
 import Signout from './components/Signout.jsx';
@@ -72,13 +72,13 @@ const router = createBrowserRouter(
       {
         path: '/myteam/:teamId/edit/players',
         element: <PlayerSelection />,
-        loader: getAllPlayers,
+        loader: getAllThirdPartyFootballers,
         action: async ({ request, params }) => editTeam(request, params.teamId),
       },
       {
         path: '/footballers',
         element: <Footballers />,
-        loader: getAllFootballers,
+        loader: getAllThirdPartyFootballers,
       },
       {
         path: '/footballers/:footballerId',

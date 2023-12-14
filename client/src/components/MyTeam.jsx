@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import { Form, useLoaderData, useActionData, useNavigate } from 'react-router-dom'
+import { Form, useLoaderData } from 'react-router-dom'
 
 //images
 import Arsenal from '../assets/images/arsenal.png'
@@ -27,14 +27,11 @@ import TottenhamHotspur from '../assets/images/tottenham.png'
 import WestHamUnited from '../assets/images/westham.png'
 import WolverhamptonWanderers from '../assets/images/wolves.png'
 import field from '../assets/images/Pitch.png'
-import { useTransition } from 'react'
 
 export default function MyTeam() {
-  const navigate = useNavigate()
-  const deleteTeam = useActionData()
   const usersTeam = useLoaderData()
   console.log(usersTeam)
-  const { _id, teamName, players, image } = usersTeam
+  const { teamName, players, image } = usersTeam
 
   const sortedPlayers = players.sort((a, b) => {
     const positionOrder = { 'GK': 1, 'DF': 2, 'MF': 3, 'FW': 4 }

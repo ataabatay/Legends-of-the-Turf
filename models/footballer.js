@@ -5,9 +5,9 @@ const footballerSchema = new mongoose.Schema({
   lastName: { type: String },
   teamName: { type: String, required: true },
   position: { type: String, required: true },
-  DOB: { type: String },
-  height: { type: String },
   price: { type: Number, required: true },
+  totalPoints: {type: Number},
+  publicId: {type: Number, required: true},
 })
 
 export default mongoose.model('Footballer', footballerSchema)

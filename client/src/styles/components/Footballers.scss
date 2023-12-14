@@ -1,0 +1,26 @@
+.footballers {
+
+  .table.table-hover {
+    thead {
+
+      .inForm,
+      .owned-by {
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+
+        .inForm,
+        .owned-by {
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

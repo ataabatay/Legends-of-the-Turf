@@ -1,0 +1,58 @@
+.selection-screen {
+  display: flex;
+}
+
+.selected-players {
+  flex-grow: 14;
+}
+
+.available-players {
+  flex-grow: 1;
+
+  .footballers {
+    max-width: 200px;
+
+    h1 {
+      display: none;
+    }
+
+    .paginationdiv {
+      width: inherit;
+    }
+
+    .table.table-hover {
+
+      thead {
+        tr {
+          .inForm,
+          .owned-by {
+            display: none;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          .inForm,
+          .owned-by {
+            display: none;
+          }
+          td{
+            .first-name{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.jersey-logo,
+.name,
+.price,
+.points,
+.inForm,
+.owned-by {
+  vertical-align: middle;
+}

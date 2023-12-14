@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useLoaderData } from 'react-router-dom'
 import { useEffect, useState, } from 'react'
 import Filters from './Filters.jsx'
@@ -51,7 +52,7 @@ const teamLogos = [
   { team: 'WOL', logo: WOL },
 ];
 
-export default function Footballers() {
+export default function Footballers({ selectedPlayers, setSelectedPlayers }) {
   // ! Using and making the loader data usable
   // All data upon initial load
   const loaderData = useLoaderData()
@@ -125,8 +126,6 @@ export default function Footballers() {
       }
     }).sort((a, b) => b.price - a.price)
 
-    console.log(cleanedFootballersData)
-
     // filter the cleanedFootballersData
     let playersToDisplay = []
     // if seeing all the players
@@ -157,8 +156,30 @@ export default function Footballers() {
     setfilteredFootballers(activePlayersToRender)
   }, [loaderData, recordsPerPage, currentPage, filters])
 
-  return (
-    <>
+  function handleClick(e) {
+    const idOfPlayerToAdd = parseInt(e.currentTarget.id)
+    const playerToAdd = filteredFootballers.find(player => player.id === idOfPlayerToAdd)
+    let newPlayerList = []
+    if (!selectedPlayers.find(player => player.id === idOfPlayerToAdd)) {
+      if (selectedPlayers.length < 11) {
+        newPlayerList = [...selectedPlayers, playerToAdd]
+      } else {
+      return
+      }
+    } else {
+      {
+        newPlayerList = selectedPlayers.filter(player => player.id !== idOfPlayerToAdd)
+      }
+    }
+    setSelectedPlayers(newPlayerList)
+  }
+  useEffect(() => {
+    console.log(selectedPlayers)
+  }, )
+
+return (
+  <>
+    <section className="footballers">
       <h1 style={{ marginTop: '40px' }}>Player Statistics</h1>
       <Filters
         positions={positions}
@@ -170,26 +191,26 @@ export default function Footballers() {
       />
       <Table hover>
         <thead>
-          <tr style={{ textAlign: 'left' }}>
+          <tr className='jersey-logo' style={{ textAlign: 'left' }}>
             <th></th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Points</th>
-            <th>Form</th>
-            <th>Owned by</th>
+            <th className='name'>Name</th>
+            <th className='price'>Price</th>
+            <th className='points'>Points</th>
+            <th className='inForm'>Form</th>
+            <th className='owned-by'>Owned by</th>
           </tr>
         </thead>
         <tbody>
-          {filteredFootballers.map((player, idx) => {
+          {filteredFootballers.map(player => {
             return (
-              <tr key={idx} style={{ textAlign: 'left' }}>
-                <td style={{ width: '40px' }}>{<img style={{ width: 'inherit', marginRight: '10px' }} src={player.teamLogo} alt="team jersey" />}</td>
-                <td>{player.firstName} {player.lastName} <br />
+              <tr id={player.id} key={player.id} style={{ textAlign: 'left' }} onClick={handleClick}>
+                <td className='jersey-logo' style={{ width: '40px' }}>{<img style={{ width: 'inherit', marginRight: '10px' }} src={player.teamLogo} alt="team jersey" />}</td>
+                <td className='name'><span className='first-name'>{player.firstName}</span> <span className='last-name'>{player.lastName}</span> <br />
                   <span style={{ fontWeight: 'lighter', fontStyle: 'italic' }}>{player.teamName} {player.position}</span></td>
-                <td>{player.price}</td>
-                <td>{player.totalPoints}</td>
-                <td>{player.form}</td>
-                <td>{player.ownership}%</td>
+                <td className='price'>{player.price}</td>
+                <td className='points'>{player.totalPoints}</td>
+                <td className='inForm'>{player.form}</td>
+                <td className='owned-by'>{player.ownership}%</td>
               </tr>
             )
           })}
@@ -202,6 +223,7 @@ export default function Footballers() {
           setCurrentPage={setCurrentPage}
         />
       </div>
-    </>
-  )
+    </section>
+  </>
+)
 }

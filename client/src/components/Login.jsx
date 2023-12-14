@@ -20,14 +20,14 @@ export default function Login() {
       
     <div className='login-container' >
     <Form className="login-form" method="POST">
-    <p class="login-title display-6 mb-8">Login</p>
-      <div class="form-group">
-        <input type="email" class="form-control" id="email" name="email" placeholder='Email' placeholder="Your email" />
+    <p className="login-title display-6 mb-8">Login</p>
+      <div className="form-group">
+        <input type="email" className="form-control" id="email" name="email" placeholder="Your email" />
         </div>
-        <div class="form-group">
-        <input className="input" type="password" class="form-control" id="password" name="password" placeholder="Password" />
+        <div className="form-group">
+        <input className="input form-control" type="password" id="password" name="password" placeholder="Password" />
         <button className='btn btn-outline-primary btn-md m-4'  type="submit">Login</button>
-        {res && <p class='danger'>{res.data.message}</p>}
+        {res && <p className='danger'>{res.data.message}</p>}
         </div >
     </Form>
     </div>

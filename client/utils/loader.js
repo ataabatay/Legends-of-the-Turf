@@ -12,7 +12,7 @@ export async function  getSinglePlayer(id){
   return res.json()
 }
 
-export async function getAllPlayers(){
+export async function getAllSeedDataPlayers(){
   const res = await fetch('/api/players')
   return res.json()
 }
@@ -28,7 +28,7 @@ export async function getAllPlayers(){
 //   }
 // }
 
-export async function getAllFootballers() {
+export async function getAllThirdPartyFootballers() {
   const playersFromThirdParty = await axios.get('/rest/bootstrap-static/')
   return playersFromThirdParty
 }
