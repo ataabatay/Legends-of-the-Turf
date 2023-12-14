@@ -1,13 +1,19 @@
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { activeUser, getToken, removeToken } from '../../utils/helpers/common'
 import axios from 'axios'
 import premLogo from '../assets/images/prem.png'
+
 export default function Navigation() {
 
   const navigate = useNavigate()
+  const location = useLocation()
+
+  const isLoginPage = location.pathname === '/login'
+  const isRegisterPage = location.pathname === '/register'
+
 
   // get the details of the active user from id
   const token = getToken()
@@ -57,6 +63,7 @@ export default function Navigation() {
 
   return (
     <>
+    {!(isLoginPage || isRegisterPage) && (
     <Navbar className="navbar" bg="primary" data-bs-theme="dark">
       <Container fluid style={{ paddingLeft: 0}}>
         <Nav className="me-auto">
@@ -68,7 +75,9 @@ export default function Navigation() {
         </Nav>
       </Container>
     </Navbar>
+    )}
     </>
   )
 }
+
 
