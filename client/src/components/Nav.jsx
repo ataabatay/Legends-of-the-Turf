@@ -30,7 +30,7 @@ export default function Navigation() {
           Authorization: `Bearer ${token}`
         }
       })
-      if (!response) {
+      if (!response || !response.data.teamsCreated[0]) {
         response = null
         return response
       }
