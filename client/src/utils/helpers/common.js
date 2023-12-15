@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const axiosFPL = axios.create({
-  baseURL: import.meta.env.MODE === 'development' ? '/' : 'https://fantasy.premierleague.com/'
+  baseURL: import.meta.env.MODE === 'development' ? '/' : 'https://corsproxy.io/?' + encodeURIComponent('https://fantasy.premierleague.com/')
 })
  
 axiosFPL.interceptors.request.use(config => {
