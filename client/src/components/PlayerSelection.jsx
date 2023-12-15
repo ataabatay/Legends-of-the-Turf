@@ -44,7 +44,7 @@ export default function PlayerSelection() {
     const teamId = await getCurrentUserTeamId()
     setTimeout(()=> {
       navigate(`/myteam/${teamId}`)
-    }, 200)
+    }, 500)
   }
 
   return (
