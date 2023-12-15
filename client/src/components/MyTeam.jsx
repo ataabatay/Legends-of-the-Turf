@@ -74,7 +74,7 @@ export default function MyTeam() {
       <section className='my-team'>
         <section className='team-details'>
           <img src={image} style={{width: '100px', borderRadius: '100px'}}></img>
-          <div className='team-name'>Lets Go {teamName}!</div>
+          <div className='team-name'>{teamName}</div>
           <button type='button' className='btn btn-primary btn-sm'
             style={{ marginTop: '5px' }}
             onClick={() => navigate(`/myteam/${_id}/edit/players`)}>
