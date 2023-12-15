@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { getToken, removeToken } from '../../utils/helpers/common'
+import { getToken, removeToken } from '../utils/helpers/common'
 import axios from 'axios'
 import Badgelinks from './Badgelinks'
 import logoG from '../assets/images/logogold.png'
@@ -30,7 +30,7 @@ export default function Navigation() {
           Authorization: `Bearer ${token}`
         }
       })
-      if (!response) {
+      if (!response || !response.data.teamsCreated[0]) {
         response = null
         return response
       }

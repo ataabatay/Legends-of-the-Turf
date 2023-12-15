@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Form, useActionData, useNavigate } from 'react-router-dom'
-import { setToken } from '../../utils/helpers/common'
+import { setToken } from '../utils/helpers/common'
 
 
 

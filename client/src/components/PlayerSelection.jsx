@@ -1,7 +1,7 @@
 
 import { Form, useActionData, useNavigate } from "react-router-dom"
 import { useState } from 'react'
-import { getToken } from "../../utils/helpers/common"
+import { getToken } from "../utils/helpers/common"
 
 // Bootstrap Components
 import { Table } from "react-bootstrap"

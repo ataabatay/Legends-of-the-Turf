@@ -118,7 +118,9 @@ export default function Footballers({ selectedPlayers, setSelectedPlayers }) {
 
   useEffect(() => {
     // Getting a set of unique team names
-    const teamNames = loaderData.data.teams.map(team => { return team.short_name })
+    if (loaderData){
+      console.log(loaderData)
+      const teamNames = loaderData.data.teams.map(team => { return team.short_name })
     setTeams(teamNames)
 
     // Getting a set of unique footballer positions
@@ -171,6 +173,7 @@ export default function Footballers({ selectedPlayers, setSelectedPlayers }) {
     // final result of players to show on per page (30 items) after filtering is done
     const activePlayersToRender = playersToDisplay.slice(indexOfFirst, indexOfLast)
     setfilteredFootballers(activePlayersToRender)
+    } 
   }, [loaderData, recordsPerPage, currentPage, filters])
 
   function handleClick(e) {

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { removeToken } from '../../utils/helpers/common'
+import { removeToken } from '../utils/helpers/common'
 import { useEffect, useState } from 'react'
 
 

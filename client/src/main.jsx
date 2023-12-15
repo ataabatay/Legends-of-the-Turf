@@ -18,13 +18,13 @@ import NewTeam from '../src/components/NewTeam.jsx';
 import PlayerSelection from '../src/components/PlayerSelection.jsx';
 import Footballers from '../src/components/Footballers.jsx';
 import SingleFootballer from '../src/components/SingleFootballer.jsx';
-import { FixturesAndLeagueTable } from '../utils/loader.js';
+import { FixturesAndLeagueTable } from './utils/loader.js';
 
 // Style imports
 import './index.css'
-import { getMyTeam, getAllThirdPartyFootballers } from '../utils/loader.js';
-import { deleteTeam, createTeam, editTeam } from '../utils/actions/teams.js'
-import { loginUser, registerUser, signoutUser } from '../utils/actions/auth.js';
+import { getMyTeam, getAllThirdPartyFootballers } from './utils/loader.js';
+import { deleteTeam, createTeam, editTeam } from './utils/actions/teams.js'
+import { loginUser, registerUser, signoutUser } from './utils/actions/auth.js';
 import Signout from './components/Signout.jsx';
 
 

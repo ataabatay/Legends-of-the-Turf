@@ -10,7 +10,7 @@ import Typewriter from './components/Typewriter'
 export default function App() {
   const currentPage = useLocation().pathname
   const navigation = useNavigation()
-
+console.log(import.meta.env.MODE)
   return (
     <>
       {currentPage !== '/' ? 

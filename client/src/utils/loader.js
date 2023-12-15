@@ -1,3 +1,4 @@
+import { axiosFPL, axiosChelsea } from "./helpers/common"
 import axios from "axios"
 //fetch userteam from database
 
@@ -17,15 +18,15 @@ export async function getAllSeedDataPlayers(){
 }
 
 export async function getAllThirdPartyFootballers() {
-  const playersFromThirdParty = await axios.get('/rest/bootstrap-static/')
+  const playersFromThirdParty = await axiosFPL.get('/rest/bootstrap-static/')
   return playersFromThirdParty
 }
 
 export async function FixturesAndLeagueTable(){
   const [ fixturesRes, teamsRes, leagueRes ] = await Promise.all([
-    axios.get('/rest/fixtures/?future=1'),
-    axios.get('/rest/bootstrap-static/'), 
-    axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
+    axiosFPL.get('/rest/fixtures/?future=1'),
+    axiosFPL.get('/rest/bootstrap-static/'), 
+    axiosChelsea.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
   ])
   return {
     fixtures: fixturesRes.data,
