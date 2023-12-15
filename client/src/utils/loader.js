@@ -24,8 +24,8 @@ export async function getAllThirdPartyFootballers() {
 
 export async function FixturesAndLeagueTable(){
   const [ fixturesRes, teamsRes, leagueRes ] = await Promise.all([
-    axios.get('/rest/fixtures/?future=1'),
-    axios.get('/rest/bootstrap-static/'), 
+    axiosFPL.get('/rest/fixtures/?future=1'),
+    axiosFPL.get('/rest/bootstrap-static/'), 
     axios.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
   ])
   return {
