@@ -12,6 +12,18 @@ axiosFPL.interceptors.request.use(config => {
   return config
 })
 
+export const axiosChelsea = axios.create({
+  baseURL: import.meta.env.MODE === 'development' ? '/' : 'https://corsproxy.io/?' + encodeURIComponent('https://www.chelseafc.com/en')
+})
+ 
+axiosChelsea.interceptors.request.use(config => {
+  if (import.meta.env.MODE === 'production') {
+    config.url = config.url.replace(/^\/plt/, '/api')
+  }
+  console.log(config)
+  return config
+})
+
 const tokenName = 'LEGENDS-OF-THE-TURF-TOKEN'
 
 
