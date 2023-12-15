@@ -28,11 +28,16 @@ div.landing {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 911px){
+div.landing {
+  width: 100%;
+}
+} 
+
 @media only screen and (max-width: 599px) {
-  .landing {
-    
-    background-image: url(../assets/images/landing-mobile.png); 
-    background-size: contain; 
+  div.landing {
+    background-size: cover; 
+    width: 100%;
     
     &-content {
       max-width: 599px;  
@@ -45,8 +50,8 @@ div.landing {
       text-align: center;
     }
   }
+  .login {
+    margin-right: 2em; 
+  }
 }
 
-.login {
-  margin-right: 2em; 
-}

@@ -80,8 +80,8 @@ export default function MyTeam() {
             onClick={() => navigate(`/myteam/${_id}/edit/players`)}>
               Edit Team
               </button>
-          <Form method='DELETE'>
-            <button type='button' className='btn btn-primary btn-sm' style={{ marginTop: '5px' }}>Delete Team</button>
+          <Form method='POST'>
+            <button type='submit' className='btn btn-primary btn-sm' style={{ marginTop: '5px' }}>Delete Team</button>
           </Form>
         </section>
 

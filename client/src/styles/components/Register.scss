@@ -1,7 +1,8 @@
 .register-container {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+  height: 100vh;  
   background: #f2f2f2;
 }
 
@@ -26,3 +27,15 @@ input {
   border-radius: 3px;
 }
 
+@media only screen and (max-width: 599px) {
+  .login-container {
+  width: 100%;
+  }
+  .login-form {
+    padding: 1.5rem;
+  }
+  .form-group {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+}
