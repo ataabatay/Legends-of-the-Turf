@@ -1,3 +1,4 @@
+import { axiosFPL } from "./helpers/common"
 import axios from "axios"
 //fetch userteam from database
 
@@ -17,7 +18,7 @@ export async function getAllSeedDataPlayers(){
 }
 
 export async function getAllThirdPartyFootballers() {
-  const playersFromThirdParty = await axios.get('/rest/bootstrap-static/')
+  const playersFromThirdParty = await axiosFPL.get('/rest/bootstrap-static/')
   return playersFromThirdParty
 }
 

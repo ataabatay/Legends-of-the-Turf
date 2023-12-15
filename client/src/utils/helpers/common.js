@@ -1,4 +1,11 @@
+import axios from 'axios'
+
+export const axiosFPL = axios.create({
+  baseURL: import.meta.env.MODE === 'development' ? '/' : 'https://fantasy.premierleague.com/'
+})
+ 
 const tokenName = 'LEGENDS-OF-THE-TURF-TOKEN'
+
 
 // This function takes a request object and returns form data as a JS object
 export async function formToObj(request){
