@@ -48,13 +48,13 @@ For the purposes of project management and monitoring, I was selected as the tea
 
 We continued with a discussion of the functionalities we wanted to include which drove what endpoints we were going to include on the server side for the client side to call. Based on our discussions and decisions for the user journeys, I created the wireframes for each page including how the user journey would be on the app. Below are snippets from Figma.
 
-**_(Images to come)_**
+![1](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/7b747147-a0a3-4d43-acb4-79f38cfd657c)
 
 Below are close up snapshots of several examples of the pages.
 
 **Home Page**
 
-**_(Images to come)_**
+![image](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/148dd414-5964-4dc7-bb1b-d7c7671425a1)
 
 We designed the user journey so that when a user lands on our app, the first thing they land on is a page where they are asked to either register or login. If the user registers for the first time, they are redirected to the login page so to login. Once logged in they land on what we call the Home page as seen above where they can see the fixture of real-time football matches scheduled to be played that week as well as a live league table. 
 
@@ -62,22 +62,22 @@ On this page when the user clicks on “My Team” from the nav, if the user alr
 
 **My Team Page**
 
-**_(Images to come)_**
+![image](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/c4c1f29d-eca0-4d22-b9f0-166e1555e1b9)
 
 My team page has the functionality to allow you to delete your team or edit the players you have selected for your squad which is missing from the wireframes but was added later.
 
 **Create Team Page**
 
-**_(Images to come)_**
+![image](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/11d32a32-fc84-44b2-ac84-7e5da4157270)
 
 Below is a snippet of the user stories we initially discussed and agreed to bring into the app.
 
-**_(Images to come)_**
+![image](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/5f08616b-abad-4582-8618-125215b475c7)
 
 We have also discussed the data models as well as the general sense of the router, check below.
 
-**_(Images to come)_**
-**_(Images to come)_**
+![image](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/a9e9ab43-fc78-49b1-9fa8-ca71251c63fa)
+![image](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/f79d68ac-e852-4276-8f0e-2c1ca02a1ccf)
 
 Once the plan was conceived, I then created the action plan of what to be worked on, by who and when. The group lacked familiarity with Trello or any other project management tool, so we chose to keep track of the work in a simpler manner using Notion. 
 
@@ -85,7 +85,7 @@ Every morning, I held a stand-up meeting for 30 mins for each of us to go throug
 
 **Project Management Table**
 
-**_(Images to come)_**
+![image](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/c5abfddd-c410-4916-bae5-4b953709367a)
 
 ## Build Process
 A detailed map of all the items we worked on can be found above in the project management table. Chronology of the was as follows:
@@ -93,31 +93,267 @@ A detailed map of all the items we worked on can be found above in the project m
 ### Day 1
 The team worked on the initial version of the Express app, created a nav bar, created some seed data and the models and schemas. I worked on creating a router for the server side and the initial version of the controllers page with simple functions to be completed later on.
 
-**_(Images to come)_**
+```javascript
+import secureRoute from './secureRoute.js'
 
+const router = express.Router()
+
+router.route('/myteam/newteam')
+  .post(secureRoute, createTeam)
+
+router.route('/players')
+  .get(getAllPlayers)
+
+router.route('/myteam/:teamId/edit/players')
+  .put(secureRoute, addPlayersToTeam)
+
+router.route('/myteam/:teamId/edit/details')
+  .put(secureRoute, changeTeamDetails)
+
+router.route('/myteam/:teamId')
+  .get(getMyTeam)
+  .delete(secureRoute, deleteTeam)
+
+router.route('/players/:playerId')
+  .get(getSinglePlayer)
+
+router.route('/teams')
+  .get(getAllTeams)
+
+router.route('/register')
+  .post(register)
+
+router.route('/login')
+  .post(login)
+
+// User
+router.route('/profile')
+  .get(secureRoute, getProfile)
+
+export default router
+```
 ### Day 2
 The team worked on testing all the endpoints created and on initial designs. I worked on the footer, on redoing the seed data, and on the rules page with React accordion. This took me a long time as this was the first time I worked with React components and getting the accordion work was not easy. I made the mistake of not reading the “Get Started” section of React Bootstrap and spent a considerable time trying to get the Accordion to appear on screen. The result was a success.
 
-**_(Images to come)_**
+![image](https://github.com/ataabatay/Legends-of-the-Turf/assets/25418371/6b8dac1a-c063-4fac-88ff-b22e380b1d75)
 
 ### Day 3
 The team worked on creating a secure route for endpoints, Register and Login routes, and on testing register and login endpoints. I worked on the initial version of the Players page that consumes third party API to load players and show in a React table. Working with the table component was much easier after the accordion. I also made improvements on the controller functions.
 
-**_(Images to come)_**
-**_(Images to come)_**
-**_(Images to come)_**
+```javascript
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    proxy: {
+      // own API
+      '/api': 'http://localhost:3000',
+      // 3rd party
+      '/rest': {
+        target: 'https://fantasy.premierleague.com/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/rest/, '/api'),
+        
+      },
+      '/plt': {
+        target: 'https://www.chelseafc.com/en',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/plt/, '/api'),
+        
+      }
+  }
+}
+})
+
+```
+
+```javascript
+export async function getAllThirdPartyFootballers() {
+  const playersFromThirdParty = await axiosFPL.get('/rest/bootstrap-static/')
+  return playersFromThirdParty
+}
+
+export async function FixturesAndLeagueTable(){
+  const [ fixturesRes, teamsRes, leagueRes ] = await Promise.all([
+    axiosFPL.get('/rest/fixtures/?future=1'),
+    axiosFPL.get('/rest/bootstrap-static/'), 
+    axiosChelsea.get('/plt/fixtures/league-table?entryId=30EGwHPO9uwBCc75RQY6kg')
+  ])
+  return {
+    fixtures: fixturesRes.data,
+    teams: teamsRes.data.teams,
+    leagueTable: leagueRes.data,
+  }
+}
+```
+
+```javascript
+        <Table hover>
+          <thead>
+            <tr className='jersey-logo'>
+              <th></th>
+              <th className='name'>Name</th>
+              <th className='price'>Price</th>
+              <th className='points'>Points</th>
+              <th className='inForm'>Form</th>
+              <th className='owned-by'>Owned by</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredFootballers.map(player => {
+              const isPlayerSelected = selectedPlayers?.some(selectedPlayer => selectedPlayer.id === player.id)
+              return (
+                <tr
+                  id={player.id}
+                  key={player.id}
+                  onClick={handleClick}
+                  className={isPlayerSelected ? 'selected' : ''}
+                >
+                  <td className='jersey-logo'>
+                    {<img src={player.teamLogo} alt="team jersey" />}
+                  </td>
+                  <td className='name'>
+                    <span className='first-name'>{player.firstName}</span> <span className='last-name'>{player.lastName}</span> <br />
+                    <span className='team-name'>{player.teamName}</span>
+                    <span className='position'> {player.position}</span>
+                  </td>
+                  <td className='price'>{player.price}</td>
+                  <td className='points'>{player.totalPoints}</td>
+                  <td className='inForm'>{player.form}</td>
+                  <td className='owned-by'>{player.ownership}%</td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </Table>
+```
 
 ### Day 4
 The team worked on signout functionality, routing logic for the “My Team” page and initial version of the My Team page. In the meantime, I worked on separate filtering and sorting dropdown components as well as functionality for all the players in the “Players” page. I also worked on pagination for players as there were in excess of 600 players to show.
 
-**_(Images to come)_**
-**_(Images to come)_**
+```javascript
+export default function Filters({ positions, teams, filters, setFilters}) {
+
+  function handleFilterChange(e) {
+    let newFilter = {}
+    newFilter = {
+      ...filters,
+      filterBy: e
+    }
+    setFilters(newFilter)
+  }
+
+  function handleSortChange(e) {
+    let newFilter = {}
+    newFilter = {
+      ...filters,
+      sortBy: e
+    }
+    setFilters(newFilter)
+    console.log(filters)
+  }
+
+  return (
+    <>
+      <div style={{ display: 'flex' }}>
+
+        {/* Filter button */}
+        <DropdownButton
+          align="end"
+          title={`${filters.filterBy}`}
+          id="dropdown-menu-align-end"
+          style={{ margin: '20px' }}
+          onSelect={handleFilterChange}
+        >
+          <Dropdown.Item eventKey={'ALL'}>All Players</Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Header style={{ fontSize: '1.2em', fontWeight: 'bold', color: 'black' }}>By Position</Dropdown.Header>
+          {positions.map((position, idx) => {
+            return <Dropdown.Item eventKey={position} key={idx}>{position}</Dropdown.Item>
+          })}
+          <Dropdown.Divider />
+          <Dropdown.Header style={{ fontSize: '1.2em', fontWeight: 'bold', color: 'black' }}>By Team</Dropdown.Header>
+          {teams.map((team, idx) => {
+            return <Dropdown.Item eventKey={team} key={idx}>{team}</Dropdown.Item>
+          })}
+        </DropdownButton>
+
+        {/* Sort button */}
+        <DropdownButton
+          align="end"
+          title={`${filters.sortBy}`}
+          id="dropdown-menu-align-end"
+          style={{ margin: '20px' }}
+          onSelect={handleSortChange}
+        >
+          <Dropdown.Item eventKey="Price">Price</Dropdown.Item>
+          <Dropdown.Item eventKey="Points">Points</Dropdown.Item>
+          <Dropdown.Item eventKey="Form">Form</Dropdown.Item>
+          <Dropdown.Item eventKey="Ownership">Ownership</Dropdown.Item>
+        </DropdownButton>
+      </div>
+    </>
+  )
+}
+```
 
 **Pagination**
 
-**_(Images to come)_**
-**_(Images to come)_**
-**_(Images to come)_**
+```javascript
+export default function Pagetoggle({ nPages, currentPage, setCurrentPage }) {
+
+  // All the page numbers array to use as reference on the pagination component
+  const pageNumbers = [...Array(nPages + 1).keys()].slice(1)
+
+
+  // Handle click and set the current page to the page clicked
+  let active = currentPage
+
+  const handleClick = (e) => {
+    setCurrentPage(parseInt(e.target.text))
+    active = currentPage
+  }
+
+  return (
+    <>
+      <Pagination>
+        {pageNumbers.map(pageNumber => {
+          return <Pagination.Item
+            key={pageNumber}
+            onClick={handleClick}
+            active={pageNumber === active}
+          >
+            {pageNumber}
+          </Pagination.Item>
+        })}
+      </Pagination>
+    </>
+  )
+}
+```
+
+```javascript
+        <div className='paginationdiv'>
+          <Pagetoggle
+            nPages={nPages}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+        </div>
+```
+
+```javascript
+    // Set the number of pages that will be shown in the pagination
+    setNPages(Math.ceil(cleanedFootballersData.length / recordsPerPage))
+    // index of the last item on page (based on the current page number multiplied by how number of items per page)
+    const indexOfLast = currentPage * recordsPerPage
+    // index of the first item on page
+    const indexOfFirst = indexOfLast - recordsPerPage
+
+    // final result of players to show on per page (30 items) after filtering is done
+    const activePlayersToRender = playersToDisplay.slice(indexOfFirst, indexOfLast)
+    setfilteredFootballers(activePlayersToRender)
+    } 
+```
 
 ### Day 5
 The team worked on the DELETE team endpoint and the functionality to be able to delete your team. On day 5 I worked on some seed data fixes, revamped My Team page designs completely to show the pitch and the players, and also worked on bug fixing for routing, API data not loading, and MyTeam page not leading to the New Team page if you don’t have a team.
@@ -125,11 +361,84 @@ The team worked on the DELETE team endpoint and the functionality to be able to 
 ### Day 6
 On the final days, the team focused on designs and image upload functionality with Cloudinary while I focused on player selection functionality with rules such as transferring max 4 defenders, 4 midfielders, 2 forwards, 1 goalkeeper. I also worked on changing players in the team after the initial selection (making transfers) functionality. I used the same footballers page component I created on the player selection page which made the footballers page component a little more complex than I intended. However, the result was a display of reusability of a component which made me understand the power of object oriented programming and React even further.
 
-**_(Images to come)_**
+```javascript
+  function handleClick(e) {
+    // ! Making sure we're not on the actual footballers page where adding and removing players should not exist
+    if (currentPath !== '/footballers') {
+      // ! Variables
+      const idOfPlayerToAdd = parseInt(e.currentTarget.id) // id of player we're gonna add
+      const playerToAdd = filteredFootballers.find(player => player.id === idOfPlayerToAdd) // player himself to add to our selected players
+      const selectedPlayerCounts = countPlayersByPosition(selectedPlayers) // get the number of players inside of our current selected players list by position
+      // create a new empty array to spread the old list and make changes
+      let newPlayerList = []
+
+      // ! Logic
+      // check to see if we can find the player to add
+      if (!selectedPlayers.find(player => player.id === idOfPlayerToAdd)) {
+        // if yes, check if there are already 11 players and the max number of players by that position is reached or not
+        if (selectedPlayerCounts.TOT < maxCounts.TOT && selectedPlayerCounts[playerToAdd.position] < maxCounts[playerToAdd.position]) {
+          // if not add the player to the selected players array
+          newPlayerList = [...selectedPlayers, playerToAdd]
+        } else return // if yes simply return and do not add the player
+      } else { // if the player is already on the list remove the player and remove selected class
+        newPlayerList = selectedPlayers.filter(player => player.id !== idOfPlayerToAdd)
+        e.currentTarget.classList.remove('selected')
+      }
+      // set the selectedPlayers to the new list created
+      setSelectedPlayers(newPlayerList)
+    }
+  }
+```
 
 **Footballers component inside of another page**
 
-**_(Images to come)_**
+```javascript
+  return (
+    <>
+      <div className="selection-screen">
+        <div className="player-selection-and-button">
+          <section className="selected-players">
+            <Table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Player</th>
+                  <th>Id</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                {selectedPlayers.map((player, idx) => {
+                  return (
+                    <tr key={idx}>
+                      <td><img style={{ width: '40px' }} src={player.teamLogo} alt='team-logo'></img></td>
+                      <td>{player.lastName} {player.position} {player.teamName}</td>
+                      <td>{player.id}</td>
+                      <td>{player.price}</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </Table>
+          </section>
+          <Form
+            className="form"
+            method="PUT"
+          >
+            <input type="hidden" name='players' value={selectedPlayers.map(player => player.id)}></input>
+            <button type='submit' value='Make Transfers' onClick={handeClick}>Make Transfers</button>
+          </Form>
+        </div>
+        <section className="available-players">
+          <Footballers
+            selectedPlayers={selectedPlayers}
+            setSelectedPlayers={setSelectedPlayers}
+          />
+        </section>
+      </div >
+    </>
+  )
+```
 
 ### Day 7
 Final day was used exclusively for bug squashing and designs and prep for presentation.
